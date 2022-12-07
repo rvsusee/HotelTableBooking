@@ -27,4 +27,40 @@
         <comments/>
         <audiofile>Hindi.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>AutoLanguage</displayname>
+        <talent/>
+        <phrasetext>English Language is Automatically Selected</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>AutoLanguage.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoInputLanguageMenu</displayname>
+        <talent/>
+        <phrasetext>You have not selected yet.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoInputLanguageMenu.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ChoosePreferredLanguage</displayname>
+        <talent/>
+        <phrasetext>Choose Your Preferred Language</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ChoosePreferredLanguage.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoMatchLanguageMenu</displayname>
+        <talent/>
+        <phrasetext>You have Entered invalid option.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoMatchLanguageMenu.wav</audiofile>
+    </phrase>
 </phraseset>

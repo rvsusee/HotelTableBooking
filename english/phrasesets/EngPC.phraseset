@@ -12,7 +12,7 @@
     <phrase version="1.0">
         <displayname>NoInputNoPerson</displayname>
         <talent/>
-        <phrasetext>Please</phrasetext>
+        <phrasetext>you didn't enter the number of persons yet</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -21,10 +21,100 @@
     <phrase version="1.0">
         <displayname>NoMatchNoPerson</displayname>
         <talent/>
-        <phrasetext/>
+        <phrasetext>Sorry, we are allowing to book upto 10 members at a time.</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
         <audiofile>NoInputNoMatch.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>EnterDurationInHrs</displayname>
+        <talent/>
+        <phrasetext>Enter Duration in Hours</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>EnterDurationInHrs.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>EnterDate</displayname>
+        <talent/>
+        <phrasetext>Enter Date in (dd-mm-yyyy) format.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>EnterDate.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>EnterBookingNo</displayname>
+        <talent/>
+        <phrasetext>Enter Your Booking Number</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>EnterTicketNo.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>EnterTime</displayname>
+        <talent/>
+        <phrasetext>Enter Time in (hours,minutes) in 24 Hours format</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>EnterTime.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoInputDuration</displayname>
+        <talent/>
+        <phrasetext>you didn't enter the duration yet. Please</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoInputDuration.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoMatchDuration</displayname>
+        <talent/>
+        <phrasetext>you have entered Invalid duration</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoMatchDuration.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoInputDate</displayname>
+        <talent/>
+        <phrasetext>you didn't enter the date yet. please</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoInputDate.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoMatchDate</displayname>
+        <talent/>
+        <phrasetext>You have entered invalid date.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoMatchDate.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoInputTime</displayname>
+        <talent/>
+        <phrasetext>you didn't enter the Time yet</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoInputTime.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoMatchTime</displayname>
+        <talent/>
+        <phrasetext>You have entered Invalid Time. Please</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoMatchTime.wav</audiofile>
     </phrase>
 </phraseset>

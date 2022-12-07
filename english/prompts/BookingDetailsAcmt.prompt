@@ -21,7 +21,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
                         <Property name="Valid" value="true"/>
-                        <Property name="Name" value=" is your booking Number"/>
+                        <Property name="Name" value=" is your booking Number. and "/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -38,7 +38,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
                         <Property name="Valid" value="true"/>
-                        <Property name="Name" value="Persons. and"/>
+                        <Property name="Name" value="Persons. and Booking date and Time is"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -60,6 +60,23 @@
                         <Property name="format" value="time"/>
                         <Property name="Time Format" value="TH24M"/>
                         <Property name="Name" value="GetTimePC"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                    <Properties>
+                        <Property name="Name" value="Duration for"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
+                    <Properties>
+                        <Property name="Field" value="value"/>
+                        <Property name="Valid" value="true"/>
+                        <Property name="format" value="number"/>
+                        <Property name="Name" value="GetDurationPC"/>
+                        <Property name="Number Type" value="integer"/>
+                        <Property name="inflection" value="Nn"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

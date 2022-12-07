@@ -198,10 +198,23 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>CancelBooking</servlet-name>
         <servlet-class>flow.CancelBooking</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_189">
-        <servlet-name>TransferToAgent</servlet-name>
-        <servlet-class>flow.TransferToAgent</servlet-class>
+    
+    <servlet id="SAGE-callflow-servlet_main_204">
+        <servlet-name>DefaultLangSelected</servlet-name>
+        <servlet-class>flow.DefaultLangSelected</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_211">
+        <servlet-name>WaitingToTransferCall</servlet-name>
+        <servlet-class>flow.WaitingToTransferCall</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_GetBookingDetails_51">
+        <servlet-name>GetBookingDetails-GetDurationPC</servlet-name>
+        <servlet-class>flow.subflow.GetBookingDetails.GetDurationPC</servlet-class>
+    </servlet>
+    
+    
+    
+    
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -322,10 +335,23 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>CancelBooking</servlet-name>
         <url-pattern>/CancelBooking</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_189">
-        <servlet-name>TransferToAgent</servlet-name>
-        <url-pattern>/TransferToAgent</url-pattern>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_204">
+        <servlet-name>DefaultLangSelected</servlet-name>
+        <url-pattern>/DefaultLangSelected</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_211">
+        <servlet-name>WaitingToTransferCall</servlet-name>
+        <url-pattern>/WaitingToTransferCall</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingDetails_51">
+        <servlet-name>GetBookingDetails-GetDurationPC</servlet-name>
+        <url-pattern>/GetBookingDetails-GetDurationPC</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
     
     
     

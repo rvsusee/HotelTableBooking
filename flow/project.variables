@@ -342,6 +342,62 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
+    <variable factoryID="" name="GetDurationPC:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="GetDurationPC:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="GetDurationPC:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="GetDurationPC:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="GetDurationPC:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="GetDurationPC:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="GetDurationPC:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
     <variable factoryID="" name="GetNoPersonPC:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
@@ -972,14 +1028,6 @@
     <variable factoryID="" name="time:timezone" owner="com.avaya.sce.core" type="com.avaya.sce.core.time" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="TransferToAgent" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.ui.blindTransfer" value="" version="1.0">
-        <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
             <policy name="deleteable" value="false"/>

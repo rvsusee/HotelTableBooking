@@ -15,6 +15,13 @@
                     </Properties>
                     <ChildItems/>
                 </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="EngPC"/>
+                        <Property name="Phrase" value="EnterDate"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
             </ChildItems>
         </PromptLevel>
     </Prompt>

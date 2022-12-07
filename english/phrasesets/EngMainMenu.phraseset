@@ -36,4 +36,22 @@
         <comments/>
         <audiofile>ForCancelBooking.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>NoInput</displayname>
+        <talent/>
+        <phrasetext>You have not selected any option yet.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoInput.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoMatch</displayname>
+        <talent/>
+        <phrasetext>You have entered Invalid Option</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoMatch.wav</audiofile>
+    </phrase>
 </phraseset>

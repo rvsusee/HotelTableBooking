@@ -63,4 +63,13 @@
         <comments/>
         <audiofile>ForMainMenu.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>MoreAttemps</displayname>
+        <talent/>
+        <phrasetext>Sorry, You have enter invalid or wrong options frequently. Please try after some times</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MoreAttemps.wav</audiofile>
+    </phrase>
 </phraseset>
