@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="EngSubMenu" version="1.0">
+    <phrase version="1.0">
+        <displayname>ForRepeatBookingDetails</displayname>
+        <talent/>
+        <phrasetext>For Repeat Booking Details</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ForAcmtBookingDetails.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ForEditBookingDetails</displayname>
+        <talent/>
+        <phrasetext>For Edit Booking Details</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ForEditBookingDetails.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ForCancelBookingDetails</displayname>
+        <talent/>
+        <phrasetext>For Cancel Booking</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ForCancelBookingDetails.wav</audiofile>
+    </phrase>
+</phraseset>

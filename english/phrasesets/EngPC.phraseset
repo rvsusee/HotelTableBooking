@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="EngPC" version="1.0">
+    <phrase version="1.0">
+        <displayname>EnterNoPerson</displayname>
+        <talent/>
+        <phrasetext>Enter No of Persons</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>EnterNoPerson.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoInputNoPerson</displayname>
+        <talent/>
+        <phrasetext>Please</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoInputNoPerson.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoMatchNoPerson</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoInputNoMatch.wav</audiofile>
+    </phrase>
+</phraseset>

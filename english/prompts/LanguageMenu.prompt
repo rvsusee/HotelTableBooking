@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<PromptDoc>
+    <Prompt addreply="false" audioonly="false" bargeintype="speech" order="standard" version="1.0">
+        <PromptLevel count="1" valid="true">
+            <Properties>
+                <Property name="Timeout_Presentation" value="constant"/>
+                <Property name="Timeout" value="8"/>
+                <Property name="TimeUnit" value="seconds"/>
+                <Property name="BargeIn" value="true"/>
+            </Properties>
+            <ChildItems>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="LanguageMenu"/>
+                        <Property name="Phrase" value="English"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="PressEng"/>
+                        <Property name="Phrase" value="PressOne"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="LanguageMenu"/>
+                        <Property name="Phrase" value="Hindi"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="PressEng"/>
+                        <Property name="Phrase" value="PressTwo"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="LanguageMenu"/>
+                        <Property name="Phrase" value="Tamil"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="PressEng"/>
+                        <Property name="Phrase" value="PressThree"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="HotelTableBooking"/>
+                        <Property name="Phrase" value="ForTransferToAgent"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="PressEng"/>
+                        <Property name="Phrase" value="PressNine"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="HotelTableBooking"/>
+                        <Property name="Phrase" value="ForExit"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="PressEng"/>
+                        <Property name="Phrase" value="PressZero"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+            </ChildItems>
+        </PromptLevel>
+    </Prompt>
+</PromptDoc>

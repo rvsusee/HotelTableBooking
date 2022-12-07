@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="Press" version="1.0">
+    <phrase version="1.0">
+        <displayname>PressOne</displayname>
+        <talent/>
+        <phrasetext>Press One</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PressOne.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>PressTwo</displayname>
+        <talent/>
+        <phrasetext>Press Two</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PressTwo.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>PressThree</displayname>
+        <talent/>
+        <phrasetext>Press Three</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PressThree.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>PressFour</displayname>
+        <talent/>
+        <phrasetext>Press Four</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Press4.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>PressFive</displayname>
+        <talent/>
+        <phrasetext>Press Five</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PressFive.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>PressNine</displayname>
+        <talent/>
+        <phrasetext>Press Nine</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PressNine.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>PressZero</displayname>
+        <talent/>
+        <phrasetext>Press Zero</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PressZero.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>PressEight</displayname>
+        <talent/>
+        <phrasetext>Press Eight</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PressEight.wav</audiofile>
+    </phrase>
+</phraseset>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="LanguageMenu" version="1.0">
+    <phrase version="1.0">
+        <displayname>English</displayname>
+        <talent/>
+        <phrasetext>For English</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>English.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Tamil</displayname>
+        <talent/>
+        <phrasetext>For Tamil</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Tamil.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Hindi</displayname>
+        <talent/>
+        <phrasetext>For Hindi</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Hindi.wav</audiofile>
+    </phrase>
+</phraseset>
