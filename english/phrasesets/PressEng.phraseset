@@ -34,7 +34,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>Press4.wav</audiofile>
+        <audiofile>PressFour.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>PressFive</displayname>
@@ -43,7 +43,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>PressFive.wav</audiofile>
+        <audiofile>PressFour.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>PressNine</displayname>

@@ -3,7 +3,7 @@
     <phrase version="1.0">
         <displayname>EnterNoPerson</displayname>
         <talent/>
-        <phrasetext>Enter No of Persons</phrasetext>
+        <phrasetext>Enter Number of Persons</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -21,11 +21,11 @@
     <phrase version="1.0">
         <displayname>NoMatchNoPerson</displayname>
         <talent/>
-        <phrasetext>Sorry, we are allowing to book upto 10 members at a time.</phrasetext>
+        <phrasetext>You are entered wrong input.</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>NoInputNoMatch.wav</audiofile>
+        <audiofile>NoMatchNoPerson.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>EnterDurationInHrs</displayname>
@@ -39,7 +39,7 @@
     <phrase version="1.0">
         <displayname>EnterDate</displayname>
         <talent/>
-        <phrasetext>Enter Date in (dd-mm-yyyy) format.</phrasetext>
+        <phrasetext>Enter Date in  (Year - Month - Day)    format.</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -52,7 +52,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>EnterTicketNo.wav</audiofile>
+        <audiofile>EnterBookingNo.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>EnterTime</displayname>

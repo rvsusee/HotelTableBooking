@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <phraseset audiolocation="internal" filename="LanguageMenu" version="1.0">
     <phrase version="1.0">
-        <displayname>English</displayname>
+        <displayname>ForEnglish</displayname>
         <talent/>
         <phrasetext>For English</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>English.wav</audiofile>
+        <audiofile>ForEnglish.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>Tamil</displayname>
+        <displayname>ForTamil</displayname>
         <talent/>
         <phrasetext>For Tamil</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>Tamil.wav</audiofile>
+        <audiofile>ForTamil.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>Hindi</displayname>
+        <displayname>ForHindi</displayname>
         <talent/>
         <phrasetext>For Hindi</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>Hindi.wav</audiofile>
+        <audiofile>ForHindi.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>AutoLanguage</displayname>
         <talent/>
-        <phrasetext>English Language is Automatically Selected</phrasetext>
+        <phrasetext>English is automatically selected</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -39,7 +39,7 @@
     <phrase version="1.0">
         <displayname>NoInputLanguageMenu</displayname>
         <talent/>
-        <phrasetext>You have not selected yet.</phrasetext>
+        <phrasetext>You have not selected Your preferred language</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>

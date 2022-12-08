@@ -19,9 +19,9 @@
         <audiofile>ForLastBookingDetails.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>ForEditBooking</displayname>
+        <displayname>ForModifyBooking</displayname>
         <talent/>
-        <phrasetext>For Edit Booking</phrasetext>
+        <phrasetext>For Edit Booking Details</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -43,7 +43,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>NoInput.wav</audiofile>
+        <audiofile>NoInputEngMainMenu.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>NoMatch</displayname>
@@ -52,6 +52,6 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>NoMatch.wav</audiofile>
+        <audiofile>NoMatchEngMainMenu.wav</audiofile>
     </phrase>
 </phraseset>

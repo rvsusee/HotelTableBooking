@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="EngAcmt" version="1.0">
+    <phrase version="1.0">
+        <displayname>BookingCancelSuccess</displayname>
+        <talent/>
+        <phrasetext>Your booking is cancelled successfully</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>BookingCancelSuccess.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>BookingCancelFailed</displayname>
+        <talent/>
+        <phrasetext>Unable to cancel booking. </phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>BookingCancelFailed.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>BookingNoNotFound</displayname>
+        <talent/>
+        <phrasetext>You have entered invalid Booking Number</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>BookingNoNotFound.wav</audiofile>
+    </phrase>
+</phraseset>

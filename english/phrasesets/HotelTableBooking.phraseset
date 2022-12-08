@@ -25,7 +25,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>WaitingToTransferCall.wav</audiofile>
+        <audiofile>WaitingToTransferCallAcmt.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>ForExit</displayname>
@@ -48,7 +48,7 @@
     <phrase version="1.0">
         <displayname>ForChangeLanguage</displayname>
         <talent/>
-        <phrasetext>Fo Change Language</phrasetext>
+        <phrasetext>For Change Language</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -64,12 +64,39 @@
         <audiofile>ForMainMenu.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>MoreAttemps</displayname>
+        <displayname>MoreInvalidValues</displayname>
         <talent/>
-        <phrasetext>Sorry, You have enter invalid or wrong options frequently. Please try after some times</phrasetext>
+        <phrasetext>Sorry, You have enter invalid value frequently</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>MoreAttemps.wav</audiofile>
+        <audiofile>MoreInvalidValues.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MoreInvalidChoice</displayname>
+        <talent/>
+        <phrasetext>Sorry, You have choose wrong Choice on more times.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MoreInvalidChoice.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>TryAgainLater</displayname>
+        <talent/>
+        <phrasetext> Please try again later</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>TryAgainLater.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>SometingWrong</displayname>
+        <talent/>
+        <phrasetext>Sorry, Something wrong.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>SometingWrong.wav</audiofile>
     </phrase>
 </phraseset>

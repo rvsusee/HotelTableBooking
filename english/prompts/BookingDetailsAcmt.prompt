@@ -9,19 +9,26 @@
                 <Property name="BargeIn" value="true"/>
             </Properties>
             <ChildItems>
+                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                    <Properties>
+                        <Property name="Valid" value="true"/>
+                        <Property name="Name" value="Your Booking Number is "/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
                     <Properties>
+                        <Property name="Field" value="value"/>
                         <Property name="Valid" value="true"/>
                         <Property name="format" value="digits"/>
                         <Property name="Inflection" value="Crmm"/>
-                        <Property name="Name" value="BookingNo"/>
+                        <Property name="Name" value="GetBookingNoPC"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
-                        <Property name="Valid" value="true"/>
-                        <Property name="Name" value=" is your booking Number. and "/>
+                        <Property name="Name" value=" and, Number of persons is "/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -38,7 +45,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
                         <Property name="Valid" value="true"/>
-                        <Property name="Name" value="Persons. and Booking date and Time is"/>
+                        <Property name="Name" value="and The Booking date is"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -57,8 +64,9 @@
                     <Properties>
                         <Property name="Field" value="value"/>
                         <Property name="Valid" value="false"/>
-                        <Property name="format" value="time"/>
-                        <Property name="Time Format" value="TH24M"/>
+                        <Property name="format" value="digits"/>
+                        <Property name="Inflection" value="Crmm"/>
+                        <Property name="Time Format" value="THMAM"/>
                         <Property name="Name" value="GetTimePC"/>
                     </Properties>
                     <ChildItems/>
@@ -73,7 +81,8 @@
                     <Properties>
                         <Property name="Field" value="value"/>
                         <Property name="Valid" value="true"/>
-                        <Property name="format" value="number"/>
+                        <Property name="format" value="time"/>
+                        <Property name="Time Format" value="THMAM"/>
                         <Property name="Name" value="GetDurationPC"/>
                         <Property name="Number Type" value="integer"/>
                         <Property name="inflection" value="Nn"/>
@@ -82,7 +91,7 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
-                        <Property name="Name" value="and Your Booking is Confirmed"/>
+                        <Property name="Name" value="  and Your Booking is Confirmed"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

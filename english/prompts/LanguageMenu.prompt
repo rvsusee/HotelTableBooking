@@ -12,7 +12,14 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="LanguageMenu"/>
-                        <Property name="Phrase" value="English"/>
+                        <Property name="Phrase" value="ChoosePreferredLanguage"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="LanguageMenu"/>
+                        <Property name="Phrase" value="ForEnglish"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -26,7 +33,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="LanguageMenu"/>
-                        <Property name="Phrase" value="Hindi"/>
+                        <Property name="Phrase" value="ForHindi"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -40,7 +47,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="LanguageMenu"/>
-                        <Property name="Phrase" value="Tamil"/>
+                        <Property name="Phrase" value="ForTamil"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -48,20 +55,6 @@
                     <Properties>
                         <Property name="Phraseset" value="PressEng"/>
                         <Property name="Phrase" value="PressThree"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
-                    <Properties>
-                        <Property name="Phraseset" value="HotelTableBooking"/>
-                        <Property name="Phrase" value="ForTransferToAgent"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
-                    <Properties>
-                        <Property name="Phraseset" value="PressEng"/>
-                        <Property name="Phrase" value="PressNine"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

@@ -16,13 +16,6 @@
                     </Properties>
                     <ChildItems/>
                 </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
-                    <Properties>
-                        <Property name="Phraseset" value="LanguageMenu"/>
-                        <Property name="Phrase" value="ChoosePreferredLanguage"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
             </ChildItems>
         </PromptLevel>
     </Prompt>

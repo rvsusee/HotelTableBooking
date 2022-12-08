@@ -7,7 +7,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>ForAcmtBookingDetails.wav</audiofile>
+        <audiofile>ForRepeatBookingDetails.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>ForEditBookingDetails</displayname>
@@ -16,7 +16,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>ForEditBookingDetails.wav</audiofile>
+        <audiofile>ForEditBooking.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>ForCancelBookingDetails</displayname>
@@ -25,6 +25,6 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>ForCancelBookingDetails.wav</audiofile>
+        <audiofile>ForCancelBooking.wav</audiofile>
     </phrase>
 </phraseset>
