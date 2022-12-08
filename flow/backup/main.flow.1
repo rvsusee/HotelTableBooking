@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="345" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="349" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="-109"/>
@@ -144,8 +144,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="133" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="1112"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="132"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1108"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="131"/>
                 <Property name="flowID" value="BookingDetails"/>
                 <Property name="Name" value="GetBookingDetails"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="134" version="1.2">
@@ -267,9 +267,9 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="331" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="1373"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1344"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="136"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="187"/>
                 <Property name="Name" value="CancelBookingSuccess"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="332" version="1.2">
                     <ItemProperties/>
@@ -382,9 +382,9 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="340" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="1383"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1341"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="194"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="242"/>
                 <Property name="Name" value="BookingCancelFailed"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="341" version="1.2">
                     <ItemProperties/>
@@ -405,7 +405,7 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="311" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="943"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="925"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="209"/>
                 <Property name="flowID" value="GetBookingNo"/>
                 <Property name="Name" value="GetCancelNoPC"/>
@@ -499,6 +499,12 @@
                                 </FlowItem>
                             </ChildItems>
                         </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Report" id="348" version="1.2">
+                            <ItemProperties>
+                                <Property name="report.type" value="trans.start"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
@@ -531,12 +537,12 @@
                 <Property name="ReferencedNodeID" value="25"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="315" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="1597"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="159"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1586"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="205"/>
                 <Property name="ReferencedNodeID" value="31"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="317" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="1174"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1120"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="212"/>
                 <Property name="Name" value="ValidateBookingNo"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="318" version="1.2">
@@ -668,6 +674,13 @@
                                     <ChildItems/>
                                 </FlowItem>
                             </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Report" id="349" version="1.2">
+                            <ItemProperties>
+                                <Property name="report.trans.name" value="EngMainMenu"/>
+                                <Property name="report.type" value="trans.start"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>
@@ -878,6 +891,7 @@
                 <TargetNode id="315"/>
                 <Property name="Connection.SourceObjectID" value="334"/>
                 <Property name="Connection.TargetObjectID" value="315"/>
+                <Bendpoint x="1536" y="200"/>
             </NodeConnection>
             <NodeConnection id="338" version="1.2">
                 <SourceNode id="137"/>
@@ -891,7 +905,7 @@
                 <Property name="Connection.SourceObjectID" value="320"/>
                 <Property name="Connection.TargetObjectID" value="340"/>
             </NodeConnection>
-            <NodeConnection id="345" version="1.2">
+            <NodeConnection id="346" version="1.2">
                 <SourceNode id="340"/>
                 <TargetNode id="315"/>
                 <Property name="Connection.SourceObjectID" value="343"/>

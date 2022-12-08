@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="346" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="349" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="-109"/>
@@ -499,6 +499,13 @@
                                 </FlowItem>
                             </ChildItems>
                         </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Report" id="348" version="1.2">
+                            <ItemProperties>
+                                <Property name="report.trans.name" value="LangMenu"/>
+                                <Property name="report.type" value="trans.start"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
@@ -668,6 +675,13 @@
                                     <ChildItems/>
                                 </FlowItem>
                             </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Report" id="349" version="1.2">
+                            <ItemProperties>
+                                <Property name="report.trans.name" value="EngMainMenu"/>
+                                <Property name="report.type" value="trans.start"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>

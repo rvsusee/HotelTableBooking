@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="98" package="flow.subflow.AddBooking" version="5.0">
+    <ApplicationFlow nextObjectId="106" package="flow.subflow.AddBooking" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="37"/>
@@ -87,6 +87,10 @@
                                     </ChildItems>
                                 </FlowItem>
                             </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="106" version="1.2">
+                            <ItemProperties/>
+                            <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="27" version="1.2">
                             <ItemProperties>
@@ -234,25 +238,25 @@
                                 </FlowItem>
                             </ChildItems>
                         </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Catch" id="95" version="1.2">
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="105" version="1.2">
                             <ItemProperties>
-                                <Property name="event.name" value="error.badfetch"/>
+                                <Property name="trace.varId" value="BookingNo"/>
+                                <Property name="trace.text" value="AutoGenBookNo"/>
                             </ItemProperties>
-                            <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="97" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="Name" value="SometingWrong"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Throw" id="98" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="event.name" value="error.badfetch"/>
-                                        <Property name="ActivateIteration" value="3"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                            </ChildItems>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="104" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.varId" value="GetNoPersonPC"/>
+                                <Property name="trace.text" value="GetNoPersonPC"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="99" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="18"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>
@@ -377,6 +381,12 @@
                 <TargetNode id="44"/>
                 <Property name="Connection.SourceObjectID" value="60"/>
                 <Property name="Connection.TargetObjectID" value="44"/>
+            </NodeConnection>
+            <NodeConnection id="100" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="18"/>
+                <Property name="Connection.SourceObjectID" value="99"/>
+                <Property name="Connection.TargetObjectID" value="18"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>
