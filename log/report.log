@@ -12,3 +12,9 @@
 08/12/2022 18:24:08:216  WARN - In Progress | session id:sess3286066 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDurationPC:value : com.avaya.sce.runtime.InputFormatException: toTime, value must be in format of HH[:]MM[:][SS] |  |  | undefined
 08/12/2022 18:24:08:356  INFO - Start | session id:sess3286066 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
 08/12/2022 18:24:20:921  INFO - In Progress | session id:sess3286066 | HotelTableBooking:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | undefined
+08/12/2022 18:42:55:670  INFO - Start | session id:sess6305997 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+08/12/2022 18:43:31:836  INFO - Start | session id:sess3487121 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+08/12/2022 18:43:43:425  INFO - In Progress | session id:sess3487121 | HotelTableBooking:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | undefined
+08/12/2022 18:44:40:569  INFO - Start | session id:sess7978714 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+08/12/2022 18:45:03:152  INFO - Start | session id:sess7978714 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+08/12/2022 18:45:07:792  INFO - In Progress | session id:sess7978714 | HotelTableBooking:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | undefined

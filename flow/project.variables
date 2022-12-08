@@ -1034,4 +1034,5 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
+    <variable factoryID="" name="WelcomeAudio" owner="" type="" value="" version="1.0"/>
 </projectvariables>

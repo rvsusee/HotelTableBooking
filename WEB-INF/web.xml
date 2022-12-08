@@ -71,6 +71,11 @@ Copyright 2004-2021 Avaya Inc.
         <param-value>none</param-value>
         <description>Grammar caching mode, none=no caching, default=system default or property setting</description>
     </context-param>
+    
+    <context-param>
+        <param-name>english.phraseset.HotelTableBooking.urlbase</param-name>
+        <param-value>https://pixabay.com/sound-effects/welcome-64347/</param-value>
+    </context-param>
     <servlet id="avayadefaultdisconnecthandler-servlet">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <servlet-class>com.avaya.sce.runtime.DefaultDisconnect</servlet-class>
