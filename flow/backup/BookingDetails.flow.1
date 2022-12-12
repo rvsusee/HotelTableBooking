@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="14" package="flow.subflow.BookingDetails" version="5.0">
+    <ApplicationFlow nextObjectId="17" package="flow.subflow.BookingDetails" version="5.0">
         <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="16" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="372"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="305"/>
+                <Property name="Name" value="Return"/>
+            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="13"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="293"/>
@@ -35,17 +40,12 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="7" version="1.2">
                             <ItemProperties>
-                                <Property name="LinkedNodeID" value="12"/>
+                                <Property name="LinkedNodeID" value="16"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>
-            </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="12" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="390"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="295"/>
-                <Property name="Name" value="returnNo"/>
             </FlowNode>
             <NodeConnection id="13" version="1.2">
                 <SourceNode id="1"/>
@@ -53,11 +53,11 @@
                 <Property name="Connection.SourceObjectID" value="3"/>
                 <Property name="Connection.TargetObjectID" value="4"/>
             </NodeConnection>
-            <NodeConnection id="14" version="1.2">
+            <NodeConnection id="17" version="1.2">
                 <SourceNode id="4"/>
-                <TargetNode id="12"/>
+                <TargetNode id="16"/>
                 <Property name="Connection.SourceObjectID" value="7"/>
-                <Property name="Connection.TargetObjectID" value="12"/>
+                <Property name="Connection.TargetObjectID" value="16"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>
