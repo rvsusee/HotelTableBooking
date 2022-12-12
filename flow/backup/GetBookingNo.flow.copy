@@ -18,7 +18,7 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="17" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="449"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="533"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="80"/>
                 <Property name="Name" value="BookingNo"/>
             </FlowNode>

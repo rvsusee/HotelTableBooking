@@ -27,4 +27,13 @@
         <comments/>
         <audiofile>BookingNoNotFound.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>BookingConfirmed</displayname>
+        <talent/>
+        <phrasetext>Your Booking is Confirmed</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>BookingConfirmed.wav</audiofile>
+    </phrase>
 </phraseset>
