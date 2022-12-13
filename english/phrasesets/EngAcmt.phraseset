@@ -36,4 +36,31 @@
         <comments/>
         <audiofile>BookingConfirmed.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>ConfirmBooking</displayname>
+        <talent/>
+        <phrasetext>For Confirm Booking</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ConfirmBooking.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>EditBooking</displayname>
+        <talent/>
+        <phrasetext>For Edit Booking</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>EditBooking.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>CancelBooking</displayname>
+        <talent/>
+        <phrasetext>For Cancel Booking</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>CancelBooking.wav</audiofile>
+    </phrase>
 </phraseset>

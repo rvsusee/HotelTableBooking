@@ -11,13 +11,6 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="PressEng"/>
-                        <Property name="Phrase" value="PressOne"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
-                    <Properties>
                         <Property name="Phraseset" value="EngMainMenu"/>
                         <Property name="Phrase" value="ForNewBooking"/>
                     </Properties>
@@ -26,7 +19,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="PressEng"/>
-                        <Property name="Phrase" value="PressTwo"/>
+                        <Property name="Phrase" value="PressOne"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -40,7 +33,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="PressEng"/>
-                        <Property name="Phrase" value="PressThree"/>
+                        <Property name="Phrase" value="PressTwo"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -54,7 +47,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="PressEng"/>
-                        <Property name="Phrase" value="PressFour"/>
+                        <Property name="Phrase" value="PressThree"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -68,7 +61,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="PressEng"/>
-                        <Property name="Phrase" value="PressEight"/>
+                        <Property name="Phrase" value="PressFour"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -82,7 +75,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="PressEng"/>
-                        <Property name="Phrase" value="PressNine"/>
+                        <Property name="Phrase" value="PressEight"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -96,7 +89,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="PressEng"/>
-                        <Property name="Phrase" value="PressZero"/>
+                        <Property name="Phrase" value="PressNine"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -104,6 +97,13 @@
                     <Properties>
                         <Property name="Phraseset" value="HotelTableBooking"/>
                         <Property name="Phrase" value="ForExit"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="PressEng"/>
+                        <Property name="Phrase" value="PressZero"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

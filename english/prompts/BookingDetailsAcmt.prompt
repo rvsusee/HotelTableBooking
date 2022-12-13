@@ -18,11 +18,10 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
                     <Properties>
-                        <Property name="Field" value="value"/>
                         <Property name="Valid" value="true"/>
                         <Property name="format" value="digits"/>
                         <Property name="Inflection" value="Crmm"/>
-                        <Property name="Name" value="GetBookingNoPC"/>
+                        <Property name="Name" value="BookingNo"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -53,10 +52,16 @@
                     <Properties>
                         <Property name="Month Type" value="spokenmonth"/>
                         <Property name="Field" value="value"/>
-                        <Property name="Date Format" value="DMSPDYY"/>
+                        <Property name="Date Format" value="DDOWMSPDYY"/>
                         <Property name="Valid" value="false"/>
                         <Property name="format" value="date"/>
                         <Property name="Name" value="GetDatePC"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                    <Properties>
+                        <Property name="Name" value="and Time is"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -81,7 +86,7 @@
                     <Properties>
                         <Property name="Field" value="value"/>
                         <Property name="Valid" value="true"/>
-                        <Property name="format" value="time"/>
+                        <Property name="format" value="number"/>
                         <Property name="Time Format" value="THMAM"/>
                         <Property name="Name" value="GetDurationPC"/>
                         <Property name="Number Type" value="integer"/>
@@ -91,7 +96,7 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
-                        <Property name="Name" value="  and Your Booking is Confirmed"/>
+                        <Property name="Name" value="  Hours"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

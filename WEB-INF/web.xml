@@ -307,6 +307,22 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>AddBooking-BookingCancel</servlet-name>
         <servlet-class>flow.subflow.AddBooking.BookingCancel</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_AddBooking_214">
+        <servlet-name>AddBooking-SetDate</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.SetDate</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_AddBooking_221">
+        <servlet-name>AddBooking-ValidateDate</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.ValidateDate</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_AddBooking_226">
+        <servlet-name>AddBooking-DateValidater</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.DateValidater</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_371">
+        <servlet-name>Disconnect</servlet-name>
+        <servlet-class>flow.Disconnect</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -520,6 +536,22 @@ Copyright 2004-2021 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_199">
         <servlet-name>AddBooking-BookingCancel</servlet-name>
         <url-pattern>/AddBooking-BookingCancel</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_214">
+        <servlet-name>AddBooking-SetDate</servlet-name>
+        <url-pattern>/AddBooking-SetDate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_221">
+        <servlet-name>AddBooking-ValidateDate</servlet-name>
+        <url-pattern>/AddBooking-ValidateDate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_226">
+        <servlet-name>AddBooking-DateValidater</servlet-name>
+        <url-pattern>/AddBooking-DateValidater</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_371">
+        <servlet-name>Disconnect</servlet-name>
+        <url-pattern>/Disconnect</url-pattern>
     </servlet-mapping>
     
     

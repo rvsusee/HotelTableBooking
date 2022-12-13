@@ -1,12 +1,137 @@
-12/12/2022 15:52:19:333  INFO - Start | session id:sess9841654 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
-12/12/2022 15:52:45:268  INFO - Start | session id:sess9841654 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
-12/12/2022 15:52:52:778  INFO - In Progress | session id:sess9841654 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
-12/12/2022 15:53:09:333  INFO - In Progress | session id:sess9841654 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
-12/12/2022 15:53:12:628  WARN - In Progress | session id:sess9841654 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetBookingNoPC:value : com.avaya.sce.runtime.InputFormatException: toChars, empty string |  |  | undefined
-12/12/2022 15:53:12:632  WARN - In Progress | session id:sess9841654 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid value for date "2080????" - could not be converted to integer |  |  | undefined
-12/12/2022 15:53:12:632  WARN - In Progress | session id:sess9841654 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
-12/12/2022 15:53:12:632  WARN - In Progress | session id:sess9841654 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDurationPC:value : com.avaya.sce.runtime.InputFormatException: toTime, value must be in format of HH[:]MM[:][SS] |  |  | undefined
-12/12/2022 15:55:52:029  INFO - Start | session id:sess3276795 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
-12/12/2022 15:55:54:527  INFO - Start | session id:sess3276795 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
-12/12/2022 15:55:56:867  INFO - In Progress | session id:sess3276795 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
-12/12/2022 15:57:27:360  INFO - Start | session id:sess9754327 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 10:34:52:095  INFO - Start | session id:sess7080351 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 10:34:55:264  INFO - Start | session id:sess7080351 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 10:34:59:975  INFO - In Progress | session id:sess7080351 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 10:35:27:041  INFO - In Progress | session id:sess7080351 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 10:35:38:401  WARN - In Progress | session id:sess7080351 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetBookingNoPC:value : com.avaya.sce.runtime.InputFormatException: toChars, empty string |  |  | undefined
+13/12/2022 10:35:38:412  WARN - In Progress | session id:sess7080351 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid value for date "2020????" - could not be converted to integer |  |  | undefined
+13/12/2022 10:35:38:412  WARN - In Progress | session id:sess7080351 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 10:35:38:412  WARN - In Progress | session id:sess7080351 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDurationPC:value : com.avaya.sce.runtime.InputFormatException: toTime, value must be in format of HH[:]MM[:][SS] |  |  | undefined
+13/12/2022 10:36:12:817  INFO - In Progress | session id:sess7080351 | HotelTableBooking:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | undefined
+13/12/2022 10:37:10:330  INFO - Start | session id:sess5260104 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 10:37:18:387  INFO - Start | session id:sess5260104 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 10:37:21:536  INFO - In Progress | session id:sess5260104 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 10:37:43:433  INFO - In Progress | session id:sess5260104 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 10:37:47:283  WARN - In Progress | session id:sess5260104 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetBookingNoPC:value : com.avaya.sce.runtime.InputFormatException: toChars, empty string |  |  | undefined
+13/12/2022 10:37:47:292  WARN - In Progress | session id:sess5260104 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid value for date "2568????" - could not be converted to integer |  |  | undefined
+13/12/2022 10:37:47:292  WARN - In Progress | session id:sess5260104 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 10:37:47:292  WARN - In Progress | session id:sess5260104 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDurationPC:value : com.avaya.sce.runtime.InputFormatException: toTime, value must be in format of HH[:]MM[:][SS] |  |  | undefined
+13/12/2022 10:37:58:243  INFO - Start | session id:sess5260104 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 10:42:55:250  INFO - Start | session id:sess8149029 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 10:43:00:181  INFO - Start | session id:sess8149029 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 10:43:05:766  INFO - In Progress | session id:sess8149029 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 10:43:20:972  INFO - In Progress | session id:sess8149029 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 10:43:23:545  WARN - In Progress | session id:sess8149029 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetBookingNoPC:value : com.avaya.sce.runtime.InputFormatException: toChars, empty string |  |  | undefined
+13/12/2022 10:43:23:545  WARN - In Progress | session id:sess8149029 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid value for date "202208??" - could not be converted to integer |  |  | undefined
+13/12/2022 10:43:23:546  WARN - In Progress | session id:sess8149029 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 10:43:23:546  WARN - In Progress | session id:sess8149029 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDurationPC:value : com.avaya.sce.runtime.InputFormatException: toTime, value must be in format of HH[:]MM[:][SS] |  |  | undefined
+13/12/2022 10:43:39:484  INFO - In Progress | session id:sess8149029 | HotelTableBooking:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | undefined
+13/12/2022 10:45:12:486  INFO - Start | session id:sess2874044 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 10:45:18:939  INFO - Start | session id:sess2874044 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 10:45:24:730  INFO - In Progress | session id:sess2874044 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 10:45:49:525  INFO - In Progress | session id:sess2874044 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 10:45:51:942  WARN - In Progress | session id:sess2874044 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetBookingNoPC:value : com.avaya.sce.runtime.InputFormatException: toChars, empty string |  |  | undefined
+13/12/2022 10:45:51:945  WARN - In Progress | session id:sess2874044 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 10:50:01:058  INFO - Start | session id:sess5065094 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 10:50:09:002  INFO - Start | session id:sess5065094 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 10:50:21:661  INFO - In Progress | session id:sess5065094 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 10:50:35:896  INFO - In Progress | session id:sess5065094 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 10:50:38:473  WARN - In Progress | session id:sess5065094 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 10:51:08:815  INFO - In Progress | session id:sess5065094 | HotelTableBooking:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | undefined
+13/12/2022 10:56:34:884  INFO - Start | session id:sess1041289 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 10:56:58:447  INFO - Start | session id:sess1041289 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 10:57:16:701  INFO - In Progress | session id:sess1041289 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 10:57:51:470  INFO - In Progress | session id:sess1041289 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 10:57:54:139  WARN - In Progress | session id:sess1041289 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 10:58:28:727  INFO - Start | session id:sess1041289 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 11:00:24:987  INFO - Start | session id:sess3302941 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 11:00:34:879  INFO - Start | session id:sess3302941 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 11:00:38:005  INFO - In Progress | session id:sess3302941 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 11:02:14:835  INFO - Start | session id:sess6697978 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 11:07:40:879  INFO - Start | session id:sess4594084 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 11:08:06:985  INFO - Start | session id:sess4594084 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 11:08:12:974  INFO - In Progress | session id:sess4594084 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 11:08:28:744  INFO - In Progress | session id:sess4594084 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 11:08:31:740  WARN - In Progress | session id:sess4594084 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid value for date "222202??" - could not be converted to integer |  |  | undefined
+13/12/2022 11:08:31:740  WARN - In Progress | session id:sess4594084 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 11:09:06:301  INFO - Start | session id:sess4594084 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 11:09:17:769  WARN - In Progress | session id:sess4594084 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid value for date "222202??" - could not be converted to integer |  |  | undefined
+13/12/2022 11:09:17:769  WARN - In Progress | session id:sess4594084 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 11:16:05:219  INFO - Start | session id:sess6663324 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 11:37:11:140  INFO - Start | session id:sess6663324 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 11:38:27:600  INFO - Start | session id:sess2473891 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 11:42:59:309  INFO - In Progress | session id:sess2473891 | HotelTableBooking:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | undefined
+13/12/2022 11:43:09:711  INFO - Start | session id:sess7984010 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 11:43:17:623  INFO - Start | session id:sess7984010 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 11:43:23:232  INFO - In Progress | session id:sess7984010 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 111 | undefined
+13/12/2022 11:43:43:935  INFO - In Progress | session id:sess7984010 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 11:43:49:428  WARN - In Progress | session id:sess7984010 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 13:01:38:309  INFO - Start | session id:sess5245916 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 13:01:42:370  INFO - Start | session id:sess5245916 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 13:01:44:024  INFO - In Progress | session id:sess5245916 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 1750 | undefined
+13/12/2022 13:01:52:270 ERROR - In Progress | session id:sess5245916 | HotelTableBooking:AddBooking-ValidateDate |  | com.avaya.sce.runtimecommon.VariableTypeException: Cannot access complex variable as simple variable | Exception stack trace | Error processing request
+ EXCEPTION> 
+com.avaya.sce.runtimecommon.VariableTypeException: Cannot access complex variable as simple variable
+	at com.avaya.sce.runtimecommon.SCESession.getVariableField(SCESession.java:2133)
+	at flow.subflow.AddBooking.ValidateDate.servletImplementation(ValidateDate.java:48)
+	at com.avaya.sce.runtime.BasicServlet.handleRequest(BasicServlet.java:112)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doPost(SCEServlet.java:148)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1454)
+	at com.avaya.sce.runtime.Data.handleRequest(Data.java:184)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doPost(SCEServlet.java:148)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+ | undefined
+13/12/2022 13:06:34:432  INFO - Start | session id:sess9153225 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 13:06:45:389  INFO - Start | session id:sess9153225 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 13:06:47:303  INFO - In Progress | session id:sess9153225 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 1750 | undefined
+13/12/2022 13:07:48:109  INFO - Start | session id:sess8902900 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 13:07:52:887  INFO - Start | session id:sess8902900 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 13:07:55:967  INFO - In Progress | session id:sess8902900 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 1750 | undefined
+13/12/2022 13:08:37:322  INFO - In Progress | session id:sess8902900 | HotelTableBooking:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | undefined
+13/12/2022 14:37:34:450  INFO - Start | session id:sess5993397 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 14:37:36:718  INFO - Start | session id:sess5993397 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 14:38:45:739  INFO - Start | session id:sess5043497 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 14:38:55:595  INFO - Start | session id:sess5043497 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined

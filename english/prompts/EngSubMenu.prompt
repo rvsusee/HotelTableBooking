@@ -65,6 +65,20 @@
                     </Properties>
                     <ChildItems/>
                 </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="PressEng"/>
+                        <Property name="Phrase" value="PressZero"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="HotelTableBooking"/>
+                        <Property name="Phrase" value="ForExit"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
             </ChildItems>
         </PromptLevel>
     </Prompt>
