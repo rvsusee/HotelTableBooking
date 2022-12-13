@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="241" package="flow.subflow.AddBooking" version="5.0">
+    <ApplicationFlow nextObjectId="242" package="flow.subflow.AddBooking" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="15"/>
@@ -20,8 +20,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="226" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="567"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="19"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="563"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="14"/>
                 <Property name="Name" value="DateValidater"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="227" version="1.2">
                     <ItemProperties/>
@@ -131,6 +131,7 @@
                                 <Property name="trace.varId" value="GetNoPersonPC"/>
                                 <Property name="trace.text" value="GetNoPersonPC"/>
                                 <Property name="trace.fieldId" value="value"/>
+                                <Property name="trace.priority" value="debug"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -213,8 +214,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="237" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="733"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="25"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="732"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="27"/>
                 <Property name="ReferencedNodeID" value="18"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="49" version="3.1">
