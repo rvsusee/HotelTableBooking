@@ -5,3 +5,17 @@
 13/12/2022 18:10:01:776  WARN - In Progress | session id:sess580930 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid month value "20" - must be between 1-12 |  |  | undefined
 13/12/2022 18:10:01:777  WARN - In Progress | session id:sess580930 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
 13/12/2022 18:10:04:973  INFO - Start | session id:sess580930 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 18:18:59:752  INFO - Start | session id:sess8368546 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 18:19:01:955  INFO - Start | session id:sess8368546 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 18:19:05:058  INFO - In Progress | session id:sess8368546 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 1750 | undefined
+13/12/2022 18:19:18:281  INFO - In Progress | session id:sess8368546 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 18:19:20:777  WARN - In Progress | session id:sess8368546 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid month value "20" - must be between 1-12 |  |  | undefined
+13/12/2022 18:19:20:777  WARN - In Progress | session id:sess8368546 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 18:19:28:844  INFO - Start | session id:sess8368546 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 18:35:23:955  INFO - Start | session id:sess1177399 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+13/12/2022 18:35:27:280  INFO - Start | session id:sess1177399 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+13/12/2022 18:35:30:365  INFO - In Progress | session id:sess1177399 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 1750 | undefined
+13/12/2022 18:35:59:662  INFO - In Progress | session id:sess1177399 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+13/12/2022 18:36:05:130  WARN - In Progress | session id:sess1177399 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid month value "20" - must be between 1-12 |  |  | undefined
+13/12/2022 18:36:05:130  WARN - In Progress | session id:sess1177399 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+13/12/2022 18:36:09:189  INFO - Start | session id:sess1177399 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
