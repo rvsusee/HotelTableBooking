@@ -612,8 +612,8 @@
                 <Property name="ReferencedNodeID" value="31"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="174" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="1865"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="-27"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1878"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="-24"/>
                 <Property name="ReferencedNodeID" value="31"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="369" version="3.1">
