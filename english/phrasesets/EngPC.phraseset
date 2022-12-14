@@ -93,7 +93,7 @@
     <phrase version="1.0">
         <displayname>NoMatchDate</displayname>
         <talent/>
-        <phrasetext>You have entered invalid date.</phrasetext>
+        <phrasetext>You have entered invalid date format.</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <projectvariables>
+    <variable factoryID="" name="BookingDetails:BookingNo" owner="" type="" value="1020" version="1.0"/>
+    <variable factoryID="" name="BookingDetails:Date" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="BookingDetails:DateValidation" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="BookingDetails:duration" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="BookingDetails:Persons" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="BookingDetails:Time" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="BookingNo" owner="" type="" value="1750" version="1.0"/>
     <variable factoryID="" name="date:audio" owner="com.avaya.sce.core" type="com.avaya.sce.core.date" value="" version="1.0">
         <editpolicies>
@@ -398,8 +404,6 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetDatePCValidate" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="GetDatePCValue" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="GetDurationPC:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>

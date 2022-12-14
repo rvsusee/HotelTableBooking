@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="389" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="390" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="-109"/>
@@ -11,13 +11,6 @@
                         <Property name="StartNodeID" value="5"/>
                     </ItemProperties>
                     <ChildItems>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Property" id="353" version="1.2">
-                            <ItemProperties>
-                                <Property name="interdigittimeout" value="5s"/>
-                                <Property name="termtimeout" value="10s"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Link" id="17" version="1.2">
                             <ItemProperties>
                                 <Property name="ActivateDTMF" value="0"/>
@@ -86,7 +79,7 @@
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="281" version="1.2">
                                     <ItemProperties>
                                         <Property name="LinkedNodeID" value="250"/>
-                                        <Property name="ActivateIteration" value="0"/>
+                                        <Property name="ActivateIteration" value="1"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -106,6 +99,7 @@
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="380" version="1.2">
                                     <ItemProperties>
                                         <Property name="LinkedNodeID" value="250"/>
+                                        <Property name="ActivateIteration" value="1"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -125,6 +119,7 @@
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="384" version="1.2">
                                     <ItemProperties>
                                         <Property name="LinkedNodeID" value="250"/>
+                                        <Property name="ActivateIteration" value="1"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
