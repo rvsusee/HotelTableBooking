@@ -5,7 +5,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="256" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="521"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="-60"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="-25"/>
                 <Property name="Name" value="WrongDateFormat"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="257" version="1.2">
                     <ItemProperties/>
@@ -43,8 +43,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="226" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="383"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="-64"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="397"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="-6"/>
                 <Property name="Name" value="DateValidater"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="227" version="1.2">
                     <ItemProperties/>
@@ -581,8 +581,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Servlet" id="221" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="248"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="-3"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="247"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="-1"/>
                 <Property name="Name" value="ValidateDate"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Servlet" id="222" version="1.2">
                     <ItemProperties/>
