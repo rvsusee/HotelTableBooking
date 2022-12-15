@@ -46,3 +46,137 @@
 15/12/2022 12:23:41:672  INFO - In Progress | session id:sess4870826 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
 15/12/2022 12:23:45:010  WARN - In Progress | session id:sess4870826 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetTimePC:value : com.avaya.sce.runtime.InputFormatException: toDate, value must be either 4 or 6 digit long in format of HHMM[SS] if you do not use separators |  |  | undefined
 15/12/2022 12:26:27:731  INFO - Start | session id:sess5672869 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+15/12/2022 12:26:51:941  INFO - Start | session id:sess5672869 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+15/12/2022 12:27:15:276  INFO - In Progress | session id:sess5672869 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+15/12/2022 12:27:18:046  WARN - In Progress | session id:sess5672869 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetTimePC:value : com.avaya.sce.runtime.InputFormatException: toDate, value must be either 4 or 6 digit long in format of HHMM[SS] if you do not use separators |  |  | undefined
+15/12/2022 12:27:18:046  WARN - In Progress | session id:sess5672869 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+15/12/2022 12:28:17:740  INFO - Start | session id:sess2281497 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+15/12/2022 12:28:24:301  INFO - Start | session id:sess2281497 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+15/12/2022 12:28:37:776  INFO - In Progress | session id:sess2281497 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+15/12/2022 12:28:50:334  WARN - In Progress | session id:sess2281497 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetTimePC:value : com.avaya.sce.runtime.InputFormatException: toDate, value must be either 4 or 6 digit long in format of HHMM[SS] if you do not use separators |  |  | undefined
+15/12/2022 12:28:50:334  WARN - In Progress | session id:sess2281497 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+15/12/2022 12:29:43:381  INFO - Start | session id:sess4341491 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+15/12/2022 12:30:07:068  INFO - Start | session id:sess4341491 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+15/12/2022 12:31:07:599  INFO - In Progress | session id:sess4341491 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+15/12/2022 12:31:10:530  WARN - In Progress | session id:sess4341491 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetTimePC:value : com.avaya.sce.runtime.InputFormatException: toDate, value must be either 4 or 6 digit long in format of HHMM[SS] if you do not use separators |  |  | undefined
+15/12/2022 12:31:10:530  WARN - In Progress | session id:sess4341491 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+15/12/2022 12:32:02:017  INFO - Start | session id:sess4341491 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+15/12/2022 12:51:38:692  INFO - Start | session id:sess5310624 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+15/12/2022 12:52:10:064  INFO - Start | session id:sess5310624 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+15/12/2022 12:52:26:158 ERROR - In Progress | session id:sess5310624 | HotelTableBooking:AddBooking-ValidateTime |  | java.lang.NullPointerException | Exception stack trace | Error processing request
+ EXCEPTION> 
+java.lang.NullPointerException
+	at flow.subflow.AddBooking.ValidateTime.servletImplementation(ValidateTime.java:48)
+	at com.avaya.sce.runtime.BasicServlet.handleRequest(BasicServlet.java:112)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doPost(SCEServlet.java:148)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+ | undefined
+15/12/2022 12:53:44:682  INFO - Start | session id:sess5649001 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+15/12/2022 12:53:51:382  INFO - Start | session id:sess5649001 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+15/12/2022 12:54:11:564 ERROR - In Progress | session id:sess5649001 | HotelTableBooking:AddBooking-ValidateTime |  | java.lang.NullPointerException | Exception stack trace | Error processing request
+ EXCEPTION> 
+java.lang.NullPointerException
+	at flow.subflow.AddBooking.ValidateTime.servletImplementation(ValidateTime.java:45)
+	at com.avaya.sce.runtime.BasicServlet.handleRequest(BasicServlet.java:112)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doPost(SCEServlet.java:148)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+ | undefined
+15/12/2022 13:17:51:589  INFO - Start | session id:sess7251929 | HotelTableBooking:LanguageMenu | LangMenu |  |  |  | undefined
+15/12/2022 13:18:06:279  INFO - Start | session id:sess7251929 | HotelTableBooking:EngMainMenu | EngMainMenu |  |  |  | undefined
+15/12/2022 13:18:28:035  INFO - In Progress | session id:sess7251929 | HotelTableBooking:AddBooking-GetDurationPC | GetDuration | GetDurationPC | GetDurationPC:value |  | undefined
+15/12/2022 13:19:11:436  WARN - In Progress | session id:sess7251929 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetDatePC:value : com.avaya.sce.runtime.InputFormatException: toDate, invalid month value "20" - must be between 1-12 |  |  | undefined
+15/12/2022 13:19:11:436  WARN - In Progress | session id:sess7251929 | HotelTableBooking:BookingDetails-BookingAcmt |  | Error formatting variable : GetTimePC:value : com.avaya.sce.runtime.InputFormatException: toDate, value must be either 4 or 6 digit long in format of HHMM[SS] if you do not use separators |  |  | undefined
+15/12/2022 13:19:11:436  WARN - In Progress | session id:sess7251929 | HotelTableBooking:BookingDetails-BookingAcmt |  | Problem formatting variable : GetTimePC:value : speakChars, unsupported character "?" skipped |  |  | undefined
+15/12/2022 13:19:38:176  INFO - In Progress | session id:sess7251929 | HotelTableBooking:AddBooking-getBookingNo | GetBookingNo | Auto Generated Booking Number | BookingNo | 1750 | undefined
+15/12/2022 13:19:38:394 ERROR - In Progress | session id:sess7251929 | HotelTableBooking:AddBooking-ValidateTime |  | java.lang.NullPointerException | Exception stack trace | Error processing request
+ EXCEPTION> 
+java.lang.NullPointerException
+	at flow.subflow.AddBooking.ValidateTime.servletImplementation(ValidateTime.java:45)
+	at com.avaya.sce.runtime.BasicServlet.handleRequest(BasicServlet.java:112)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:140)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+ | undefined
