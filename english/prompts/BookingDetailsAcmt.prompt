@@ -18,10 +18,11 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
                     <Properties>
+                        <Property name="Field" value="BookingNo"/>
                         <Property name="Valid" value="true"/>
                         <Property name="format" value="digits"/>
                         <Property name="Inflection" value="Crmm"/>
-                        <Property name="Name" value="BookingNo"/>
+                        <Property name="Name" value="BookingDetails"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -52,7 +53,7 @@
                     <Properties>
                         <Property name="Month Type" value="spokenmonth"/>
                         <Property name="Field" value="value"/>
-                        <Property name="Date Format" value="DDOWMSPDYY"/>
+                        <Property name="Date Format" value="DMSPDYY"/>
                         <Property name="Valid" value="false"/>
                         <Property name="format" value="date"/>
                         <Property name="Name" value="GetDatePC"/>
@@ -69,16 +70,33 @@
                     <Properties>
                         <Property name="Field" value="value"/>
                         <Property name="Valid" value="false"/>
-                        <Property name="format" value="digits"/>
+                        <Property name="format" value="time"/>
                         <Property name="Inflection" value="Crmm"/>
-                        <Property name="Time Format" value="THMAM"/>
+                        <Property name="Time Format" value="TH24M"/>
                         <Property name="Name" value="GetTimePC"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
-                        <Property name="Name" value="Duration for"/>
+                        <Property name="Name" value="and Time is"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
+                    <Properties>
+                        <Property name="Field" value="value"/>
+                        <Property name="Valid" value="false"/>
+                        <Property name="format" value="digits"/>
+                        <Property name="Inflection" value="Crmm"/>
+                        <Property name="Time Format" value="TH24M"/>
+                        <Property name="Name" value="GetTimePC"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                    <Properties>
+                        <Property name="Name" value="Duration is"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

@@ -57,7 +57,7 @@
     <phrase version="1.0">
         <displayname>EnterTime</displayname>
         <talent/>
-        <phrasetext>Enter Time in (hours,minutes) in 24 Hours format</phrasetext>
+        <phrasetext>Enter Time in (hours,minutes) format</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -111,7 +111,7 @@
     <phrase version="1.0">
         <displayname>NoMatchTime</displayname>
         <talent/>
-        <phrasetext>You have entered Invalid Time. Please</phrasetext>
+        <phrasetext>You have entered Invalid Time format. Please</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
