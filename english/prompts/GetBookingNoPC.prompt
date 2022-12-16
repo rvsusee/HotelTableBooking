@@ -12,7 +12,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
                         <Property name="Valid" value="true"/>
-                        <Property name="Name" value="Enter Your Booking Number"/>
+                        <Property name="Name" value="hangup event occured"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

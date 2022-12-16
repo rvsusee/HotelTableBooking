@@ -396,6 +396,7 @@
             <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
         </editpolicies>
+        <property name="private" value="false"/>
     </variable>
     <variable factoryID="" name="GetDatePC:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
         <editpolicies>
@@ -404,6 +405,7 @@
             <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
         </editpolicies>
+        <property name="private" value="false"/>
     </variable>
     <variable factoryID="" name="GetDurationPC:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
         <editpolicies>
@@ -629,6 +631,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
+    <variable factoryID="" name="NoMatchAttempt" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="redirectinfo:presentationinfo" owner="com.avaya.sce.core" type="com.avaya.sce.core.redirect" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>

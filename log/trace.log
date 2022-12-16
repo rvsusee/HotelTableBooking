@@ -1,0 +1,48 @@
+16/12/2022 10:37:53:307 ERROR - 2805EE4380BC55492D4103B8FE256122:/HotelTableBooking : session id:sess609700 | Error processing request
+ EXCEPTION> 
+java.lang.NullPointerException
+	at com.avaya.sce.runtime.vxml.OutputGenerator.getNextUrl(OutputGenerator.java:150)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.linkBegin(OutputGenerator.java:530)
+	at com.avaya.sce.runtime.Link.generate(Link.java:70)
+	at com.avaya.sce.runtime.AppDocument.processRequest(AppDocument.java:316)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:140)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+16/12/2022 10:37:53:385 ERROR - 2805EE4380BC55492D4103B8FE256122:/HotelTableBooking : session id:sess609700 | Runtime Error Occured
+16/12/2022 16:30:36:249  INFO - 74E4464ACC1483F70390E95ED8E4F49D:/HotelTableBooking : session id:sess9329446 | GetNoPC
+16/12/2022 16:31:02:205  INFO - 74E4464ACC1483F70390E95ED8E4F49D:/HotelTableBooking : session id:sess9329446 | 
+User Inputs
+Booking No: 1750
+No Of Persons: 2
+Date: 2220????
+Time: 0600?
+Duration: 6
+16/12/2022 16:46:34:109  INFO - F7A1EAC3EE088BC64E9B792018670281:/HotelTableBooking : session id:sess6572438 | GetNoPC
+16/12/2022 16:46:38:824 ERROR - F7A1EAC3EE088BC64E9B792018670281:/HotelTableBooking : session id:sess6572438 | Hangup Event Occured

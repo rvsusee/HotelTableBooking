@@ -5,8 +5,8 @@
         <type value="static"/>
     </properties>
     <data>
-        <options value="bGVuZ3RoPTg="/>
-        <builtintype value="digits"/>
+        <options value=""/>
+        <builtintype value="date"/>
         <builtinversion value="1"/>
     </data>
 </grammar>
