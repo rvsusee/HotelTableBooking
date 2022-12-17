@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <projectvariables>
+    <variable factoryID="" name="AttemptCount" owner="" type="" value="1" version="1.0"/>
     <variable factoryID="" name="BookingDetails:BookingNo" owner="" type="" value="1020" version="1.0"/>
     <variable factoryID="" name="BookingDetails:Date" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="BookingDetails:DateValidation" owner="" type="" value="no" version="1.0"/>
@@ -631,7 +632,6 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="NoMatchAttempt" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="redirectinfo:presentationinfo" owner="com.avaya.sce.core" type="com.avaya.sce.core.redirect" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>
@@ -1094,6 +1094,15 @@
     <variable factoryID="" name="time:timezone" owner="com.avaya.sce.core" type="com.avaya.sce.core.time" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="untitled:untitled" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="WaitingToTransferCall" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.ui.blindTransfer" value="" version="1.0">
+        <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
             <policy name="deleteable" value="false"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="11" package="flow.subflow.AttemptReset" version="5.0">
+    <ApplicationFlow nextObjectId="24" package="flow.subflow.AttemptReset" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="11"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="182"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="30"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="154"/>
                 <Property name="Name" value="Begin"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
                     <ItemProperties/>
@@ -20,8 +20,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="4" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="158"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="175"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="176"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="155"/>
                 <Property name="Name" value="Reset"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="5" version="1.2">
                     <ItemProperties/>
@@ -32,17 +32,24 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="11" version="1.2">
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="19" version="1.2">
                             <ItemProperties>
-                                <Property name="destVarId" value="NoMatchAttempt"/>
+                                <Property name="destVarId" value="AttemptCount"/>
                                 <Property name="type" value="assign"/>
                                 <Property name="sourceConstant" value="1"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Report" id="24" version="1.2">
+                            <ItemProperties>
+                                <Property name="report.varId" value="AttemptCount"/>
+                                <Property name="report.trans.name" value="ResetAttemptValue"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="7" version="1.2">
                             <ItemProperties>
-                                <Property name="LinkedNodeID" value="8"/>
+                                <Property name="LinkedNodeID" value="20"/>
                                 <Property name="Name" value="Default"/>
                             </ItemProperties>
                             <ChildItems/>
@@ -50,22 +57,22 @@
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="8" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="324"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="182"/>
-                <Property name="Name" value="Return"/>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="20" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="327"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="155"/>
+                <Property name="Name" value="GoNext"/>
             </FlowNode>
-            <NodeConnection id="9" version="1.2">
+            <NodeConnection id="18" version="1.2">
                 <SourceNode id="1"/>
                 <TargetNode id="4"/>
                 <Property name="Connection.SourceObjectID" value="3"/>
                 <Property name="Connection.TargetObjectID" value="4"/>
             </NodeConnection>
-            <NodeConnection id="10" version="1.2">
+            <NodeConnection id="21" version="1.2">
                 <SourceNode id="4"/>
-                <TargetNode id="8"/>
+                <TargetNode id="20"/>
                 <Property name="Connection.SourceObjectID" value="7"/>
-                <Property name="Connection.TargetObjectID" value="8"/>
+                <Property name="Connection.TargetObjectID" value="20"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>
