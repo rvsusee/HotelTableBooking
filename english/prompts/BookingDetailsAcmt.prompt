@@ -9,10 +9,10 @@
                 <Property name="BargeIn" value="true"/>
             </Properties>
             <ChildItems>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Valid" value="true"/>
-                        <Property name="Name" value="Your Booking Number is "/>
+                        <Property name="Phraseset" value="BookingDetailsSpeak"/>
+                        <Property name="Phrase" value="BookingNoIs"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -26,9 +26,10 @@
                     </Properties>
                     <ChildItems/>
                 </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Name" value=" and, Number of persons is "/>
+                        <Property name="Phraseset" value="BookingDetailsSpeak"/>
+                        <Property name="Phrase" value="NoOfPersonsIs"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -42,10 +43,10 @@
                     </Properties>
                     <ChildItems/>
                 </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Valid" value="true"/>
-                        <Property name="Name" value="and The Booking date is"/>
+                        <Property name="Phraseset" value="BookingDetailsSpeak"/>
+                        <Property name="Phrase" value="DateAndTimeIs"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -60,12 +61,6 @@
                     </Properties>
                     <ChildItems/>
                 </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
-                    <Properties>
-                        <Property name="Name" value="and Time is"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
                     <Properties>
                         <Property name="Field" value="value"/>
@@ -77,26 +72,10 @@
                     </Properties>
                     <ChildItems/>
                 </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Name" value="and Time is"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
-                    <Properties>
-                        <Property name="Field" value="value"/>
-                        <Property name="Valid" value="false"/>
-                        <Property name="format" value="digits"/>
-                        <Property name="Inflection" value="Crmm"/>
-                        <Property name="Time Format" value="TH24M"/>
-                        <Property name="Name" value="GetTimePC"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
-                    <Properties>
-                        <Property name="Name" value="Duration is"/>
+                        <Property name="Phraseset" value="BookingDetailsSpeak"/>
+                        <Property name="Phrase" value="BookingDurationIs"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -109,12 +88,6 @@
                         <Property name="Name" value="GetDurationPC"/>
                         <Property name="Number Type" value="integer"/>
                         <Property name="inflection" value="Nn"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
-                    <Properties>
-                        <Property name="Name" value="  Hours"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

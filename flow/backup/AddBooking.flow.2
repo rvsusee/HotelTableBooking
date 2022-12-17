@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="441" package="flow.subflow.AddBooking" version="5.0">
+    <ApplicationFlow nextObjectId="450" package="flow.subflow.AddBooking" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="256" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="585"/>
@@ -129,9 +129,9 @@
                 <Property name="ReferencedNodeID" value="4"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="199" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="1605"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1621"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="570"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="574"/>
                 <Property name="Name" value="BookingCancel"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="200" version="1.2">
                     <ItemProperties/>
@@ -202,6 +202,10 @@
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="19" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="450" version="1.2">
+                            <ItemProperties/>
+                            <ChildItems/>
+                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="327" version="1.2">
                             <ItemProperties>
                                 <Property name="Name" value="GetDatePC"/>
@@ -932,7 +936,7 @@
                 <TargetNode id="226"/>
                 <Property name="Connection.SourceObjectID" value="223"/>
                 <Property name="Connection.TargetObjectID" value="226"/>
-                <Bendpoint x="526" y="-7"/>
+                <Bendpoint x="473" y="-189"/>
                 <Bendpoint x="341" y="48"/>
                 <Bendpoint x="294" y="56"/>
             </NodeConnection>
@@ -1013,7 +1017,7 @@
                 <TargetNode id="199"/>
                 <Property name="Connection.SourceObjectID" value="156"/>
                 <Property name="Connection.TargetObjectID" value="199"/>
-                <Bendpoint x="1555" y="568"/>
+                <Bendpoint x="1569" y="573"/>
             </NodeConnection>
             <NodeConnection id="318" version="1.2">
                 <SourceNode id="199"/>
