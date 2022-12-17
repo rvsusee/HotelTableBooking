@@ -46,15 +46,6 @@
         <audiofile>NoInputLanguageMenu.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>ChoosePreferredLanguage</displayname>
-        <talent/>
-        <phrasetext>Choose Your Preferred Language</phrasetext>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>ChoosePreferredLanguage.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
         <displayname>NoMatchLanguageMenu</displayname>
         <talent/>
         <phrasetext>You have Entered invalid option.</phrasetext>
@@ -62,5 +53,14 @@
         <searchkeywords/>
         <comments/>
         <audiofile>NoMatchLanguageMenu.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ChoosePreferedLanguage</displayname>
+        <talent/>
+        <phrasetext>Choose Your preferred Language</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ChoosePreferredLanguage.wav</audiofile>
     </phrase>
 </phraseset>

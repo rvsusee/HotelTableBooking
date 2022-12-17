@@ -12,7 +12,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="LanguageMenu"/>
-                        <Property name="Phrase" value="ChoosePreferredLanguage"/>
+                        <Property name="Phrase" value="ChoosePreferedLanguage"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

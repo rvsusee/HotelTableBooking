@@ -464,10 +464,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>GetBookingNo-AtmtExit</servlet-name>
         <servlet-class>flow.subflow.GetBookingNo.AtmtExit</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_544">
-        <servlet-name>MenuAtmt</servlet-name>
-        <servlet-class>flow.MenuAtmt</servlet-class>
-    </servlet>
+    
     
     <servlet id="SAGE-callflow-servlet_AddBooking_425">
         <servlet-name>AddBooking-ResetAtmtDate</servlet-name>
@@ -501,11 +498,14 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>ResetAtmt-ResetAtmt</servlet-name>
         <servlet-class>flow.subflow.ResetAtmt.ResetAtmt</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_ResetAtmt_9">
-        <servlet-name>ResetAtmt-NextNode</servlet-name>
-        <servlet-class>flow.subflow.ResetAtmt.NextNode</servlet-class>
+    
+    
+    <servlet id="SAGE-callflow-servlet_ResetAtmt_12">
+        <servlet-name>ResetAtmt-exit</servlet-name>
+        <servlet-class>flow.subflow.ResetAtmt.exit</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_568">
+    
+    <servlet id="SAGE-callflow-servlet_main_593">
         <servlet-name>ResetAtmt</servlet-name>
         <servlet-class>flow.ResetAtmt</servlet-class>
     </servlet>
@@ -869,10 +869,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>GetBookingNo-AtmtExit</servlet-name>
         <url-pattern>/GetBookingNo-AtmtExit</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_544">
-        <servlet-name>MenuAtmt</servlet-name>
-        <url-pattern>/MenuAtmt</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_425">
         <servlet-name>AddBooking-ResetAtmtDate</servlet-name>
         <url-pattern>/AddBooking-ResetAtmtDate</url-pattern>
@@ -905,11 +902,14 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>ResetAtmt-ResetAtmt</servlet-name>
         <url-pattern>/ResetAtmt-ResetAtmt</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_ResetAtmt_9">
-        <servlet-name>ResetAtmt-NextNode</servlet-name>
-        <url-pattern>/ResetAtmt-NextNode</url-pattern>
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_ResetAtmt_12">
+        <servlet-name>ResetAtmt-exit</servlet-name>
+        <url-pattern>/ResetAtmt-exit</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_568">
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_593">
         <servlet-name>ResetAtmt</servlet-name>
         <url-pattern>/ResetAtmt</url-pattern>
     </servlet-mapping>

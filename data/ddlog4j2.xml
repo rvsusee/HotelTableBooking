@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
 <Properties>
-    <Property name="log-path"> D:/AVAYA Project/HotelTableBooking/log</Property>
+    <Property name="log-path"> C:/Avaya Project/log</Property>
 </Properties>
 <Appenders>
 
@@ -21,9 +21,9 @@
         <!-- set file size policy -->
         <Policies>
             <!--TimeBasedTriggeringPolicy interval="1" modulate="true"/-->
-            <SizeBasedTriggeringPolicy size="10 MB" />
+            <SizeBasedTriggeringPolicy size="2 KB" />
         </Policies>
-        <DefaultRolloverStrategy max="10"/>
+        <DefaultRolloverStrategy max="3"/>
     </RollingFile>
     <RollingFile name="report" fileName="${log-path}/report.log"
                  filePattern="${log-path}/report-%d{yyyy-MM-dd}.log">

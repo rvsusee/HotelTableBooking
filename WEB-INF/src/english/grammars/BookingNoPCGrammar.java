@@ -20,8 +20,8 @@ public class BookingNoPCGrammar extends com.avaya.sce.runtime.Grammar {
         setMode("dtmf");
         setBuiltin(true);
         setBuiltinMode("dtmf");
-        setType("number");
-        setOptions("");
+        setType("digits");
+        setOptions("length=8");
 		//}}END:CLASS:CONSTRUCTOR
     }
 

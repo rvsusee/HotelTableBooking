@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="10" package="flow.subflow.ResetAtmt" version="5.0">
+    <ApplicationFlow nextObjectId="11" package="flow.subflow.ResetAtmt" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="61"/>
@@ -29,6 +29,14 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="6" version="1.2">
                             <ItemProperties>
                                 <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="11" version="1.2">
+                            <ItemProperties>
+                                <Property name="destVarId" value="AttemptCount"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceConstant" value="1"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>

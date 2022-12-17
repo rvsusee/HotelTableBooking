@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <projectvariables>
     <variable factoryID="" name="AttemptCount" owner="" type="" value="1" version="1.0"/>
-    <variable factoryID="" name="BookingDetails:BookingNo" owner="" type="" value="1020" version="1.0"/>
+    <variable factoryID="" name="BookingDetails:BookingNo" owner="" type="" value="10304050" version="1.0"/>
     <variable factoryID="" name="BookingDetails:Date" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="BookingDetails:DateValidation" owner="" type="" value="no" version="1.0"/>
     <variable factoryID="" name="BookingDetails:duration" owner="" type="" value="" version="1.0"/>
