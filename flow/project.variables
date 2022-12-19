@@ -1100,7 +1100,6 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="untitled:untitled" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="WaitingToTransferCall" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.ui.blindTransfer" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>

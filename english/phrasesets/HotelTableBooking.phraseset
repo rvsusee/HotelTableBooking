@@ -99,4 +99,13 @@
         <comments/>
         <audiofile>SometingWrong.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>WelcomeAcmtAu</displayname>
+        <talent/>
+        <phrasetext>Welcome to Hotel Booking</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>WelcomeAcmt.au</audiofile>
+    </phrase>
 </phraseset>
