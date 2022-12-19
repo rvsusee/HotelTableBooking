@@ -20,44 +20,47 @@ public class HotelTableBooking extends com.avaya.sce.runtime.Phraseset {
 		//{{START:PHRASESET:STATIC
 
 		// Create the phrase map, then populate with phrases
-		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(24);
+		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(26);
 		com.avaya.sce.runtime.Phrase phrase;
 
 		// phrase: WelcomeAcmt
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "WelcomeAcmt", "WelcomeAcmt.wav", "Welcome to Hotel Table Booking"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "WelcomeAcmt", "WelcomeAcmt.wav", "Welcome to Hotel Table Booking"); 
 
 		// phrase: ExitAcmt
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "ExitAcmt", "ExitAcmt.wav", "Thank you for calling"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ExitAcmt", "ExitAcmt.wav", "Thank you for calling"); 
 
 		// phrase: WaitingToTransferCallAcmt
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "WaitingToTransferCallAcmt", "WaitingToTransferCallAcmt.wav", "Please wait. Your call will transfer to our agent.."); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "WaitingToTransferCallAcmt", "WaitingToTransferCallAcmt.wav", "Please wait. Your call will transfer to our agent.."); 
 
 		// phrase: ForExit
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "ForExit", "ForExit.wav", "For Exit"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ForExit", "ForExit.wav", "For Exit"); 
 
 		// phrase: ForTransferToAgent
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "ForTransferToAgent", "ForTransferToAgent.wav", "For Call Transfer to our Agent"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ForTransferToAgent", "ForTransferToAgent.wav", "For Call Transfer to our Agent"); 
 
 		// phrase: ForChangeLanguage
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "ForChangeLanguage", "ForChangeLanguage.wav", "For Change Language"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ForChangeLanguage", "ForChangeLanguage.wav", "For Change Language"); 
 
 		// phrase: ForMainMenu
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "ForMainMenu", "ForMainMenu.wav", "For Main Menu"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ForMainMenu", "ForMainMenu.wav", "For Main Menu"); 
 
 		// phrase: MoreInvalidValues
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "MoreInvalidValues", "MoreInvalidValues.wav", "Sorry, You have enter invalid value frequently"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "MoreInvalidValues", "MoreInvalidValues.wav", "Sorry, You have enter invalid value frequently"); 
 
 		// phrase: MoreInvalidChoice
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "MoreInvalidChoice", "MoreInvalidChoice.wav", "Sorry, You have choose wrong Choice on more times."); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "MoreInvalidChoice", "MoreInvalidChoice.wav", "Sorry, You have choose wrong Choice on more times."); 
 
 		// phrase: TryAgainLater
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "TryAgainLater", "TryAgainLater.wav", "Please try again later"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "TryAgainLater", "TryAgainLater.wav", "Please try again later"); 
 
 		// phrase: SometingWrong
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "SometingWrong", "SometingWrong.wav", "Sorry, Something wrong."); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "SometingWrong", "SometingWrong.wav", "Sorry, Something wrong."); 
 
 		// phrase: WelcomeAcmtAu
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "english.phraseset.HotelTableBooking.urlbase", "WelcomeAcmtAu", "WelcomeAcmt.au", "Welcome to Hotel Booking"); 
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "WelcomeAcmtAu", "WelcomeAcmt.au", "Welcome to Hotel Booking"); 
+
+		// phrase: ExitAcmtAu
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ExitAcmtAu", "ThankYouForCalling.au", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}
@@ -69,7 +72,7 @@ public class HotelTableBooking extends com.avaya.sce.runtime.Phraseset {
 	 * This method is generated automatically by the code generator
 	 * and should not be manually edited.  Manual edits may be overwritten
 	 * by the code generator.
-	 * Last generated by Orchestration Designer at: 2022-DEC-19  10:44:11 AM
+	 * Last generated by Orchestration Designer at: 2022-DEC-19  10:59:40 AM
 	 * @see com.avaya.sce.runtime.Phraseset#getPhrase(String) 
 	 */ 
 	public com.avaya.sce.runtime.Phrase getPhrase(String phraseName) {

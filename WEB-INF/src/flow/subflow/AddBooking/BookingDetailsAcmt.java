@@ -1,5 +1,9 @@
 package flow.subflow.AddBooking;
 
+import com.avaya.sce.runtime.tracking.TraceInfo;
+import com.avaya.sce.runtimecommon.ITraceInfo;
+import com.avaya.sce.runtimecommon.SCESession;
+
 /**
  * This servlet is used to forward the request to the entry point of a
  * project callflow (subflow).
@@ -43,4 +47,8 @@ public class BookingDetailsAcmt extends com.avaya.sce.runtime.Subflow {
 		exitPoints.put("BookingDetails-Return", "AddBooking-GetConfirmOrNot");
 		return exitPoints;
 	}	
+	@Override
+	public void requestBegin(SCESession mySession) {
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "BookingDetailsAcmt Node", mySession);
+	}
 }

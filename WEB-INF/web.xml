@@ -73,10 +73,7 @@ Copyright 2004-2021 Avaya Inc.
     </context-param>
     
     
-    <context-param>
-        <param-name>english.phraseset.HotelTableBooking.urlbase</param-name>
-        <param-value>WelcomeAudio=</param-value>
-    </context-param>
+    
     <servlet id="avayadefaultdisconnecthandler-servlet">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <servlet-class>com.avaya.sce.runtime.DefaultDisconnect</servlet-class>
@@ -510,6 +507,10 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>ResetAtmt</servlet-name>
         <servlet-class>flow.ResetAtmt</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_625">
+        <servlet-name>testing</servlet-name>
+        <servlet-class>flow.testing</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -913,6 +914,10 @@ Copyright 2004-2021 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_593">
         <servlet-name>ResetAtmt</servlet-name>
         <url-pattern>/ResetAtmt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_625">
+        <servlet-name>testing</servlet-name>
+        <url-pattern>/testing</url-pattern>
     </servlet-mapping>
     
     

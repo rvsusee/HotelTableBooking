@@ -233,14 +233,22 @@ public class BookingConfirm extends com.avaya.sce.runtime.Form {
 
 		return grammarInfo;
 	}
+
 	@Override
 	public void requestBegin(SCESession mySession) {
-		String userInputs = "\nBooking No: "+mySession.getVariableField(IProjectVariables.BOOKING_NO).getStringValue()
-				+"\nNo Of Persons: "+mySession.getVariableField(IProjectVariables.GET_NO_PERSON_PC,IProjectVariables.GET_NO_PERSON_PC_FIELD_VALUE).getStringValue()
-				+"\nDate: "+mySession.getVariableField(IProjectVariables.GET_DATE_PC,IProjectVariables.GET_DATE_PC_FIELD_VALUE).getStringValue()
-				+"\nTime: "+mySession.getVariableField(IProjectVariables.GET_TIME_PC,IProjectVariables.GET_TIME_PC_FIELD_VALUE).getStringValue()
-				+"\nDuration: "+mySession.getVariableField(IProjectVariables.GET_DURATION_PC,IProjectVariables.GET_DURATION_PC_FIELD_VALUE).getStringValue();
-		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO,"\nUser Inputs"+userInputs, mySession);
+		String userInputs = "\nBooking No: " + mySession.getVariableField(IProjectVariables.BOOKING_NO).getStringValue()
+				+ "\nNo Of Persons: "
+				+ mySession.getVariableField(IProjectVariables.GET_NO_PERSON_PC,
+						IProjectVariables.GET_NO_PERSON_PC_FIELD_VALUE).getStringValue()
+				+ "\nDate: "
+				+ mySession.getVariableField(IProjectVariables.GET_DATE_PC, IProjectVariables.GET_DATE_PC_FIELD_VALUE)
+						.getStringValue()
+				+ "\nTime: "
+				+ mySession.getVariableField(IProjectVariables.GET_TIME_PC, IProjectVariables.GET_TIME_PC_FIELD_VALUE)
+						.getStringValue()
+				+ "\nDuration: " + mySession.getVariableField(IProjectVariables.GET_DURATION_PC,
+						IProjectVariables.GET_DURATION_PC_FIELD_VALUE).getStringValue();
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "\nUser Inputs" + userInputs, mySession);
 	}
 
 }

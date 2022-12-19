@@ -1,5 +1,11 @@
 package flow.subflow.AddBooking;
 
+import javax.xml.ws.RequestWrapper;
+
+import com.avaya.sce.runtime.tracking.TraceInfo;
+import com.avaya.sce.runtimecommon.ITraceInfo;
+import com.avaya.sce.runtimecommon.SCESession;
+
 /**
  * Class that represents a menu.  A menu can contain prompts, choices and links
  * as well as handlers for various events that may occur while the menu is executing
@@ -140,5 +146,9 @@ public class GetConfirmOrNot extends com.avaya.sce.runtime.Menu {
 		// Item has no tracking items.
 		list = new java.util.ArrayList();
 		return(list);
+	}
+	@Override
+	public void requestBegin(SCESession mySession) {
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "GetConfirmOrNotMenu", mySession);
 	}
 }

@@ -716,8 +716,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="44" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="1185"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="514"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1198"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="509"/>
                 <Property name="flowID" value="BookingDetails"/>
                 <Property name="Name" value="BookingDetailsAcmt"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="46" version="1.2">
@@ -1007,6 +1007,9 @@
                 <TargetNode id="152"/>
                 <Property name="Connection.SourceObjectID" value="48"/>
                 <Property name="Connection.TargetObjectID" value="152"/>
+                <Bendpoint x="1371" y="541"/>
+                <Bendpoint x="1457" y="432"/>
+                <Bendpoint x="1376" y="474"/>
             </NodeConnection>
             <NodeConnection id="317" version="1.2">
                 <SourceNode id="152"/>
