@@ -1,5 +1,9 @@
 package flow;
 
+import com.avaya.sce.runtime.tracking.TraceInfo;
+import com.avaya.sce.runtimecommon.ITraceInfo;
+import com.avaya.sce.runtimecommon.SCESession;
+
 /**
  * This is the root document for the application.  It defines the links and grammars
  * that are "global" for the application.<br>
@@ -97,6 +101,10 @@ public class AppRoot extends com.avaya.sce.runtime.Root {
 		event = new com.avaya.sce.runtime.Event("error", (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ErrorNode", 0, true, ""));
 		list.add(event);
 		return(list);
+	}
+	@Override
+	public void requestBegin(SCESession mySession) {
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Application Flow Started", mySession);
 	}
 	
 }

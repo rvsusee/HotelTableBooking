@@ -7,7 +7,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>EnterBookingNo.wav</audiofile>
+        <audiofile>YourBookingNoIs.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>NoOfPersonsIs</displayname>

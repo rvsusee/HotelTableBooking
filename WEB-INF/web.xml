@@ -107,10 +107,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>Start</servlet-name>
         <servlet-class>flow.Start</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_5">
-        <servlet-name>WelcomeAcmt</servlet-name>
-        <servlet-class>flow.WelcomeAcmt</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_11">
         <servlet-name>Exit</servlet-name>
         <servlet-class>flow.Exit</servlet-class>
@@ -508,9 +505,11 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.ResetAtmt</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_641">
-        <servlet-name>TestingPC</servlet-name>
-        <servlet-class>flow.TestingPC</servlet-class>
+    
+    
+    <servlet id="SAGE-callflow-servlet_main_665">
+        <servlet-name>WelcomeAcmt</servlet-name>
+        <servlet-class>flow.WelcomeAcmt</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -545,10 +544,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>Start</servlet-name>
         <url-pattern>/Start</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5">
-        <servlet-name>WelcomeAcmt</servlet-name>
-        <url-pattern>/WelcomeAcmt</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_11">
         <servlet-name>Exit</servlet-name>
         <url-pattern>/Exit</url-pattern>
@@ -916,10 +912,12 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>ResetAtmt</servlet-name>
         <url-pattern>/ResetAtmt</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_641">
-        <servlet-name>TestingPC</servlet-name>
-        <url-pattern>/TestingPC</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_665">
+        <servlet-name>WelcomeAcmt</servlet-name>
+        <url-pattern>/WelcomeAcmt</url-pattern>
     </servlet-mapping>
+    
+    
     
     
     

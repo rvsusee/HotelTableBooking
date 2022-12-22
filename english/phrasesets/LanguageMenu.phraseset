@@ -3,7 +3,7 @@
     <phrase version="1.0">
         <displayname>ForEnglish</displayname>
         <talent/>
-        <phrasetext>For English</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -12,7 +12,7 @@
     <phrase version="1.0">
         <displayname>ForTamil</displayname>
         <talent/>
-        <phrasetext>For Tamil</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -21,7 +21,7 @@
     <phrase version="1.0">
         <displayname>ForHindi</displayname>
         <talent/>
-        <phrasetext>For Hindi</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -30,7 +30,7 @@
     <phrase version="1.0">
         <displayname>AutoLanguage</displayname>
         <talent/>
-        <phrasetext>English is automatically selected</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -39,7 +39,7 @@
     <phrase version="1.0">
         <displayname>NoInputLanguageMenu</displayname>
         <talent/>
-        <phrasetext>You have not selected Your preferred language</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -48,7 +48,7 @@
     <phrase version="1.0">
         <displayname>NoMatchLanguageMenu</displayname>
         <talent/>
-        <phrasetext>You have Entered invalid option.</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -57,7 +57,7 @@
     <phrase version="1.0">
         <displayname>ChoosePreferedLanguage</displayname>
         <talent/>
-        <phrasetext>Choose Your preferred Language</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>

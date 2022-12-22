@@ -3,7 +3,7 @@
     <phrase version="1.0">
         <displayname>WelcomeAcmt</displayname>
         <talent/>
-        <phrasetext>Welcome to Hotel Table Booking</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -12,7 +12,7 @@
     <phrase version="1.0">
         <displayname>WaitingToTransferCallAcmt</displayname>
         <talent/>
-        <phrasetext>Please wait. Your call will transfer to our agent..</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -21,7 +21,7 @@
     <phrase version="1.0">
         <displayname>ForExit</displayname>
         <talent/>
-        <phrasetext>For Exit</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -30,7 +30,7 @@
     <phrase version="1.0">
         <displayname>ForTransferToAgent</displayname>
         <talent/>
-        <phrasetext>For Call Transfer to our Agent</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -39,7 +39,7 @@
     <phrase version="1.0">
         <displayname>ForChangeLanguage</displayname>
         <talent/>
-        <phrasetext>For Change Language</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -48,7 +48,7 @@
     <phrase version="1.0">
         <displayname>ForMainMenu</displayname>
         <talent/>
-        <phrasetext>For Main Menu</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -57,7 +57,7 @@
     <phrase version="1.0">
         <displayname>MoreInvalidValues</displayname>
         <talent/>
-        <phrasetext>Sorry, You have enter invalid value frequently</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -66,7 +66,7 @@
     <phrase version="1.0">
         <displayname>MoreInvalidChoice</displayname>
         <talent/>
-        <phrasetext>Sorry, You have choose wrong Choice on more times.</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -75,7 +75,7 @@
     <phrase version="1.0">
         <displayname>TryAgainLater</displayname>
         <talent/>
-        <phrasetext> Please try again later</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -84,7 +84,7 @@
     <phrase version="1.0">
         <displayname>SometingWrong</displayname>
         <talent/>
-        <phrasetext>Sorry, Something wrong.</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -102,10 +102,10 @@
     <phrase version="1.0">
         <displayname>Testing</displayname>
         <talent/>
-        <phrasetext>Testing...</phrasetext>
+        <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>TestingAudio.au</audiofile>
+        <audiofile>Testing.wav</audiofile>
     </phrase>
 </phraseset>
