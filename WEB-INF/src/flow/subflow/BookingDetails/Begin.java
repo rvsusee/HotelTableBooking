@@ -1,5 +1,9 @@
 package flow.subflow.BookingDetails;
 
+import com.avaya.sce.runtimecommon.SCESession;
+
+import flow.IProjectVariables;
+
 /**
  * A basic servlet which allows a user to define their code, generate
  * any output, and to select where to transition to next.
@@ -48,5 +52,9 @@ public class Begin extends com.avaya.sce.runtime.BasicServlet {
 		list.add(aGoto);
 
 		return list;
+	}
+	@Override
+	public void requestBegin(SCESession mySession) {
+
 	}
 }

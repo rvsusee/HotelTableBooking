@@ -277,28 +277,16 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.BookingCancelFailed</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_123">
-        <servlet-name>AddBooking-getBookingNo</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.getBookingNo</servlet-class>
-    </servlet>
     
     
     
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_152">
-        <servlet-name>AddBooking-GetConfirmOrNot</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.GetConfirmOrNot</servlet-class>
-    </servlet>
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_165">
-        <servlet-name>AddBooking-BookingConfirm</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.BookingConfirm</servlet-class>
-    </servlet>
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_199">
-        <servlet-name>AddBooking-BookingCancel</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.BookingCancel</servlet-class>
-    </servlet>
+    
+    
+    
+    
     
     <servlet id="SAGE-callflow-servlet_AddBooking_221">
         <servlet-name>AddBooking-ValidateDate</servlet-name>
@@ -413,10 +401,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>AttemptCount-HaveAttempt</servlet-name>
         <servlet-class>flow.subflow.AttemptCount.HaveAttempt</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_343">
-        <servlet-name>AddBooking-MoreAtmtEnd</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.MoreAtmtEnd</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_AddBooking_344">
         <servlet-name>AddBooking-ResetExitAtmt</servlet-name>
         <servlet-class>flow.subflow.AddBooking.ResetExitAtmt</servlet-class>
@@ -511,6 +496,13 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>WelcomeAcmt</servlet-name>
         <servlet-class>flow.WelcomeAcmt</servlet-class>
     </servlet>
+    
+    
+    
+    
+    
+    
+    
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -701,24 +693,12 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>BookingCancelFailed</servlet-name>
         <url-pattern>/BookingCancelFailed</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_123">
-        <servlet-name>AddBooking-getBookingNo</servlet-name>
-        <url-pattern>/AddBooking-getBookingNo</url-pattern>
-    </servlet-mapping>
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_152">
-        <servlet-name>AddBooking-GetConfirmOrNot</servlet-name>
-        <url-pattern>/AddBooking-GetConfirmOrNot</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_165">
-        <servlet-name>AddBooking-BookingConfirm</servlet-name>
-        <url-pattern>/AddBooking-BookingConfirm</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_199">
-        <servlet-name>AddBooking-BookingCancel</servlet-name>
-        <url-pattern>/AddBooking-BookingCancel</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
     
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_221">
         <servlet-name>AddBooking-ValidateDate</servlet-name>
@@ -822,10 +802,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>AttemptCount-HaveAttempt</servlet-name>
         <url-pattern>/AttemptCount-HaveAttempt</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_343">
-        <servlet-name>AddBooking-MoreAtmtEnd</servlet-name>
-        <url-pattern>/AddBooking-MoreAtmtEnd</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_344">
         <servlet-name>AddBooking-ResetExitAtmt</servlet-name>
         <url-pattern>/AddBooking-ResetExitAtmt</url-pattern>
@@ -916,6 +893,11 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>WelcomeAcmt</servlet-name>
         <url-pattern>/WelcomeAcmt</url-pattern>
     </servlet-mapping>
+    
+    
+    
+    
+    
     
     
     

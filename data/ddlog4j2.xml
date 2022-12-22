@@ -21,7 +21,7 @@
         <!-- set file size policy -->
         <Policies>
             <!--TimeBasedTriggeringPolicy interval="1" modulate="true"/-->
-            <SizeBasedTriggeringPolicy size="2 KB" />
+            <SizeBasedTriggeringPolicy size="10 KB" />
         </Policies>
         <DefaultRolloverStrategy max="3"/>
     </RollingFile>

@@ -34,7 +34,7 @@
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>BookingConfirmed.wav</audiofile>
+        <audiofile>BookingConfirm.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>ConfirmBooking</displayname>
