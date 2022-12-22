@@ -1,9 +1,15 @@
 package flow;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 import com.avaya.sce.runtime.tracking.TraceInfo;
 import com.avaya.sce.runtimecommon.ITraceInfo;
@@ -187,6 +193,93 @@ public class LanguageMenu extends com.avaya.sce.runtime.Menu {
 
 	@Override
 	public void requestBegin(SCESession mySession) {
-		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Language Menu Started", mySession);
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "DatabaseConnection started", mySession);
+		Connection connection = null;
+		try {
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
+			connection = DriverManager.getConnection("jdbc:sqlserver://192.168.168.12;databaseName=New_joinee_2022",
+					"NewJoinee2022", "P@ssw0rd");
+			try {
+				Statement stmt = connection.createStatement();
+				stmt.execute("insert into survey_response(customer_name,question1,question2,question3,question4)values('kumar','good','bad','average','good')");
+
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Database accessed succesfully", mySession);
+				stmt.close();
+			} catch (Exception e) {
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "exception occoured", mySession);
+			}
+		} catch (Exception e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Database Connection Failed" + e.getMessage(), mySession);
+		}finally {
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
 	}
+
+//	@Override
+//	public void requestBegin(SCESession mySession) {
+//		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Language Menu Started", mySession);
+////		get database values from properties file
+//		String path = "D:\\AVAYA Project\\HotelTableBooking\\data\\Database.properties";
+//		try {
+//			FileInputStream fileInput = new FileInputStream(new File(path));
+//			Properties properties = new Properties();
+//			properties.load(fileInput);
+//			Object url = properties.get("database.url");
+//			fileInput.close();
+//		} catch (FileNotFoundException e) {
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//
+//		
+////		connect database
+//		
+//		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Upload Booking Details form Database", mySession);
+//		try {
+//			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_WARN, "Try to Connect Database Start", mySession);
+//			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_WARN, "after", mySession);
+//			Connection conn = DriverManager.getConnection(
+//					"jdbc:sqlserver://192.168.168.12:1433;databaseName=New_joinee_2022;encrypt=true;trustServerCertificate=true;",
+//					"NewJoinee2022", "P@ssw0rd");
+//			Statement stmt = conn.createStatement();
+//			ResultSet rs = stmt.executeQuery("select * from SUSEENDHIRAN_EMPLOYEES;");
+//			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "+++", mySession);
+//			while (rs.next()) {
+//				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, rs.getInt(1) + " " + rs.getString(2), mySession);
+//				System.out.println("Value :" + rs.getInt(1) + " " + rs.getString(2));
+//			}
+//			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_WARN, "Database Connected Successfully", mySession);
+//			stmt.close();
+//			rs.close();
+//			conn.close();
+//		} catch (Exception e) {
+//			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_WARN, "Unable to Connect Database" + e, mySession);
+//			e.printStackTrace();
+//		}
+
+//		String bookingNo = mySession.getVariableField(IProjectVariables.BOOKING_NO).getStringValue();
+//	
+//		String noPerson = mySession
+//				.getVariableField(IProjectVariables.GET_NO_PERSON_PC, IProjectVariables.GET_NO_PERSON_PC_FIELD_VALUE)
+//				.getStringValue();
+//	
+//		String bkDate = mySession
+//				.getVariableField(IProjectVariables.GET_DATE_PC, IProjectVariables.GET_DATE_PC_FIELD_VALUE)
+//				.getStringValue();
+//		String bkTime = mySession
+//				.getVariableField(IProjectVariables.GET_TIME_PC, IProjectVariables.GET_TIME_PC_FIELD_VALUE)
+//				.getStringValue();
+//	
+//		String bkDuration = mySession
+//				.getVariableField(IProjectVariables.GET_DURATION_PC, IProjectVariables.GET_DURATION_PC_FIELD_VALUE)
+//				.getStringValue();
+//	}
 }

@@ -359,13 +359,13 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="662" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="198"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="329"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="194"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="322"/>
                 <Property name="ReferencedNodeID" value="371"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Menu" id="25" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="-79"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="283"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="-80"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="281"/>
                 <Property name="Name" value="LanguageMenu"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Menu" id="26" version="1.2">
                     <ItemProperties/>
