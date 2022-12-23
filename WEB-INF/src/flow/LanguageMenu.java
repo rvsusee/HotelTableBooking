@@ -193,6 +193,7 @@ public class LanguageMenu extends com.avaya.sce.runtime.Menu {
 
 	@Override
 	public void requestBegin(SCESession mySession) {
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Language Menu Node", mySession);
 		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "DatabaseConnection started", mySession);
 		Connection connection = null;
 		try {

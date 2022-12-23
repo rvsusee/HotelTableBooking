@@ -4,6 +4,7 @@ import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import com.avaya.sce.runtime.tracking.TraceInfo;
 import com.avaya.sce.runtimecommon.ITraceInfo;
@@ -253,6 +254,35 @@ public class WelcomeAcmt extends com.avaya.sce.runtime.Form {
 
 	@Override
 	public void requestBegin(SCESession mySession) {
-		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Welcome Acmt", mySession);
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Welcome Acmt Node", mySession);
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Language Menu Node", mySession);
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "DatabaseConnection started", mySession);
+		Connection connection = null;
+		try {
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
+			connection = DriverManager.getConnection("jdbc:sqlserver://192.168.168.12;databaseName=New_joinee_2022",
+					"NewJoinee2022", "P@ssw0rd");
+			try {
+				Statement stmt = connection.createStatement();
+				stmt.execute(
+						"insert into survey_response(customer_name,question1,question2,question3,question4)values('kumar','good','bad','average','good')");
+
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Database accessed succesfully", mySession);
+				stmt.close();
+			} catch (Exception e) {
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "exception occoured", mySession);
+			}
+		} catch (Exception e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Database Connection Failed" + e.getMessage(), mySession);
+		} finally {
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
 	}
+
 }

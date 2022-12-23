@@ -358,10 +358,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.subflow.NoMatchCalc.CheckAttempt</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_463">
-        <servlet-name>LangAtmt</servlet-name>
-        <servlet-class>flow.LangAtmt</servlet-class>
-    </servlet>
+    
     
     
     <servlet id="SAGE-callflow-servlet_AttemptReset_1">
@@ -485,10 +482,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.subflow.ResetAtmt.exit</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_593">
-        <servlet-name>ResetAtmt</servlet-name>
-        <servlet-class>flow.ResetAtmt</servlet-class>
-    </servlet>
+    
     
     
     
@@ -760,10 +754,7 @@ Copyright 2004-2021 Avaya Inc.
         <url-pattern>/NoMatchCalc-CheckAttempt</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_463">
-        <servlet-name>LangAtmt</servlet-name>
-        <url-pattern>/LangAtmt</url-pattern>
-    </servlet-mapping>
+    
     
     
     <servlet-mapping id="SAGE-callflow-servletmapping_AttemptReset_1">
@@ -885,10 +876,7 @@ Copyright 2004-2021 Avaya Inc.
         <url-pattern>/ResetAtmt-exit</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_593">
-        <servlet-name>ResetAtmt</servlet-name>
-        <url-pattern>/ResetAtmt</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_665">
         <servlet-name>WelcomeAcmt</servlet-name>
         <url-pattern>/WelcomeAcmt</url-pattern>
