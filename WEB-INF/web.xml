@@ -253,8 +253,8 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.subflow.GetBookingNo.GetBookingNoPC</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_GetBookingNo_17">
-        <servlet-name>GetBookingNo-BookingNo</servlet-name>
-        <servlet-class>flow.subflow.GetBookingNo.BookingNo</servlet-class>
+        <servlet-name>GetBookingNo-BookingNoFound</servlet-name>
+        <servlet-class>flow.subflow.GetBookingNo.BookingNoFound</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_306">
         <servlet-name>GetEditNoPC</servlet-name>
@@ -441,6 +441,10 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.subflow.AddBooking.GenerateBookingNo</servlet-class>
     </servlet>
     
+    <servlet id="SAGE-callflow-servlet_GetBookingNo_51">
+        <servlet-name>GetBookingNo-BookingNoNotFound</servlet-name>
+        <servlet-class>flow.subflow.GetBookingNo.BookingNoNotFound</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -608,8 +612,8 @@ Copyright 2004-2021 Avaya Inc.
         <url-pattern>/GetBookingNo-GetBookingNoPC</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_17">
-        <servlet-name>GetBookingNo-BookingNo</servlet-name>
-        <url-pattern>/GetBookingNo-BookingNo</url-pattern>
+        <servlet-name>GetBookingNo-BookingNoFound</servlet-name>
+        <url-pattern>/GetBookingNo-BookingNoFound</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_306">
         <servlet-name>GetEditNoPC</servlet-name>
@@ -775,6 +779,10 @@ Copyright 2004-2021 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_483">
         <servlet-name>AddBooking-GenerateBookingNo</servlet-name>
         <url-pattern>/AddBooking-GenerateBookingNo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_51">
+        <servlet-name>GetBookingNo-BookingNoNotFound</servlet-name>
+        <url-pattern>/GetBookingNo-BookingNoNotFound</url-pattern>
     </servlet-mapping>
     
     

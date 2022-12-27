@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
@@ -128,41 +129,38 @@ public class CheckBookingNoDB extends com.avaya.sce.runtime.Data {
 	}
 
 	private void dbOperation(String DBUrl, String DBDriver, String DBUserName, String DBPassword,
-				SCESession mySession) {
-			try {
-				Class.forName(DBDriver);
-				Connection connection = DriverManager.getConnection(DBUrl, DBUserName, DBPassword);
-				Statement stmt = connection.createStatement();
-				String query = queryGenerate(mySession);
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Query :"+query, mySession);
-				stmt.execute(query);
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Database accessed succesfully", mySession);
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "New Booking Added successfully", mySession);
-				stmt.close();
-				connection.close();
-			} catch (SQLException e) {
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Unable to Connect Database" + e.getMessage(), mySession);
-			} catch (ClassNotFoundException e) {
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR,
-						"Unable to Connect Database - ClassNotFoundException" + e.getMessage(), mySession);
-			}
+			SCESession mySession) {
+		try {
+			Class.forName(DBDriver);
+			Connection connection = DriverManager.getConnection(DBUrl, DBUserName, DBPassword);
+			Statement stmt = connection.createStatement();
+			ResultSet resultSet = stmt.executeQuery("\n" + "exec SUSEENDHIRAN_HOTEL_TABLE_BOOKING_GETLAST_BK_DETAILS;");
+			setValues(resultSet.getInt(1), resultSet.getInt(3), resultSet.getString(4), resultSet.getString(5),
+					resultSet.getInt(6), mySession);
+			resultSet.close();
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO,
+					"Booking No Generated Successfully. No:" + (resultSet.getInt(1) + 1), mySession);
+			stmt.close();
+			connection.close();
+		} catch (SQLException e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Unable to Connect Database" + e.getMessage(), mySession);
+		} catch (ClassNotFoundException e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR,
+					"Unable to Connect Database - ClassNotFoundException" + e.getMessage(), mySession);
+		}
 	}
 
-	private String queryGenerate(SCESession mySession) {
-		int bookingNo = mySession.getVariableField(IProjectVariables.BOOKING_DETAILS,IProjectVariables.BOOKING_DETAILS_FIELD_BOOKING_NO).getIntValue();
-		int mobileNo = mySession.getVariableField(IProjectVariables.BOOKING_DETAILS,IProjectVariables.BOOKING_DETAILS_FIELD_MOBILE_NO).getIntValue();
-		String noPerson = mySession
-				.getVariableField(IProjectVariables.GET_NO_PERSON_PC, IProjectVariables.GET_NO_PERSON_PC_FIELD_VALUE)
-				.getStringValue();
-		String bkDate = mySession
-				.getVariableField(IProjectVariables.GET_DATE_PC, IProjectVariables.GET_DATE_PC_FIELD_VALUE)
-				.getStringValue();
-		String bkTime = mySession
-				.getVariableField(IProjectVariables.GET_TIME_PC, IProjectVariables.GET_TIME_PC_FIELD_VALUE)
-				.getStringValue();
-		String bkDuration = mySession
-				.getVariableField(IProjectVariables.GET_DURATION_PC, IProjectVariables.GET_DURATION_PC_FIELD_VALUE)
-				.getStringValue();
-		return "exec SUSEENDHIRAN_HOTEL_TABLE_BOOKING_UPLOAD_BK_DETAILS @bookingID = "+bookingNo+", @mobileNo = "+mobileNo+", @noPerson = "+noPerson+", @bkDate = "+bkDate+", @bkTime = "+bkTime+", @bkDuration = "+bkDuration+";";
-	}			
-}
+	private void setValues(int bookingNo, int noPerson, String bookingDate, String bookingTime, int duration,
+			SCESession mySession) {
+		mySession
+				.getVariableField(IProjectVariables.BOOKING_DETAILS, IProjectVariables.BOOKING_DETAILS_FIELD_BOOKING_NO)
+				.setValue(bookingNo);
+		mySession.getVariableField(IProjectVariables.GET_NO_PERSON_PC, IProjectVariables.GET_NO_PERSON_PC_FIELD_VALUE)
+				.setValue(noPerson);
+		mySession.getVariableField(IProjectVariables.GET_NO_PERSON_PC, IProjectVariables.GET_NO_PERSON_PC_FIELD_VALUE)
+				.setValue(bookingDate);
+		mySession.getVariableField(IProjectVariables.GET_NO_PERSON_PC, IProjectVariables.GET_NO_PERSON_PC_FIELD_VALUE)
+				.setValue(bookingTime);
+		mySession.getVariableField(IProjectVariables.GET_NO_PERSON_PC, IProjectVariables.GET_NO_PERSON_PC_FIELD_VALUE)
+				.setValue(duration);
+	}}
