@@ -166,7 +166,7 @@ public class DeleteBkFromDB extends com.avaya.sce.runtime.Data {
 		} catch (ClassNotFoundException e) {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR,
 					"Unable to Connect Database - ClassNotFoundException" + e.getMessage(), mySession);
-		} catch (Exception e) {
+		} catch (Exception e) { 
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR,
 					"Exception Occured" + e.getMessage(), mySession);
 		}

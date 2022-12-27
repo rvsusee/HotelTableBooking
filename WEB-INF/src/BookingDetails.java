@@ -6,6 +6,7 @@ public class BookingDetails {
 	private String date;
 	private String time;
 	private String duration;
+	private int tableNo;
 	private String bkLog;
 
 	public BookingDetails(int bookingNo, int mobileNo, int persons, String date, String time, String duration,
