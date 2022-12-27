@@ -253,8 +253,8 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.subflow.GetBookingNo.GetBookingNoPC</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_GetBookingNo_17">
-        <servlet-name>GetBookingNo-BookingNoFound</servlet-name>
-        <servlet-class>flow.subflow.GetBookingNo.BookingNoFound</servlet-class>
+        <servlet-name>GetBookingNo-CorrectBkNo</servlet-name>
+        <servlet-class>flow.subflow.GetBookingNo.CorrectBkNo</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_306">
         <servlet-name>GetEditNoPC</servlet-name>
@@ -265,8 +265,8 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.GetCancelNoPC</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_317">
-        <servlet-name>ValidateBookingNo</servlet-name>
-        <servlet-class>flow.ValidateBookingNo</servlet-class>
+        <servlet-name>DeleteBkFromDB</servlet-name>
+        <servlet-class>flow.DeleteBkFromDB</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_331">
         <servlet-name>CancelBookingSuccess</servlet-name>
@@ -401,10 +401,7 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_GetBookingNo_35">
-        <servlet-name>GetBookingNo-AtmtExit</servlet-name>
-        <servlet-class>flow.subflow.GetBookingNo.AtmtExit</servlet-class>
-    </servlet>
+    
     
     
     
@@ -442,8 +439,12 @@ Copyright 2004-2021 Avaya Inc.
     </servlet>
     
     <servlet id="SAGE-callflow-servlet_GetBookingNo_51">
-        <servlet-name>GetBookingNo-BookingNoNotFound</servlet-name>
-        <servlet-class>flow.subflow.GetBookingNo.BookingNoNotFound</servlet-class>
+        <servlet-name>GetBookingNo-atmtEnd</servlet-name>
+        <servlet-class>flow.subflow.GetBookingNo.atmtEnd</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_GetBookingNo_69">
+        <servlet-name>GetBookingNo-atmtEndAcmt</servlet-name>
+        <servlet-class>flow.subflow.GetBookingNo.atmtEndAcmt</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -612,8 +613,8 @@ Copyright 2004-2021 Avaya Inc.
         <url-pattern>/GetBookingNo-GetBookingNoPC</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_17">
-        <servlet-name>GetBookingNo-BookingNoFound</servlet-name>
-        <url-pattern>/GetBookingNo-BookingNoFound</url-pattern>
+        <servlet-name>GetBookingNo-CorrectBkNo</servlet-name>
+        <url-pattern>/GetBookingNo-CorrectBkNo</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_306">
         <servlet-name>GetEditNoPC</servlet-name>
@@ -624,8 +625,8 @@ Copyright 2004-2021 Avaya Inc.
         <url-pattern>/GetCancelNoPC</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_317">
-        <servlet-name>ValidateBookingNo</servlet-name>
-        <url-pattern>/ValidateBookingNo</url-pattern>
+        <servlet-name>DeleteBkFromDB</servlet-name>
+        <url-pattern>/DeleteBkFromDB</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_331">
         <servlet-name>CancelBookingSuccess</servlet-name>
@@ -744,10 +745,7 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_35">
-        <servlet-name>GetBookingNo-AtmtExit</servlet-name>
-        <url-pattern>/GetBookingNo-AtmtExit</url-pattern>
-    </servlet-mapping>
+    
     
     
     
@@ -781,8 +779,12 @@ Copyright 2004-2021 Avaya Inc.
         <url-pattern>/AddBooking-GenerateBookingNo</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_51">
-        <servlet-name>GetBookingNo-BookingNoNotFound</servlet-name>
-        <url-pattern>/GetBookingNo-BookingNoNotFound</url-pattern>
+        <servlet-name>GetBookingNo-atmtEnd</servlet-name>
+        <url-pattern>/GetBookingNo-atmtEnd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_69">
+        <servlet-name>GetBookingNo-atmtEndAcmt</servlet-name>
+        <url-pattern>/GetBookingNo-atmtEndAcmt</url-pattern>
     </servlet-mapping>
     
     
