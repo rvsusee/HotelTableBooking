@@ -11,14 +11,14 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="HotelTableBooking"/>
+                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="MoreInvalidValues"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="HotelTableBooking"/>
+                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="TryAgainLater"/>
                     </Properties>
                     <ChildItems/>

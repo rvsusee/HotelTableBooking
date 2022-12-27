@@ -18,8 +18,8 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="EngAcmt"/>
-                        <Property name="Phrase" value="ConfirmBooking"/>
+                        <Property name="Phraseset" value="English"/>
+                        <Property name="Phrase" value="ForConfirmBooking"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -32,8 +32,8 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="EngAcmt"/>
-                        <Property name="Phrase" value="EditBooking"/>
+                        <Property name="Phraseset" value="English"/>
+                        <Property name="Phrase" value="ForEditBookingDetails"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -46,8 +46,8 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="EngAcmt"/>
-                        <Property name="Phrase" value="CancelBooking"/>
+                        <Property name="Phraseset" value="English"/>
+                        <Property name="Phrase" value="ForCancelBooking"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

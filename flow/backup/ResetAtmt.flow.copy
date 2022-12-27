@@ -34,7 +34,6 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="11" version="1.2">
                             <ItemProperties>
-                                <Property name="destVarId" value="AttemptCount"/>
                                 <Property name="type" value="assign"/>
                                 <Property name="sourceConstant" value="1"/>
                             </ItemProperties>
@@ -42,7 +41,6 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="14" version="1.2">
                             <ItemProperties>
-                                <Property name="trace.varId" value="AttemptCount"/>
                                 <Property name="trace.text" value="AttemptValue"/>
                             </ItemProperties>
                             <ChildItems/>

@@ -11,8 +11,8 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="EngAcmt"/>
-                        <Property name="Phrase" value="BookingCancelSuccess"/>
+                        <Property name="Phraseset" value="English"/>
+                        <Property name="Phrase" value="SomethingWrong"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

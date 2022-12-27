@@ -55,7 +55,6 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="12" version="1.2">
                             <ItemProperties>
-                                <Property name="destVarId" value="AttemptCount"/>
                                 <Property name="type" value="assign"/>
                                 <Property name="sourceConstant" value="1"/>
                             </ItemProperties>

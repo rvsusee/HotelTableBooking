@@ -107,7 +107,10 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>Start</servlet-name>
         <servlet-class>flow.Start</servlet-class>
     </servlet>
-    
+    <servlet id="SAGE-callflow-servlet_main_5">
+        <servlet-name>WelcomeAcmt</servlet-name>
+        <servlet-class>flow.WelcomeAcmt</servlet-class>
+    </servlet>
     <servlet id="SAGE-callflow-servlet_main_11">
         <servlet-name>Exit</servlet-name>
         <servlet-class>flow.Exit</servlet-class>
@@ -166,10 +169,7 @@ Copyright 2004-2021 Avaya Inc.
     </servlet>
     
     
-    <servlet id="SAGE-callflow-servlet_main_204">
-        <servlet-name>DefLangSet</servlet-name>
-        <servlet-class>flow.DefLangSet</servlet-class>
-    </servlet>
+    
     
     
     
@@ -277,16 +277,28 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.BookingCancelFailed</servlet-class>
     </servlet>
     
+    <servlet id="SAGE-callflow-servlet_AddBooking_123">
+        <servlet-name>AddBooking-UploadDB</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.UploadDB</servlet-class>
+    </servlet>
     
     
     
     
+    <servlet id="SAGE-callflow-servlet_AddBooking_152">
+        <servlet-name>AddBooking-GetConfirmOrNot</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.GetConfirmOrNot</servlet-class>
+    </servlet>
     
+    <servlet id="SAGE-callflow-servlet_AddBooking_165">
+        <servlet-name>AddBooking-BookingConfirm</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.BookingConfirm</servlet-class>
+    </servlet>
     
-    
-    
-    
-    
+    <servlet id="SAGE-callflow-servlet_AddBooking_199">
+        <servlet-name>AddBooking-BookingCancel</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.BookingCancel</servlet-class>
+    </servlet>
     
     <servlet id="SAGE-callflow-servlet_AddBooking_221">
         <servlet-name>AddBooking-ValidateDate</servlet-name>
@@ -325,10 +337,7 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_422">
-        <servlet-name>BadfetchNode</servlet-name>
-        <servlet-class>flow.BadfetchNode</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_426">
         <servlet-name>HangupNode</servlet-name>
         <servlet-class>flow.HangupNode</servlet-class>
@@ -361,14 +370,8 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_AttemptReset_1">
-        <servlet-name>AttemptReset-Begin</servlet-name>
-        <servlet-class>flow.subflow.AttemptReset.Begin</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AttemptReset_4">
-        <servlet-name>AttemptReset-Reset</servlet-name>
-        <servlet-class>flow.subflow.AttemptReset.Reset</servlet-class>
-    </servlet>
+    
+    
     
     
     
@@ -378,124 +381,65 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>WaitingToTransferCall</servlet-name>
         <servlet-class>flow.WaitingToTransferCall</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_331">
-        <servlet-name>AddBooking-PersonAtmt</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.PersonAtmt</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AttemptCount_1">
-        <servlet-name>AttemptCount-Begin</servlet-name>
-        <servlet-class>flow.subflow.AttemptCount.Begin</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AttemptCount_21">
-        <servlet-name>AttemptCount-NoAttempt</servlet-name>
-        <servlet-class>flow.subflow.AttemptCount.NoAttempt</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AttemptCount_25">
-        <servlet-name>AttemptCount-AttemptCheck</servlet-name>
-        <servlet-class>flow.subflow.AttemptCount.AttemptCheck</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AttemptCount_15">
-        <servlet-name>AttemptCount-HaveAttempt</servlet-name>
-        <servlet-class>flow.subflow.AttemptCount.HaveAttempt</servlet-class>
+    
+    
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_AddBooking_343">
+        <servlet-name>AddBooking-MoreAtmtEnd</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.MoreAtmtEnd</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_344">
-        <servlet-name>AddBooking-ResetExitAtmt</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.ResetExitAtmt</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_347">
-        <servlet-name>AddBooking-ResetAtmtPerson</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.ResetAtmtPerson</servlet-class>
-    </servlet>
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_353">
-        <servlet-name>AddBooking-GetDatePCAtmt</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.GetDatePCAtmt</servlet-class>
-    </servlet>
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_378">
-        <servlet-name>AddBooking-ResetAtmtTime</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.ResetAtmtTime</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_383">
-        <servlet-name>AddBooking-GetTimeAtmt</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.GetTimeAtmt</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_401">
-        <servlet-name>AddBooking-ResetAtmtDuration</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.ResetAtmtDuration</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_406">
-        <servlet-name>AddBooking-GetDurationAtmt</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.GetDurationAtmt</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_GetBookingNo_24">
-        <servlet-name>GetBookingNo-GetBookingAtmt</servlet-name>
-        <servlet-class>flow.subflow.GetBookingNo.GetBookingAtmt</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_GetBookingNo_30">
-        <servlet-name>GetBookingNo-AtmtResetExit</servlet-name>
-        <servlet-class>flow.subflow.GetBookingNo.AtmtResetExit</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_GetBookingNo_35">
         <servlet-name>GetBookingNo-AtmtExit</servlet-name>
         <servlet-class>flow.subflow.GetBookingNo.AtmtExit</servlet-class>
     </servlet>
     
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_425">
-        <servlet-name>AddBooking-ResetAtmtDate</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.ResetAtmtDate</servlet-class>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_main_673">
+        <servlet-name>BadFetchNode</servlet-name>
+        <servlet-class>flow.BadFetchNode</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_ResetExit_1">
-        <servlet-name>ResetExit-Begin</servlet-name>
-        <servlet-class>flow.subflow.ResetExit.Begin</servlet-class>
+    <servlet id="SAGE-callflow-servlet_AddBooking_475">
+        <servlet-name>AddBooking-MoreAtmtExitAcmt</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.MoreAtmtExitAcmt</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_ResetExit_4">
-        <servlet-name>ResetExit-ResetExitAcmt</servlet-name>
-        <servlet-class>flow.subflow.ResetExit.ResetExitAcmt</servlet-class>
+    <servlet id="SAGE-callflow-servlet_GetBookingNo_44">
+        <servlet-name>GetBookingNo-CheckBookingNoDB</servlet-name>
+        <servlet-class>flow.subflow.GetBookingNo.CheckBookingNoDB</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_ResetExit_8">
-        <servlet-name>ResetExit-ResetAtmt</servlet-name>
-        <servlet-class>flow.subflow.ResetExit.ResetAtmt</servlet-class>
+    <servlet id="SAGE-callflow-servlet_AddBooking_483">
+        <servlet-name>AddBooking-GenerateBookingNo</servlet-name>
+        <servlet-class>flow.subflow.AddBooking.GenerateBookingNo</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_ResetExit_13">
-        <servlet-name>ResetExit-Exit</servlet-name>
-        <servlet-class>flow.subflow.ResetExit.Exit</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AttemptReset_20">
-        <servlet-name>AttemptReset-GoNext</servlet-name>
-        <servlet-class>flow.subflow.AttemptReset.GoNext</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_ResetAtmt_1">
-        <servlet-name>ResetAtmt-Begin</servlet-name>
-        <servlet-class>flow.subflow.ResetAtmt.Begin</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_ResetAtmt_4">
-        <servlet-name>ResetAtmt-ResetAtmt</servlet-name>
-        <servlet-class>flow.subflow.ResetAtmt.ResetAtmt</servlet-class>
-    </servlet>
-    
-    
-    <servlet id="SAGE-callflow-servlet_ResetAtmt_12">
-        <servlet-name>ResetAtmt-exit</servlet-name>
-        <servlet-class>flow.subflow.ResetAtmt.exit</servlet-class>
-    </servlet>
-    
-    
-    
-    
-    
-    <servlet id="SAGE-callflow-servlet_main_665">
-        <servlet-name>WelcomeAcmt</servlet-name>
-        <servlet-class>flow.WelcomeAcmt</servlet-class>
-    </servlet>
-    
-    
-    
-    
-    
-    
     
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -530,7 +474,10 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>Start</servlet-name>
         <url-pattern>/Start</url-pattern>
     </servlet-mapping>
-    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_5">
+        <servlet-name>WelcomeAcmt</servlet-name>
+        <url-pattern>/WelcomeAcmt</url-pattern>
+    </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_11">
         <servlet-name>Exit</servlet-name>
         <url-pattern>/Exit</url-pattern>
@@ -582,10 +529,7 @@ Copyright 2004-2021 Avaya Inc.
     </servlet-mapping>
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_204">
-        <servlet-name>DefLangSet</servlet-name>
-        <url-pattern>/DefLangSet</url-pattern>
-    </servlet-mapping>
+    
     
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_1">
         <servlet-name>AddBooking-Begin</servlet-name>
@@ -687,12 +631,24 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>BookingCancelFailed</servlet-name>
         <url-pattern>/BookingCancelFailed</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_123">
+        <servlet-name>AddBooking-UploadDB</servlet-name>
+        <url-pattern>/AddBooking-UploadDB</url-pattern>
+    </servlet-mapping>
     
     
-    
-    
-    
-    
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_152">
+        <servlet-name>AddBooking-GetConfirmOrNot</servlet-name>
+        <url-pattern>/AddBooking-GetConfirmOrNot</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_165">
+        <servlet-name>AddBooking-BookingConfirm</servlet-name>
+        <url-pattern>/AddBooking-BookingConfirm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_199">
+        <servlet-name>AddBooking-BookingCancel</servlet-name>
+        <url-pattern>/AddBooking-BookingCancel</url-pattern>
+    </servlet-mapping>
     
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_221">
         <servlet-name>AddBooking-ValidateDate</servlet-name>
@@ -722,10 +678,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>AddBooking-WrongTimeAcmt</servlet-name>
         <url-pattern>/AddBooking-WrongTimeAcmt</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_422">
-        <servlet-name>BadfetchNode</servlet-name>
-        <url-pattern>/BadfetchNode</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_426">
         <servlet-name>HangupNode</servlet-name>
         <url-pattern>/HangupNode</url-pattern>
@@ -757,14 +710,8 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_AttemptReset_1">
-        <servlet-name>AttemptReset-Begin</servlet-name>
-        <url-pattern>/AttemptReset-Begin</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AttemptReset_4">
-        <servlet-name>AttemptReset-Reset</servlet-name>
-        <url-pattern>/AttemptReset-Reset</url-pattern>
-    </servlet-mapping>
+    
+    
     
     
     
@@ -773,119 +720,62 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>WaitingToTransferCall</servlet-name>
         <url-pattern>/WaitingToTransferCall</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_331">
-        <servlet-name>AddBooking-PersonAtmt</servlet-name>
-        <url-pattern>/AddBooking-PersonAtmt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AttemptCount_1">
-        <servlet-name>AttemptCount-Begin</servlet-name>
-        <url-pattern>/AttemptCount-Begin</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AttemptCount_21">
-        <servlet-name>AttemptCount-NoAttempt</servlet-name>
-        <url-pattern>/AttemptCount-NoAttempt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AttemptCount_25">
-        <servlet-name>AttemptCount-AttemptCheck</servlet-name>
-        <url-pattern>/AttemptCount-AttemptCheck</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AttemptCount_15">
-        <servlet-name>AttemptCount-HaveAttempt</servlet-name>
-        <url-pattern>/AttemptCount-HaveAttempt</url-pattern>
+    
+    
+    
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_343">
+        <servlet-name>AddBooking-MoreAtmtEnd</servlet-name>
+        <url-pattern>/AddBooking-MoreAtmtEnd</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_344">
-        <servlet-name>AddBooking-ResetExitAtmt</servlet-name>
-        <url-pattern>/AddBooking-ResetExitAtmt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_347">
-        <servlet-name>AddBooking-ResetAtmtPerson</servlet-name>
-        <url-pattern>/AddBooking-ResetAtmtPerson</url-pattern>
-    </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_353">
-        <servlet-name>AddBooking-GetDatePCAtmt</servlet-name>
-        <url-pattern>/AddBooking-GetDatePCAtmt</url-pattern>
-    </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_378">
-        <servlet-name>AddBooking-ResetAtmtTime</servlet-name>
-        <url-pattern>/AddBooking-ResetAtmtTime</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_383">
-        <servlet-name>AddBooking-GetTimeAtmt</servlet-name>
-        <url-pattern>/AddBooking-GetTimeAtmt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_401">
-        <servlet-name>AddBooking-ResetAtmtDuration</servlet-name>
-        <url-pattern>/AddBooking-ResetAtmtDuration</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_406">
-        <servlet-name>AddBooking-GetDurationAtmt</servlet-name>
-        <url-pattern>/AddBooking-GetDurationAtmt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_24">
-        <servlet-name>GetBookingNo-GetBookingAtmt</servlet-name>
-        <url-pattern>/GetBookingNo-GetBookingAtmt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_30">
-        <servlet-name>GetBookingNo-AtmtResetExit</servlet-name>
-        <url-pattern>/GetBookingNo-AtmtResetExit</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_35">
         <servlet-name>GetBookingNo-AtmtExit</servlet-name>
         <url-pattern>/GetBookingNo-AtmtExit</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_425">
-        <servlet-name>AddBooking-ResetAtmtDate</servlet-name>
-        <url-pattern>/AddBooking-ResetAtmtDate</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_ResetExit_1">
-        <servlet-name>ResetExit-Begin</servlet-name>
-        <url-pattern>/ResetExit-Begin</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_ResetExit_4">
-        <servlet-name>ResetExit-ResetExitAcmt</servlet-name>
-        <url-pattern>/ResetExit-ResetExitAcmt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_ResetExit_8">
-        <servlet-name>ResetExit-ResetAtmt</servlet-name>
-        <url-pattern>/ResetExit-ResetAtmt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_ResetExit_13">
-        <servlet-name>ResetExit-Exit</servlet-name>
-        <url-pattern>/ResetExit-Exit</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AttemptReset_20">
-        <servlet-name>AttemptReset-GoNext</servlet-name>
-        <url-pattern>/AttemptReset-GoNext</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_ResetAtmt_1">
-        <servlet-name>ResetAtmt-Begin</servlet-name>
-        <url-pattern>/ResetAtmt-Begin</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_ResetAtmt_4">
-        <servlet-name>ResetAtmt-ResetAtmt</servlet-name>
-        <url-pattern>/ResetAtmt-ResetAtmt</url-pattern>
-    </servlet-mapping>
-    
-    
-    <servlet-mapping id="SAGE-callflow-servletmapping_ResetAtmt_12">
-        <servlet-name>ResetAtmt-exit</servlet-name>
-        <url-pattern>/ResetAtmt-exit</url-pattern>
-    </servlet-mapping>
-    
-    
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_665">
-        <servlet-name>WelcomeAcmt</servlet-name>
-        <url-pattern>/WelcomeAcmt</url-pattern>
-    </servlet-mapping>
     
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_673">
+        <servlet-name>BadFetchNode</servlet-name>
+        <url-pattern>/BadFetchNode</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_475">
+        <servlet-name>AddBooking-MoreAtmtExitAcmt</servlet-name>
+        <url-pattern>/AddBooking-MoreAtmtExitAcmt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_44">
+        <servlet-name>GetBookingNo-CheckBookingNoDB</servlet-name>
+        <url-pattern>/GetBookingNo-CheckBookingNoDB</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_483">
+        <servlet-name>AddBooking-GenerateBookingNo</servlet-name>
+        <url-pattern>/AddBooking-GenerateBookingNo</url-pattern>
+    </servlet-mapping>
     
     
     

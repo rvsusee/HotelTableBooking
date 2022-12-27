@@ -11,7 +11,7 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="EngPC"/>
+                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="EnterDate"/>
                     </Properties>
                     <ChildItems/>
@@ -44,15 +44,8 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="EngPC"/>
+                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="EnterDate"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
-                    <Properties>
-                        <Property name="Valid" value="true"/>
-                        <Property name="Name" value="testing 2"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

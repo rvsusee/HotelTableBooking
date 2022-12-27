@@ -11,7 +11,7 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="BookingDetailsSpeak"/>
+                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="BookingNoIs"/>
                     </Properties>
                     <ChildItems/>
@@ -28,7 +28,7 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="BookingDetailsSpeak"/>
+                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="NoOfPersonsIs"/>
                     </Properties>
                     <ChildItems/>
@@ -45,8 +45,8 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="BookingDetailsSpeak"/>
-                        <Property name="Phrase" value="DateAndTimeIs"/>
+                        <Property name="Phraseset" value="English"/>
+                        <Property name="Phrase" value="BookingDateTimeIs"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
@@ -74,7 +74,7 @@
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phraseset" value="BookingDetailsSpeak"/>
+                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="BookingDurationIs"/>
                     </Properties>
                     <ChildItems/>
