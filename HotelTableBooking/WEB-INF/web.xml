@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This XML descriptor is automatically generated and managed by the application 
+	development environment. While manual updates to this file may be preserved, 
+	it is best to manage this file through the application development environment 
+	tool. Copyright 2004-2021 Avaya Inc. --><web-app id="WebApp_ID" version="3.0">
+	<context-param>
+		<param-name>sage.startlanguage</param-name>
+		<param-value>english</param-value>
+		<description>The starting language for the application.</description>
+	</context-param>
+	<context-param>
+		<param-name>sage.ic.throwexceptions</param-name>
+		<param-value>true</param-value>
+		<description>IC Throw Runtime Exception on Error{true|false}</description>
+	</context-param>
+	<context-param>
+		<param-name>sage.cti.autoinvoke.callinfo</param-name>
+		<param-value>true</param-value>
+		<description>CTI Auto invoke CallInfo upon app start{true|false}</description>
+	</context-param>
+	<context-param>
+		<param-name>runtime-ASR</param-name>
+		<param-value>Desktop Microsoft Speech SAPI</param-value>
+		<description>Runtime ASR {SRGS-Literals|SRGS-SISR|Nuance OSR|IBM|...}</description>
+	</context-param>
+	<context-param>
+		<param-name>runtime-SSML</param-name>
+		<param-value>true</param-value>
+		<description>Runtime SSML Generation {true|false} - "true" enables
+			SSML generation, "false" disables.</description>
+	</context-param>
+	<context-param>
+		<param-name>runtime-nature</param-name>
+		<param-value>speech</param-value>
+		<description>Application nature, speech or message</description>
+	</context-param>
+	<context-param>
+		<param-name>runtime-Platform</param-name>
+		<param-value>Desktop</param-value>
+		<description>Runtime Platform {Desktop|Experience Portal|Other|IR|MPS}</description>
+	</context-param>
+	<context-param>
+		<param-name>runtime-VXML-Compatibility</param-name>
+		<param-value>2.1</param-value>
+		<description>2.1 + IVVR, 2.1 Allows VXML 2.1 extensions, 2.0 Uses VXML
+			2.0 Only</description>
+	</context-param>
+	<context-param>
+		<param-name>runtime-DTMF-Native</param-name>
+		<param-value>LOCAL_SRGS_LITERALS</param-value>
+		<description>(NATIVE|LOCAL_SRGS_SISR|LOCAL_SRGS_LITERALS, NATIVE means
+			DTMF Grammars are in native asr format.</description>
+	</context-param>
+	<context-param>
+		<param-name>allow-html-mode</param-name>
+		<param-value>false</param-value>
+		<description>Allows html mode in speech applications.</description>
+	</context-param>
+	<context-param>
+		<param-name>CollectionSeparator</param-name>
+		<param-value>|</param-value>
+		<description>Collection Separator Char</description>
+	</context-param>
+	<context-param>
+		<param-name>log4jConfiguration</param-name>
+		<param-value>data/ddlog4j2.xml</param-value>
+		<description>Log4j2 Configuration File</description>
+	</context-param>
+	<context-param>
+		<param-name>grammar-caching</param-name>
+		<param-value>none</param-value>
+		<description>Grammar caching mode, none=no caching, default=system
+			default or property setting</description>
+	</context-param>
+
+
+
+	<servlet id="avayadefaultdisconnecthandler-servlet">
+		<servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
+		<servlet-class>com.avaya.sce.runtime.DefaultDisconnect</servlet-class>
+	</servlet>
+	<servlet id="avayadefaultexithandler-servlet">
+		<servlet-name>AvayaDefaultExitHandler</servlet-name>
+		<servlet-class>com.avaya.sce.runtime.DefaultExit</servlet-class>
+	</servlet>
+	<servlet id="avayasessiontermination-servlet">
+		<servlet-name>AvayaSessionTerminationServlet</servlet-name>
+		<servlet-class>com.avaya.sce.runtime.AvayaSessionTerminationServlet</servlet-class>
+	</servlet>
+	<servlet id="CheckAdminVariableInfo-servlet">
+		<servlet-name>CheckAdminVariableInfoServlet</servlet-name>
+		<servlet-class>com.avaya.sce.runtimecommon.CheckAdminVariableInfo</servlet-class>
+	</servlet>
+	<servlet id="avayareturnerrorhandler-servlet">
+		<servlet-name>AvayaReturnErrorHandler</servlet-name>
+		<servlet-class>com.avaya.sce.runtime.ReturnErrorHandlerServlet</servlet-class>
+	</servlet>
+	<servlet id="avayareturnerrorthrow-servlet">
+		<servlet-name>AvayaReturnErrorThrow</servlet-name>
+		<servlet-class>com.avaya.sce.runtime.ReturnErrorThrowServlet</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_1">
+		<servlet-name>AppRoot</servlet-name>
+		<servlet-class>flow.AppRoot</servlet-class>
+	</servlet>
+
+	<servlet id="SAGE-callflow-servlet_main_0">
+		<servlet-name>Start</servlet-name>
+		<servlet-class>flow.Start</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_5">
+		<servlet-name>WelcomeAcmt</servlet-name>
+		<servlet-class>flow.WelcomeAcmt</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_11">
+		<servlet-name>Exit</servlet-name>
+		<servlet-class>flow.Exit</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_25">
+		<servlet-name>LanguageMenu</servlet-name>
+		<servlet-class>flow.LanguageMenu</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_31">
+		<servlet-name>EngMainMenu</servlet-name>
+		<servlet-class>flow.EngMainMenu</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet id="SAGE-callflow-servlet_main_90">
+		<servlet-name>AddBooking</servlet-name>
+		<servlet-class>flow.AddBooking</servlet-class>
+	</servlet>
+
+
+
+	<servlet id="SAGE-callflow-servlet_main_116">
+		<servlet-name>LastBookingDetails</servlet-name>
+		<servlet-class>flow.LastBookingDetails</servlet-class>
+	</servlet>
+
+	<servlet id="SAGE-callflow-servlet_main_133">
+		<servlet-name>GetBookingDetails</servlet-name>
+		<servlet-class>flow.GetBookingDetails</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_137">
+		<servlet-name>EngSubMenu</servlet-name>
+		<servlet-class>flow.EngSubMenu</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_162">
+		<servlet-name>RepeatBookingDetails</servlet-name>
+		<servlet-class>flow.RepeatBookingDetails</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+	<servlet id="SAGE-callflow-servlet_AddBooking_1">
+		<servlet-name>AddBooking-Begin</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.Begin</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_49">
+		<servlet-name>AddBooking-Return</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.Return</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_18">
+		<servlet-name>AddBooking-GetDatePC</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.GetDatePC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_51">
+		<servlet-name>AddBooking-GetDurationPC</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.GetDurationPC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_4">
+		<servlet-name>AddBooking-GetNoPersonPC</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.GetNoPersonPC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_44">
+		<servlet-name>AddBooking-BookingDetailsAcmt</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.BookingDetailsAcmt</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_29">
+		<servlet-name>AddBooking-GetTimePC</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.GetTimePC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_BookingDetails_16">
+		<servlet-name>BookingDetails-Return</servlet-name>
+		<servlet-class>flow.subflow.BookingDetails.Return</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_BookingDetails_1">
+		<servlet-name>BookingDetails-Begin</servlet-name>
+		<servlet-class>flow.subflow.BookingDetails.Begin</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_BookingDetails_4">
+		<servlet-name>BookingDetails-BookingAcmt</servlet-name>
+		<servlet-class>flow.subflow.BookingDetails.BookingAcmt</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingDetails_1">
+		<servlet-name>GetBookingDetails-Begin</servlet-name>
+		<servlet-class>flow.subflow.GetBookingDetails.Begin</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingDetails_49">
+		<servlet-name>GetBookingDetails-Return</servlet-name>
+		<servlet-class>flow.subflow.GetBookingDetails.Return</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingDetails_18">
+		<servlet-name>GetBookingDetails-GetDatePC</servlet-name>
+		<servlet-class>flow.subflow.GetBookingDetails.GetDatePC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingDetails_51">
+		<servlet-name>GetBookingDetails-GetDurationPC</servlet-name>
+		<servlet-class>flow.subflow.GetBookingDetails.GetDurationPC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingDetails_4">
+		<servlet-name>GetBookingDetails-GetNoPersonPC</servlet-name>
+		<servlet-class>flow.subflow.GetBookingDetails.GetNoPersonPC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingDetails_44">
+		<servlet-name>GetBookingDetails-BookingDetailsAcmt</servlet-name>
+		<servlet-class>flow.subflow.GetBookingDetails.BookingDetailsAcmt</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingDetails_29">
+		<servlet-name>GetBookingDetails-GetTimePC</servlet-name>
+		<servlet-class>flow.subflow.GetBookingDetails.GetTimePC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingNo_1">
+		<servlet-name>GetBookingNo-Begin</servlet-name>
+		<servlet-class>flow.subflow.GetBookingNo.Begin</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingNo_4">
+		<servlet-name>GetBookingNo-GetBookingNoPC</servlet-name>
+		<servlet-class>flow.subflow.GetBookingNo.GetBookingNoPC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingNo_17">
+		<servlet-name>GetBookingNo-CorrectBkNo</servlet-name>
+		<servlet-class>flow.subflow.GetBookingNo.CorrectBkNo</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_306">
+		<servlet-name>GetEditNoPC</servlet-name>
+		<servlet-class>flow.GetEditNoPC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_311">
+		<servlet-name>GetCancelNoPC</servlet-name>
+		<servlet-class>flow.GetCancelNoPC</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_317">
+		<servlet-name>DeleteBkFromDB</servlet-name>
+		<servlet-class>flow.DeleteBkFromDB</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_331">
+		<servlet-name>CancelBookingSuccess</servlet-name>
+		<servlet-class>flow.CancelBookingSuccess</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_340">
+		<servlet-name>BookingCancelFailed</servlet-name>
+		<servlet-class>flow.BookingCancelFailed</servlet-class>
+	</servlet>
+
+	<servlet id="SAGE-callflow-servlet_AddBooking_123">
+		<servlet-name>AddBooking-UploadDB</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.UploadDB</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet id="SAGE-callflow-servlet_AddBooking_152">
+		<servlet-name>AddBooking-GetConfirmOrNot</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.GetConfirmOrNot</servlet-class>
+	</servlet>
+
+	<servlet id="SAGE-callflow-servlet_AddBooking_165">
+		<servlet-name>AddBooking-BookingConfirm</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.BookingConfirm</servlet-class>
+	</servlet>
+
+	<servlet id="SAGE-callflow-servlet_AddBooking_199">
+		<servlet-name>AddBooking-BookingCancel</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.BookingCancel</servlet-class>
+	</servlet>
+
+	<servlet id="SAGE-callflow-servlet_AddBooking_221">
+		<servlet-name>AddBooking-ValidateDate</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.ValidateDate</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_226">
+		<servlet-name>AddBooking-DateValidater</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.DateValidater</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_371">
+		<servlet-name>Disconnect</servlet-name>
+		<servlet-class>flow.Disconnect</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_256">
+		<servlet-name>AddBooking-WrongDateFormat</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.WrongDateFormat</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_274">
+		<servlet-name>AddBooking-ValidateTime</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.ValidateTime</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_278">
+		<servlet-name>AddBooking-dateValidator</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.dateValidator</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_290">
+		<servlet-name>AddBooking-WrongTimeAcmt</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.WrongTimeAcmt</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+	<servlet id="SAGE-callflow-servlet_main_426">
+		<servlet-name>HangupNode</servlet-name>
+		<servlet-class>flow.HangupNode</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_430">
+		<servlet-name>RuntimeNode</servlet-name>
+		<servlet-class>flow.RuntimeNode</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_434">
+		<servlet-name>TransferNode</servlet-name>
+		<servlet-class>flow.TransferNode</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_main_438">
+		<servlet-name>ErrorNode</servlet-name>
+		<servlet-class>flow.ErrorNode</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet id="SAGE-callflow-servlet_NoMatchCalc_1">
+		<servlet-name>NoMatchCalc-Begin</servlet-name>
+		<servlet-class>flow.subflow.NoMatchCalc.Begin</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_NoMatchCalc_4">
+		<servlet-name>NoMatchCalc-CheckAttempt</servlet-name>
+		<servlet-class>flow.subflow.NoMatchCalc.CheckAttempt</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+	<servlet id="SAGE-callflow-servlet_main_526">
+		<servlet-name>WaitingToTransferCall</servlet-name>
+		<servlet-class>flow.WaitingToTransferCall</servlet-class>
+	</servlet>
+
+
+
+
+
+	<servlet id="SAGE-callflow-servlet_AddBooking_343">
+		<servlet-name>AddBooking-MoreAtmtEnd</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.MoreAtmtEnd</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet id="SAGE-callflow-servlet_main_673">
+		<servlet-name>BadFetchNode</servlet-name>
+		<servlet-class>flow.BadFetchNode</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_475">
+		<servlet-name>AddBooking-MoreAtmtExitAcmt</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.MoreAtmtExitAcmt</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingNo_44">
+		<servlet-name>GetBookingNo-CheckBookingNoDB</servlet-name>
+		<servlet-class>flow.subflow.GetBookingNo.CheckBookingNoDB</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_AddBooking_483">
+		<servlet-name>AddBooking-GenerateBookingNo</servlet-name>
+		<servlet-class>flow.subflow.AddBooking.GenerateBookingNo</servlet-class>
+	</servlet>
+
+	<servlet id="SAGE-callflow-servlet_GetBookingNo_51">
+		<servlet-name>GetBookingNo-atmtEnd</servlet-name>
+		<servlet-class>flow.subflow.GetBookingNo.atmtEnd</servlet-class>
+	</servlet>
+	<servlet id="SAGE-callflow-servlet_GetBookingNo_69">
+		<servlet-name>GetBookingNo-atmtEndAcmt</servlet-name>
+		<servlet-class>flow.subflow.GetBookingNo.atmtEndAcmt</servlet-class>
+	</servlet>
+	
+    
+    <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
+		<servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
+		<url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="avayadefaultexithandler-servletmapping">
+		<servlet-name>AvayaDefaultExitHandler</servlet-name>
+		<url-pattern>/AvayaDefaultExitHandler</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="avayasessiontermination-servletmapping">
+		<servlet-name>AvayaSessionTerminationServlet</servlet-name>
+		<url-pattern>/AvayaSessionTerminationServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="CheckAdminVariableInfo-servletmapping">
+		<servlet-name>CheckAdminVariableInfoServlet</servlet-name>
+		<url-pattern>/CheckAdminVariableInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="avayareturnerrorhandler-servletmapping">
+		<servlet-name>AvayaReturnErrorHandler</servlet-name>
+		<url-pattern>/AvayaReturnErrorHandler</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="avayareturnerrorthrow-servletmapping">
+		<servlet-name>AvayaReturnErrorThrow</servlet-name>
+		<url-pattern>/AvayaReturnErrorThrow</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_1">
+		<servlet-name>AppRoot</servlet-name>
+		<url-pattern>/AppRoot</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_0">
+		<servlet-name>Start</servlet-name>
+		<url-pattern>/Start</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_5">
+		<servlet-name>WelcomeAcmt</servlet-name>
+		<url-pattern>/WelcomeAcmt</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_11">
+		<servlet-name>Exit</servlet-name>
+		<url-pattern>/Exit</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_25">
+		<servlet-name>LanguageMenu</servlet-name>
+		<url-pattern>/LanguageMenu</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_31">
+		<servlet-name>EngMainMenu</servlet-name>
+		<url-pattern>/EngMainMenu</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_90">
+		<servlet-name>AddBooking</servlet-name>
+		<url-pattern>/AddBooking</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_116">
+		<servlet-name>LastBookingDetails</servlet-name>
+		<url-pattern>/LastBookingDetails</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_133">
+		<servlet-name>GetBookingDetails</servlet-name>
+		<url-pattern>/GetBookingDetails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_137">
+		<servlet-name>EngSubMenu</servlet-name>
+		<url-pattern>/EngSubMenu</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_162">
+		<servlet-name>RepeatBookingDetails</servlet-name>
+		<url-pattern>/RepeatBookingDetails</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_1">
+		<servlet-name>AddBooking-Begin</servlet-name>
+		<url-pattern>/AddBooking-Begin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_49">
+		<servlet-name>AddBooking-Return</servlet-name>
+		<url-pattern>/AddBooking-Return</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_18">
+		<servlet-name>AddBooking-GetDatePC</servlet-name>
+		<url-pattern>/AddBooking-GetDatePC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_51">
+		<servlet-name>AddBooking-GetDurationPC</servlet-name>
+		<url-pattern>/AddBooking-GetDurationPC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_4">
+		<servlet-name>AddBooking-GetNoPersonPC</servlet-name>
+		<url-pattern>/AddBooking-GetNoPersonPC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_44">
+		<servlet-name>AddBooking-BookingDetailsAcmt</servlet-name>
+		<url-pattern>/AddBooking-BookingDetailsAcmt</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_29">
+		<servlet-name>AddBooking-GetTimePC</servlet-name>
+		<url-pattern>/AddBooking-GetTimePC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_BookingDetails_16">
+		<servlet-name>BookingDetails-Return</servlet-name>
+		<url-pattern>/BookingDetails-Return</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_BookingDetails_1">
+		<servlet-name>BookingDetails-Begin</servlet-name>
+		<url-pattern>/BookingDetails-Begin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_BookingDetails_4">
+		<servlet-name>BookingDetails-BookingAcmt</servlet-name>
+		<url-pattern>/BookingDetails-BookingAcmt</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingDetails_1">
+		<servlet-name>GetBookingDetails-Begin</servlet-name>
+		<url-pattern>/GetBookingDetails-Begin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingDetails_49">
+		<servlet-name>GetBookingDetails-Return</servlet-name>
+		<url-pattern>/GetBookingDetails-Return</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingDetails_18">
+		<servlet-name>GetBookingDetails-GetDatePC</servlet-name>
+		<url-pattern>/GetBookingDetails-GetDatePC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingDetails_51">
+		<servlet-name>GetBookingDetails-GetDurationPC</servlet-name>
+		<url-pattern>/GetBookingDetails-GetDurationPC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingDetails_4">
+		<servlet-name>GetBookingDetails-GetNoPersonPC</servlet-name>
+		<url-pattern>/GetBookingDetails-GetNoPersonPC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingDetails_44">
+		<servlet-name>GetBookingDetails-BookingDetailsAcmt</servlet-name>
+		<url-pattern>/GetBookingDetails-BookingDetailsAcmt</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingDetails_29">
+		<servlet-name>GetBookingDetails-GetTimePC</servlet-name>
+		<url-pattern>/GetBookingDetails-GetTimePC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_1">
+		<servlet-name>GetBookingNo-Begin</servlet-name>
+		<url-pattern>/GetBookingNo-Begin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_4">
+		<servlet-name>GetBookingNo-GetBookingNoPC</servlet-name>
+		<url-pattern>/GetBookingNo-GetBookingNoPC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_17">
+		<servlet-name>GetBookingNo-CorrectBkNo</servlet-name>
+		<url-pattern>/GetBookingNo-CorrectBkNo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_306">
+		<servlet-name>GetEditNoPC</servlet-name>
+		<url-pattern>/GetEditNoPC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_311">
+		<servlet-name>GetCancelNoPC</servlet-name>
+		<url-pattern>/GetCancelNoPC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_317">
+		<servlet-name>DeleteBkFromDB</servlet-name>
+		<url-pattern>/DeleteBkFromDB</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_331">
+		<servlet-name>CancelBookingSuccess</servlet-name>
+		<url-pattern>/CancelBookingSuccess</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_340">
+		<servlet-name>BookingCancelFailed</servlet-name>
+		<url-pattern>/BookingCancelFailed</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_123">
+		<servlet-name>AddBooking-UploadDB</servlet-name>
+		<url-pattern>/AddBooking-UploadDB</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_152">
+		<servlet-name>AddBooking-GetConfirmOrNot</servlet-name>
+		<url-pattern>/AddBooking-GetConfirmOrNot</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_165">
+		<servlet-name>AddBooking-BookingConfirm</servlet-name>
+		<url-pattern>/AddBooking-BookingConfirm</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_199">
+		<servlet-name>AddBooking-BookingCancel</servlet-name>
+		<url-pattern>/AddBooking-BookingCancel</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_221">
+		<servlet-name>AddBooking-ValidateDate</servlet-name>
+		<url-pattern>/AddBooking-ValidateDate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_226">
+		<servlet-name>AddBooking-DateValidater</servlet-name>
+		<url-pattern>/AddBooking-DateValidater</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_371">
+		<servlet-name>Disconnect</servlet-name>
+		<url-pattern>/Disconnect</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_256">
+		<servlet-name>AddBooking-WrongDateFormat</servlet-name>
+		<url-pattern>/AddBooking-WrongDateFormat</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_274">
+		<servlet-name>AddBooking-ValidateTime</servlet-name>
+		<url-pattern>/AddBooking-ValidateTime</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_278">
+		<servlet-name>AddBooking-dateValidator</servlet-name>
+		<url-pattern>/AddBooking-dateValidator</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_290">
+		<servlet-name>AddBooking-WrongTimeAcmt</servlet-name>
+		<url-pattern>/AddBooking-WrongTimeAcmt</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_426">
+		<servlet-name>HangupNode</servlet-name>
+		<url-pattern>/HangupNode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_430">
+		<servlet-name>RuntimeNode</servlet-name>
+		<url-pattern>/RuntimeNode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_434">
+		<servlet-name>TransferNode</servlet-name>
+		<url-pattern>/TransferNode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_438">
+		<servlet-name>ErrorNode</servlet-name>
+		<url-pattern>/ErrorNode</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_NoMatchCalc_1">
+		<servlet-name>NoMatchCalc-Begin</servlet-name>
+		<url-pattern>/NoMatchCalc-Begin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_NoMatchCalc_4">
+		<servlet-name>NoMatchCalc-CheckAttempt</servlet-name>
+		<url-pattern>/NoMatchCalc-CheckAttempt</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_526">
+		<servlet-name>WaitingToTransferCall</servlet-name>
+		<url-pattern>/WaitingToTransferCall</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_343">
+		<servlet-name>AddBooking-MoreAtmtEnd</servlet-name>
+		<url-pattern>/AddBooking-MoreAtmtEnd</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping id="SAGE-callflow-servletmapping_main_673">
+		<servlet-name>BadFetchNode</servlet-name>
+		<url-pattern>/BadFetchNode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_475">
+		<servlet-name>AddBooking-MoreAtmtExitAcmt</servlet-name>
+		<url-pattern>/AddBooking-MoreAtmtExitAcmt</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_44">
+		<servlet-name>GetBookingNo-CheckBookingNoDB</servlet-name>
+		<url-pattern>/GetBookingNo-CheckBookingNoDB</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_483">
+		<servlet-name>AddBooking-GenerateBookingNo</servlet-name>
+		<url-pattern>/AddBooking-GenerateBookingNo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_51">
+		<servlet-name>GetBookingNo-atmtEnd</servlet-name>
+		<url-pattern>/GetBookingNo-atmtEnd</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_69">
+		<servlet-name>GetBookingNo-atmtEndAcmt</servlet-name>
+		<url-pattern>/GetBookingNo-atmtEndAcmt</url-pattern>
+	</servlet-mapping>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</web-app>
