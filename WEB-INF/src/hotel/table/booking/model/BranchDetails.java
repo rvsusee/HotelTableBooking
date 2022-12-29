@@ -3,33 +3,33 @@ package hotel.table.booking.model;
 import java.util.ArrayList;
 
 public class BranchDetails {
-	private int branchID;
-	private int branchName;
-	private int branchAddress;
+	private int branchId;
+	private String branchName;
+	private String branchAddress;
 	ArrayList<TableDetails> tableDetails = new ArrayList<TableDetails>();
 	
-	public BranchDetails(int branchID, int branchName, int branchAddress, ArrayList<TableDetails> tableDetails) {
-		this.branchID = branchID;
+	public BranchDetails(int branchId, String branchName, String branchAddress, ArrayList<TableDetails> tableDetails) {
+		this.branchId = branchId;
 		this.branchName = branchName;
 		this.branchAddress = branchAddress;
 		this.tableDetails = tableDetails;
 	}
-	public int getBranchID() {
-		return branchID;
+	public int getBranchId() {
+		return branchId;
 	}
-	public void setBranchID(int branchID) {
-		this.branchID = branchID;
+	public void setBranchId(int branchId) {
+		this.branchId = branchId;
 	}
-	public int getBranchName() {
+	public String getBranchName() {
 		return branchName;
 	}
-	public void setBranchName(int branchName) {
+	public void setBranchName(String branchName) {
 		this.branchName = branchName;
 	}
-	public int getBranchAddress() {
+	public String getBranchAddress() {
 		return branchAddress;
 	}
-	public void setBranchAddress(int branchAddress) {
+	public void setBranchAddress(String branchAddress) {
 		this.branchAddress = branchAddress;
 	}
 	public ArrayList<TableDetails> getTableDetails() {
@@ -38,11 +38,7 @@ public class BranchDetails {
 	public void setTableDetails(ArrayList<TableDetails> tableDetails) {
 		this.tableDetails = tableDetails;
 	}
-	@Override
-	public String toString() {
-		return "BranchDetails [branchID=" + branchID + ", branchName=" + branchName + ", branchAddress=" + branchAddress
-				+ ", tableDetails=" + tableDetails + "]";
-	}
+	
 	
 	
 }
