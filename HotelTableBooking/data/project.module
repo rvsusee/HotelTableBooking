@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<module category="" descriptorversion="1.0" entrypoint="HotelTableBooking/Start" forcesubdialogcall="false" frameworkversion="08.11.08.01" iconlarge="icons/defaultapplicationlg.gif" iconsmall="icons/defaultapplicationsm.gif" modifyInputs="false" modifyOutputs="false" nature="com.avaya.sce.core.speechnature" outputmultipart="false" paramasnamelist="false" provider="" submitmethod="get" version="1.0.0" webname="HotelTableBooking">
-    <description/>
-    <input defaultvalue="8838930954" description="" name="userDetails:mobileNo" varreftypesimple="true"/>
-    <language name="english" root="en-us"/>
-    <dependencies/>
-</module>
