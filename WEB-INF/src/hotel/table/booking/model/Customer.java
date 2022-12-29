@@ -1,12 +1,12 @@
 package hotel.table.booking.model;
 
-public class CustomerDetails {
+public class Customer {
 	private int customerId;
 	private String customerName;
 	private int customerMobileNo;
 	private String customerEmailId;
 
-	public CustomerDetails(int customerId, String customerName, int customerMobileNo, String customerEmailId) {
+	public Customer(int customerId, String customerName, int customerMobileNo, String customerEmailId) {
 		this.customerId = customerId;
 		this.customerName = customerName;
 		this.customerMobileNo = customerMobileNo;

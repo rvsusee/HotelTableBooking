@@ -421,10 +421,7 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_673">
-        <servlet-name>BadFetchNode</servlet-name>
-        <servlet-class>flow.BadFetchNode</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_AddBooking_475">
         <servlet-name>AddBooking-MoreAtmtExitAcmt</servlet-name>
         <servlet-class>flow.subflow.AddBooking.MoreAtmtExitAcmt</servlet-class>
@@ -445,6 +442,10 @@ Copyright 2004-2021 Avaya Inc.
     <servlet id="SAGE-callflow-servlet_GetBookingNo_69">
         <servlet-name>GetBookingNo-atmtEndAcmt</servlet-name>
         <servlet-class>flow.subflow.GetBookingNo.atmtEndAcmt</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_700">
+        <servlet-name>BadFetchNode</servlet-name>
+        <servlet-class>flow.BadFetchNode</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -762,10 +763,7 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_673">
-        <servlet-name>BadFetchNode</servlet-name>
-        <url-pattern>/BadFetchNode</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_475">
         <servlet-name>AddBooking-MoreAtmtExitAcmt</servlet-name>
         <url-pattern>/AddBooking-MoreAtmtExitAcmt</url-pattern>
@@ -785,6 +783,10 @@ Copyright 2004-2021 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_GetBookingNo_69">
         <servlet-name>GetBookingNo-atmtEndAcmt</servlet-name>
         <url-pattern>/GetBookingNo-atmtEndAcmt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_700">
+        <servlet-name>BadFetchNode</servlet-name>
+        <url-pattern>/BadFetchNode</url-pattern>
     </servlet-mapping>
     
     

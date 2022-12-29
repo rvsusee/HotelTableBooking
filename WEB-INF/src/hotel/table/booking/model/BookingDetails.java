@@ -1,22 +1,22 @@
+
 package hotel.table.booking.model;
 
-import java.sql.Timestamp;
 import java.util.Date;
 
 public class BookingDetails {
 	private int bookingId;
-	private int customerId;
+	private Customer customer;
 	private int bookingPersonCount;
 	private Date bookingDateTime;
-	private Timestamp bookingLog;
+	private Date bookingOn;
 
-	public BookingDetails(int bookingId, int customerId, int bookingPersonCount, Date bookingDateTime,
-			Timestamp bookingLog) {
+	public BookingDetails(int bookingId, Customer customer, int bookingPersonCount, Date bookingDateTime,
+			Date bookingOn) {
 		this.bookingId = bookingId;
-		this.customerId = customerId;
+		this.customer = customer;
 		this.bookingPersonCount = bookingPersonCount;
 		this.bookingDateTime = bookingDateTime;
-		this.bookingLog = bookingLog;
+		this.bookingOn = bookingOn;
 	}
 
 	public int getBookingId() {
@@ -27,12 +27,12 @@ public class BookingDetails {
 		this.bookingId = bookingId;
 	}
 
-	public int getCustomerId() {
-		return customerId;
+	public Customer getcustomer() {
+		return customer;
 	}
 
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
+	public void setcustomer(Customer customer) {
+		this.customer = customer;
 	}
 
 	public int getBookingPersonCount() {
@@ -51,12 +51,12 @@ public class BookingDetails {
 		this.bookingDateTime = bookingDateTime;
 	}
 
-	public Timestamp getBookingLog() {
-		return bookingLog;
+	public Date getbookingOn() {
+		return bookingOn;
 	}
 
-	public void setBookingLog(Timestamp bookingLog) {
-		this.bookingLog = bookingLog;
+	public void setbookingOn(Date bookingOn) {
+		this.bookingOn = bookingOn;
 	}
 
 }
