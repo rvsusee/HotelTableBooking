@@ -3,47 +3,47 @@ package hotel.table.booking.model;
 import java.util.ArrayList;
 
 public class BranchDetails {
-	private int branchId;
-	private String branchName;
-	private String branchAddress;
-	ArrayList<TableDetails> tableDetails = new ArrayList<TableDetails>();
+	private int id;
+	private String name;
+	private String address;
+	ArrayList<TableDetails> tablesList;
 
-	public BranchDetails(int branchId, String branchName, String branchAddress, ArrayList<TableDetails> tableDetails) {
-		this.branchId = branchId;
-		this.branchName = branchName;
-		this.branchAddress = branchAddress;
-		this.tableDetails = tableDetails;
+	public BranchDetails(int id, String name, String address, ArrayList<TableDetails> tablesList) {
+		this.id = id;
+		this.name = name;
+		this.address = address;
+		this.tablesList = tablesList;
 	}
 
-	public int getBranchId() {
-		return branchId;
+	public int getId() {
+		return id;
 	}
 
-	public void setBranchId(int branchId) {
-		this.branchId = branchId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public String getBranchName() {
-		return branchName;
+	public String getName() {
+		return name;
 	}
 
-	public void setBranchName(String branchName) {
-		this.branchName = branchName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getBranchAddress() {
-		return branchAddress;
+	public String getAddress() {
+		return address;
 	}
 
-	public void setBranchAddress(String branchAddress) {
-		this.branchAddress = branchAddress;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
-	public ArrayList<TableDetails> getTableDetails() {
-		return tableDetails;
+	public ArrayList<TableDetails> getTablesList() {
+		return tablesList;
 	}
 
-	public void setTableDetails(ArrayList<TableDetails> tableDetails) {
-		this.tableDetails = tableDetails;
+	public void setTablesList(ArrayList<TableDetails> tablesList) {
+		this.tablesList = tablesList;
 	}
 }

@@ -2,6 +2,7 @@ package hotel.table.booking.model;
 
 public class TableDetails {
 	private int tableId;
+	private BranchDetails branchDetails;
 	private int tableSize;
 
 	public TableDetails(int tableId, int tableSize) {

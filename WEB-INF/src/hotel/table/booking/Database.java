@@ -26,7 +26,6 @@ final public class Database {
 	private Statement stmt;
 
 	public Database(SCESession mySession) {
-
 		this.mySession = mySession;
 		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Get DB Details from Properties file ", mySession);
 		try {
@@ -37,7 +36,7 @@ final public class Database {
 			properties.load(fileInput);
 			DBUrl = properties.getProperty("database.url");
 			DBDriver = properties.getProperty("database.driverClassName");
-			DBUserName = properties.getProperty("database.usernames");
+			DBUserName = properties.getProperty("database.username");
 			DBPassword = properties.getProperty("database.password");
 			fileInput.close();
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Properties Access Successfully", mySession);
@@ -54,13 +53,12 @@ final public class Database {
 		}
 	}
 
-	private boolean DBCOnnect() {
+	private boolean createConnect() {
 		try {
 			Class.forName(DBDriver);
 			conn = DriverManager.getConnection(DBUrl, DBUserName, DBPassword);
 			stmt = conn.createStatement();
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Database accessed succesfully", mySession);
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Statement Created", mySession);
 			return true;
 		} catch (SQLException e) {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Database Connection Failed" + e.getMessage(), mySession);
@@ -72,8 +70,23 @@ final public class Database {
 		}
 	}
 
-	public boolean inSertDB(String insertQuery) {
+	public boolean status() {
+		try {
+			if (!conn.isClosed()) {
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Already Established", mySession);
+				return true;
+			} else {
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Already Closed", mySession);
+				return false;
+			}
 
+		} catch (SQLException e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Database Status Not Found" + e.toString(), mySession);
+		}
 		return false;
+	}
+
+	public Statement getStatement() {
+		return stmt;
 	}
 }

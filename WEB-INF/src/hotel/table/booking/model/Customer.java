@@ -1,48 +1,48 @@
 package hotel.table.booking.model;
 
 public class Customer {
-	private int customerId;
-	private String customerName;
-	private int customerMobileNo;
-	private String customerEmailId;
+	private int id;
+	private String name;
+	private int mobileNumber;
+	private String emailId;
 
-	public Customer(int customerId, String customerName, int customerMobileNo, String customerEmailId) {
-		this.customerId = customerId;
-		this.customerName = customerName;
-		this.customerMobileNo = customerMobileNo;
-		this.customerEmailId = customerEmailId;
+	public Customer(int id, String name, int mobileNumber, String emailId) {
+		this.id = id;
+		this.name = name;
+		this.mobileNumber = mobileNumber;
+		this.emailId = emailId;
 	}
 
-	public int getcustomerId() {
-		return customerId;
+	public int getId() {
+		return id;
 	}
 
-	public void setcustomerId(int customerId) {
-		this.customerId = customerId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public String getcustomerName() {
-		return customerName;
+	public String getName() {
+		return name;
 	}
 
-	public void setcustomerName(String customerName) {
-		this.customerName = customerName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public int getcustomerMobileNo() {
-		return customerMobileNo;
+	public int getMobileNumber() {
+		return mobileNumber;
 	}
 
-	public void setcustomerMobileNo(int customerMobileNo) {
-		this.customerMobileNo = customerMobileNo;
+	public void setMobileNumber(int mobileNumber) {
+		this.mobileNumber = mobileNumber;
 	}
 
-	public String getcustomerEmailId() {
-		return customerEmailId;
+	public String getEmailId() {
+		return emailId;
 	}
 
-	public void setcustomerEmailId(String customerEmailId) {
-		this.customerEmailId = customerEmailId;
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
 	}
 
 }
