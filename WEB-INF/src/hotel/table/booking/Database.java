@@ -21,12 +21,23 @@ final public class Database {
 	private String DBDriver;
 	private String DBUserName;
 	private String DBPassword;
-	private Connection conn;
+	private static Connection conn = null;
 	private SCESession mySession;
 	private Statement stmt;
 
 	public Database(SCESession mySession) {
 		this.mySession = mySession;
+		if (!status()) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "DB Connection Not Found", mySession);
+			if(getValueFromPropertyFile()) {
+				createDBConnection();
+			}
+		} else {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "DB Connection Already Established", mySession);
+		}
+	}
+
+	private boolean getValueFromPropertyFile() {
 		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Get DB Details from Properties file ", mySession);
 		try {
 			dbPropertyFile = new File(FILEPATH);
@@ -43,17 +54,19 @@ final public class Database {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO,
 					"\nDatas : " + DBUrl + " " + DBDriver + " " + DBUserName + " " + DBPassword, mySession);
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Properties File Closed", mySession);
-
 		} catch (FileNotFoundException e) {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR,
 					"Unable to Access Property file : FileNotFound" + e.getMessage(), mySession);
+			return false;
 		} catch (IOException e) {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Property File: IOException" + e.getMessage(), mySession);
 			e.printStackTrace();
+			return false;
 		}
+		return true;
 	}
 
-	private boolean createConnect() {
+	private boolean createDBConnection() {
 		try {
 			Class.forName(DBDriver);
 			conn = DriverManager.getConnection(DBUrl, DBUserName, DBPassword);
@@ -72,16 +85,16 @@ final public class Database {
 
 	public boolean status() {
 		try {
-			if (!conn.isClosed()) {
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Already Established", mySession);
-				return true;
-			} else {
+			if (conn.equals(null)) {
 				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Already Closed", mySession);
 				return false;
+			} else {
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Already Established", mySession);
+				return true;
 			}
 
-		} catch (SQLException e) {
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Database Status Not Found" + e.toString(), mySession);
+		} catch (Exception e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Database Status Not Found" + e.getMessage(), mySession);
 		}
 		return false;
 	}
