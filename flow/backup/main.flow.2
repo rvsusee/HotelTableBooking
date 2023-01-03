@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="714" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="719" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="-389"/>
@@ -83,7 +83,7 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="5" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="-213"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="-282"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="391"/>
                 <Property name="Name" value="WelcomeAcmt"/>
@@ -1018,6 +1018,7 @@
                 <TargetNode id="25"/>
                 <Property name="Connection.SourceObjectID" value="8"/>
                 <Property name="Connection.TargetObjectID" value="25"/>
+                <Bendpoint x="-80" y="373"/>
             </NodeConnection>
             <NodeConnection id="503" version="1.2">
                 <SourceNode id="1"/>
@@ -1191,6 +1192,9 @@
             </EventType>
             <EventType class="com.avaya.sce.callflow.internal.event.EventType" id="576" version="1.2">
                 <Property name="Name" value="java.lang.ClassNotFoundException"/>
+            </EventType>
+            <EventType class="com.avaya.sce.callflow.internal.event.EventType" id="715" version="1.2">
+                <Property name="Name" value="java.lang.NullPointerException"/>
             </EventType>
         </ProjectEventTypes>
     </ApplicationFlow>

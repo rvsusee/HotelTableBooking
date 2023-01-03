@@ -22,15 +22,17 @@ final public class Database {
 	private String DBUserName;
 	private String DBPassword;
 	private static Connection conn = null;
-	private SCESession mySession;
 	private Statement stmt;
+	private SCESession mySession;
 
 	public Database(SCESession mySession) {
 		this.mySession = mySession;
 		if (!status()) {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "DB Connection Not Found", mySession);
-			if(getValueFromPropertyFile()) {
+			if (getValueFromPropertyFile()) {
 				createDBConnection();
+			} else {
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Unable to Fetch Property File", mySession);
 			}
 		} else {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "DB Connection Already Established", mySession);
@@ -54,16 +56,18 @@ final public class Database {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO,
 					"\nDatas : " + DBUrl + " " + DBDriver + " " + DBUserName + " " + DBPassword, mySession);
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Properties File Closed", mySession);
+			return true;
 		} catch (FileNotFoundException e) {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR,
 					"Unable to Access Property file : FileNotFound" + e.getMessage(), mySession);
 			return false;
 		} catch (IOException e) {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Property File: IOException" + e.getMessage(), mySession);
-			e.printStackTrace();
+			return false;
+		} catch (Exception e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Property File: Exception" + e.getMessage(), mySession);
 			return false;
 		}
-		return true;
 	}
 
 	private boolean createDBConnection() {
@@ -85,7 +89,7 @@ final public class Database {
 
 	public boolean status() {
 		try {
-			if (conn.equals(null)) {
+			if (null == conn) {
 				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Already Closed", mySession);
 				return false;
 			} else {
