@@ -53,10 +53,8 @@ public class ValidateDate extends com.avaya.sce.runtime.BasicServlet {
 			mySession.getVariableField(IProjectVariables.BOOKING_DETAILS,IProjectVariables.BOOKING_DETAILS_FIELD_DATE_VALIDATION).setValue("yes");
 		}catch (Exception e) {
 			mySession.getVariableField(IProjectVariables.BOOKING_DETAILS,IProjectVariables.BOOKING_DETAILS_FIELD_DATE_VALIDATION).setValue("no");
-			// TODO: handle exception
 		}
 		
-		// TODO: Add your code here!
 
 	}
 	/**
