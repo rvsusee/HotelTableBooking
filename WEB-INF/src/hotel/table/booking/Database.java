@@ -28,22 +28,22 @@ final public class Database {
 	public Database(SCESession mySession) {
 		this.mySession = mySession;
 		if (!status()) {
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "DB Connection Not Found", mySession);
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "DB Connection Not Found", mySession);
 			if (getValueFromPropertyFile()) {
 				createDBConnection();
 			} else {
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Unable to Fetch Property File", mySession);
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Unable to Fetch Property File", mySession);
 			}
 		} else {
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "DB Connection Already Established", mySession);
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "DB Connection Already Established", mySession);
 		}
 	}
 
 	private boolean getValueFromPropertyFile() {
-		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Get DB Details from Properties file ", mySession);
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Get DB Details from Properties file ", mySession);
 		try {
 			dbPropertyFile = new File(FILEPATH);
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Properties file found", mySession);
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Properties file found", mySession);
 			FileInputStream fileInput = new FileInputStream(dbPropertyFile);
 			Properties properties = new Properties();
 			properties.load(fileInput);
@@ -52,7 +52,7 @@ final public class Database {
 			DBUserName = properties.getProperty("database.username");
 			DBPassword = properties.getProperty("database.password");
 			fileInput.close();
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Properties Access Successfully", mySession);
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Properties Access Successfully", mySession);
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO,
 					"\nDatas : " + DBUrl + " " + DBDriver + " " + DBUserName + " " + DBPassword, mySession);
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Properties File Closed", mySession);
@@ -90,10 +90,10 @@ final public class Database {
 	public boolean status() {
 		try {
 			if (null == conn) {
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Already Closed", mySession);
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Connection Already Closed", mySession);
 				return false;
 			} else {
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Already Established", mySession);
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Connection Already Established", mySession);
 				return true;
 			}
 
