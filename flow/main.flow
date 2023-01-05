@@ -831,7 +831,8 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="325" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="Equal"/>
-                                <Property name="LeftOperandID" value="BookingIsFound"/>
+                                <Property name="LeftOperandID" value="validation"/>
+                                <Property name="LeftOperandFieldID" value="isValidBookingNo"/>
                                 <Property name="RightConstOperand" value="true"/>
                             </ItemProperties>
                             <ChildItems>

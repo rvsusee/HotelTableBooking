@@ -157,7 +157,7 @@
                             <ItemProperties>
                                 <Property name="Operator" value="Equal"/>
                                 <Property name="LeftOperandID" value="validation"/>
-                                <Property name="LeftOperandFieldID" value="CancelBookingValidation"/>
+                                <Property name="LeftOperandFieldID" value="attemptCount"/>
                                 <Property name="RightConstOperand" value="true"/>
                             </ItemProperties>
                             <ChildItems>
@@ -173,8 +173,8 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseIfCondition" id="57" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="GreaterThan"/>
-                                <Property name="LeftOperandID" value="attempt"/>
-                                <Property name="LeftOperandFieldID" value="CancelBookingAtmt"/>
+                                <Property name="LeftOperandID" value="validation"/>
+                                <Property name="LeftOperandFieldID" value="attemptCount"/>
                                 <Property name="RightConstOperand" value="3"/>
                             </ItemProperties>
                             <ChildItems>
@@ -192,8 +192,8 @@
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="62" version="1.2">
                                     <ItemProperties>
-                                        <Property name="destVarId" value="attempt"/>
-                                        <Property name="destFieldId" value="CancelBookingAtmt"/>
+                                        <Property name="destVarId" value="validation"/>
+                                        <Property name="destFieldId" value="attemptCount"/>
                                         <Property name="type" value="increment"/>
                                     </ItemProperties>
                                     <ChildItems/>

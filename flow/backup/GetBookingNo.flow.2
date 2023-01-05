@@ -30,8 +30,8 @@
                 <Property name="ReferencedNodeID" value="51"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="51" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="659"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="275"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="692"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="270"/>
                 <Property name="Name" value="atmtEnd"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="4" version="3.1">
@@ -108,9 +108,9 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="69" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="527"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="537"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="280"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="271"/>
                 <Property name="Name" value="atmtEndAcmt"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="70" version="1.2">
                     <ItemProperties/>
@@ -143,21 +143,11 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="50" version="1.2">
-                            <ItemProperties>
-                                <Property name="sourceFieldId" value="BookingNo"/>
-                                <Property name="destVarId" value="GetBookingNoPC"/>
-                                <Property name="sourceVarId" value="BookingDetails"/>
-                                <Property name="destFieldId" value="value"/>
-                                <Property name="type" value="assign"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="52" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="Equal"/>
                                 <Property name="LeftOperandID" value="validation"/>
-                                <Property name="LeftOperandFieldID" value="CancelBookingValidation"/>
+                                <Property name="LeftOperandFieldID" value="attemptCount"/>
                                 <Property name="RightConstOperand" value="true"/>
                             </ItemProperties>
                             <ChildItems>
@@ -173,8 +163,6 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseIfCondition" id="57" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="GreaterThan"/>
-                                <Property name="LeftOperandID" value="attempt"/>
-                                <Property name="LeftOperandFieldID" value="CancelBookingAtmt"/>
                                 <Property name="RightConstOperand" value="3"/>
                             </ItemProperties>
                             <ChildItems>
@@ -192,8 +180,6 @@
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="62" version="1.2">
                                     <ItemProperties>
-                                        <Property name="destVarId" value="attempt"/>
-                                        <Property name="destFieldId" value="CancelBookingAtmt"/>
                                         <Property name="type" value="increment"/>
                                     </ItemProperties>
                                     <ChildItems/>
@@ -211,8 +197,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="63" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="544"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="363"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="519"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="331"/>
                 <Property name="ReferencedNodeID" value="4"/>
             </FlowNode>
             <NodeConnection id="16" version="1.2">

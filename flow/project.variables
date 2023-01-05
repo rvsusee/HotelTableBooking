@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <projectvariables>
-    <variable factoryID="" name="attempt:CancelBookingAtmt" owner="" type="" value="1" version="1.0"/>
     <variable factoryID="" name="BookingDetails:BookingNo" owner="" type="" value="10304050" version="1.0"/>
     <variable factoryID="" name="BookingDetails:Date" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="BookingDetails:DateValidation" owner="" type="" value="no" version="1.0"/>
@@ -9,8 +8,6 @@
     <variable factoryID="" name="BookingDetails:Persons" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="BookingDetails:Time" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="BookingDetails:TimeValidation" owner="" type="" value="no" version="1.0"/>
-    <variable factoryID="" name="BookingIsFound" owner="" type="" value="false" version="1.0"/>
-    <variable factoryID="" name="BookingNoisFound" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="date:audio" owner="com.avaya.sce.core" type="com.avaya.sce.core.date" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>
@@ -1102,8 +1099,14 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="validation:CancelBookingValidation" owner="" type="" value="false" version="1.0"/>
-    <variable factoryID="" name="validation:deleteSuccess" owner="" type="" value="false" version="1.0"/>
+    <variable factoryID="" name="validation:attemptCount" owner="" type="" value="0" version="1.0"/>
+    <variable factoryID="" name="validation:isHaveLastBooking" owner="" type="" value="false" version="1.0"/>
+    <variable factoryID="" name="validation:isNoOfPerson" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="validation:isPastDate" owner="" type="" value="false" version="1.0"/>
+    <variable factoryID="" name="validation:isValidBookingNo" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="validation:isValidDate" owner="" type="" value="false" version="1.0"/>
+    <variable factoryID="" name="validation:isValidDateTime" owner="" type="" value="false" version="1.0"/>
+    <variable factoryID="" name="validation:isValidTime" owner="" type="" value="false" version="1.0"/>
     <variable factoryID="" name="WaitingToTransferCall" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.ui.blindTransfer" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
@@ -1112,5 +1115,4 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="WelcomeAudio" owner="" type="" value="C:/Users/User/Desktop/WelcomeAcmt.au" version="1.0"/>
 </projectvariables>

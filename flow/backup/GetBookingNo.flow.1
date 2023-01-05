@@ -157,7 +157,7 @@
                             <ItemProperties>
                                 <Property name="Operator" value="Equal"/>
                                 <Property name="LeftOperandID" value="validation"/>
-                                <Property name="LeftOperandFieldID" value="CancelBookingValidation"/>
+                                <Property name="LeftOperandFieldID" value="attemptCount"/>
                                 <Property name="RightConstOperand" value="true"/>
                             </ItemProperties>
                             <ChildItems>
@@ -173,8 +173,6 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseIfCondition" id="57" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="GreaterThan"/>
-                                <Property name="LeftOperandID" value="attempt"/>
-                                <Property name="LeftOperandFieldID" value="CancelBookingAtmt"/>
                                 <Property name="RightConstOperand" value="3"/>
                             </ItemProperties>
                             <ChildItems>
@@ -192,8 +190,6 @@
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="62" version="1.2">
                                     <ItemProperties>
-                                        <Property name="destVarId" value="attempt"/>
-                                        <Property name="destFieldId" value="CancelBookingAtmt"/>
                                         <Property name="type" value="increment"/>
                                     </ItemProperties>
                                     <ChildItems/>
@@ -211,8 +207,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="63" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="544"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="363"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="519"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="331"/>
                 <Property name="ReferencedNodeID" value="4"/>
             </FlowNode>
             <NodeConnection id="16" version="1.2">

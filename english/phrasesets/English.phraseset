@@ -423,4 +423,13 @@
         <comments/>
         <audiofile>WelcomeAnnouncement.au</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>PastDateAcmt</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PastDateAcmt.wav</audiofile>
+    </phrase>
 </phraseset>
