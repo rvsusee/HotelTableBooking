@@ -15,11 +15,9 @@ public class ConnectionPooling {
 				"jdbc:sqlserver://192.168.168.12:1433;databaseName=_Suseendhiran2022;encrypt=true;trustServerCertificate=true;");
 		dataSource.setUsername("NewJoinee2022");
 		dataSource.setPassword("P@ssw0rd");
-
 		dataSource.setMinIdle(5);
 		dataSource.setMaxIdle(10);
 		dataSource.setMaxTotal(25);
-
 		return dataSource;
 	}
 
