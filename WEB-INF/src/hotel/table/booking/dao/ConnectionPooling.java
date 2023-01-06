@@ -8,39 +8,49 @@ import java.sql.Statement;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 public class ConnectionPooling {
-	private static BasicDataSource dataSource = null;
-	static {
-		dataSource = new BasicDataSource();
+	public Statement statement;
+
+	public BasicDataSource getDataSource() {
+		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setUrl(
-				"jdbc:sqlserver://192.168.168.12:1433;databaseName=New_joinee_2022;encrypt=true;trustServerCertificate=true;");
+				"jdbc:sqlserver://192.168.168.12:1433;databaseName=_Suseendhiran2022;encrypt=true;trustServerCertificate=true;");
 		dataSource.setUsername("NewJoinee2022");
-		dataSource.setPassword("ssw0rd");
+		dataSource.setPassword("P@ssw0rd");
 
 		dataSource.setMinIdle(5);
 		dataSource.setMaxIdle(10);
 		dataSource.setMaxTotal(25);
 
+		return dataSource;
 	}
 
 	public static void main(String[] args) throws SQLException {
 		Connection connection = null;
 		Statement statement = null;
 		ResultSet resultSet = null;
+		BasicDataSource dataSource = null;
 		try {
+			dataSource = new ConnectionPooling().getDataSource();
 			connection = dataSource.getConnection();
 			statement = connection.createStatement();
-			resultSet = statement.executeQuery("select * from tblemployee");
+			resultSet = statement.executeQuery("select * from HOTEL_TABLE;");
 			while (resultSet.next()) {
-				System.out.println("empId:" + resultSet.getInt("empId"));
-				System.out.println("empName:" + resultSet.getString("empName"));
-				System.out.println("dob:" + resultSet.getDate("dob"));
-				System.out.println("designation:" + resultSet.getString("designation"));
+				System.out.println("id:" + resultSet.getInt("id"));
+				System.out.println("size:" + resultSet.getInt("size"));
+				System.out.println("branch_id:" + resultSet.getInt("branch_id"));
 			}
+		} catch (Exception e) {
+			System.out.println(e.toString());
 		} finally {
-
 			resultSet.close();
 			statement.close();
 			connection.close();
+			dataSource.close();
 		}
 	}
+
+	public Statement getStatement() {
+		return this.statement;
+	}
+
 }
