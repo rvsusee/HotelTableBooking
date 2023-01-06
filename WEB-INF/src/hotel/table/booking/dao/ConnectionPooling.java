@@ -8,7 +8,6 @@ import java.sql.Statement;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 public class ConnectionPooling {
-	public Statement statement;
 
 	public BasicDataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();
@@ -24,7 +23,7 @@ public class ConnectionPooling {
 		return dataSource;
 	}
 
-	public static void main(String[] args) throws SQLException {
+	public void uploadBooking(String query) throws SQLException {
 		Connection connection = null;
 		Statement statement = null;
 		ResultSet resultSet = null;
@@ -33,24 +32,13 @@ public class ConnectionPooling {
 			dataSource = new ConnectionPooling().getDataSource();
 			connection = dataSource.getConnection();
 			statement = connection.createStatement();
-			resultSet = statement.executeQuery("select * from HOTEL_TABLE;");
-			while (resultSet.next()) {
-				System.out.println("id:" + resultSet.getInt("id"));
-				System.out.println("size:" + resultSet.getInt("size"));
-				System.out.println("branch_id:" + resultSet.getInt("branch_id"));
-			}
+			statement.execute(query);
 		} catch (Exception e) {
 			System.out.println(e.toString());
 		} finally {
-			resultSet.close();
 			statement.close();
 			connection.close();
 			dataSource.close();
 		}
 	}
-
-	public Statement getStatement() {
-		return this.statement;
-	}
-
 }
