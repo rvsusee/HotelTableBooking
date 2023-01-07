@@ -2,7 +2,6 @@ package hotel.table.booking;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -29,8 +28,7 @@ public class DateTimeValidation {
 //		3	-> Future
 //		2	-> Today
 //		1	-> Past
-//		-1	-> Wrong
-//		-2	-> wrong date Format
+//		-1	-> wrong date Format
 		inputDate = convertDate(date, dateFormat);
 
 		if (inputDate != null) {
@@ -44,7 +42,7 @@ public class DateTimeValidation {
 				return -1;
 			}
 		} else {
-			return -2;
+			return -1;
 		}
 	}
 

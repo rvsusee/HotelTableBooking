@@ -688,15 +688,6 @@
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="521" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="destVarId" value="validation"/>
-                                        <Property name="destFieldId" value="isPastDate"/>
-                                        <Property name="type" value="assign"/>
-                                        <Property name="sourceConstant" value="false"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="502" version="1.2">
                                     <ItemProperties>
                                         <Property name="LinkedNodeID" value="522"/>
@@ -734,15 +725,6 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseCondition" id="507" version="1.2">
                             <ItemProperties/>
                             <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="510" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="destVarId" value="validation"/>
-                                        <Property name="destFieldId" value="isValidDate"/>
-                                        <Property name="type" value="assign"/>
-                                        <Property name="sourceConstant" value="false"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="517" version="1.2">
                                     <ItemProperties>
                                         <Property name="destVarId" value="validation"/>
