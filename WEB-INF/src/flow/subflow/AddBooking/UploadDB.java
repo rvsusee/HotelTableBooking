@@ -1,14 +1,12 @@
 package flow.subflow.AddBooking;
 
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import com.avaya.sce.runtime.tracking.TraceInfo;
 import com.avaya.sce.runtimecommon.ITraceInfo;
 import com.avaya.sce.runtimecommon.SCESession;
 
 import flow.IProjectVariables;
-import hotel.table.booking.Database;
 import hotel.table.booking.dao.ConnectionPooling;
 
 /**
@@ -101,7 +99,7 @@ public class UploadDB extends com.avaya.sce.runtime.Data {
 	@Override
 	public void requestBegin(SCESession mySession) {
 		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "GenerateBookingNo Data Node", mySession);
-		ConnectionPooling cp = new ConnectionPooling();
+		ConnectionPooling cp = new ConnectionPooling(mySession);
 
 		try {
 			cp.uploadBooking(queryGenerate(mySession));
@@ -155,8 +153,8 @@ public class UploadDB extends com.avaya.sce.runtime.Data {
 //				+ mobileNo + ", @noPerson = " + noPerson + ", @bkDate = " + bkDate + ", @bkTime = " + bkTime
 //				+ ", @bkDuration = " + bkDuration + ";";
 
-		return "INSERT INTO HOTEL_BOOKING_DETAILS(customer_id,person_count,date_time,booking_on,table_id) values(1000,"+noPerson+",CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,100)";
-
+		return "INSERT INTO HOTEL_BOOKING_DETAILS(customer_id,person_count,date_time,booking_on,table_id) values(1000,"
+				+ noPerson + ",CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,100)";
 
 	}
 }
