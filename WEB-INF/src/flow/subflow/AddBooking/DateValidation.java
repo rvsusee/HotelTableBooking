@@ -145,11 +145,11 @@ public class DateValidation extends com.avaya.sce.runtime.Data {
 				.getVariableField(IProjectVariables.GET_DATE_PC, IProjectVariables.GET_DATE_PC_FIELD_VALUE)
 				.getStringValue();
 
-		if (!userInputDate.contains("?")) {
+		DateTimeValidation dtv = new DateTimeValidation(mySession);
 
-			DateTimeValidation dtv = new DateTimeValidation(mySession);
+		int option = dtv.dateValidation(userInputDate, "yyyyMMdd");
 
-			int option = dtv.dateValidation(userInputDate, "yyyyMMdd");
+		if (!userInputDate.contains("?") && option == -1 && option == -2) {
 
 			if (option == 3 || option == 2) {
 				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "User Entered Valid Date Format", mySession);

@@ -34,11 +34,11 @@ public class DateTimeValidation {
 		inputDate = convertDate(date, dateFormat);
 
 		if (inputDate != null) {
-			if (isDateFuture(date, dateFormat))
+			if (isDateFuture(inputDate))
 				return 3;
-			else if (isDateToday(date, dateFormat))
+			else if (isDateToday(inputDate))
 				return 2;
-			else if (isDatePast(date, dateFormat)) {
+			else if (isDatePast(inputDate)) {
 				return 1;
 			} else {
 				return -1;
@@ -48,19 +48,16 @@ public class DateTimeValidation {
 		}
 	}
 
-	private boolean isDateFuture(final String date, final String dateFormat) {
-		inputDate = convertDate(date, dateFormat);
-		return inputDate != null ? inputDate.isAfter(localDate) : false;
+	private boolean isDateFuture(LocalDate inputDate) {
+		return inputDate.isAfter(localDate);
 	}
 
-	private boolean isDateToday(final String date, final String dateFormat) {
-		inputDate = convertDate(date, dateFormat);
-		return inputDate != null ? inputDate.isEqual(localDate) : false;
+	private boolean isDateToday(LocalDate inputDate) {
+		return inputDate.isEqual(localDate);
 	}
 
-	private boolean isDatePast(final String date, final String dateFormat) {
-		inputDate = convertDate(date, dateFormat);
-		return inputDate != null ? inputDate.isBefore(localDate) : false;
+	private boolean isDatePast(LocalDate inputDate) {
+		return inputDate.isBefore(localDate);
 	}
 
 	private LocalDate convertDate(String date, String dateFormat) {
