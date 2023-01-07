@@ -12,23 +12,6 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="English"/>
-                        <Property name="Phrase" value="BookingNoIs"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
-                    <Properties>
-                        <Property name="Field" value="BookingNo"/>
-                        <Property name="Valid" value="true"/>
-                        <Property name="format" value="digits"/>
-                        <Property name="Inflection" value="Crmm"/>
-                        <Property name="Name" value="BookingDetails"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
-                    <Properties>
-                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="NoOfPersonsIs"/>
                     </Properties>
                     <ChildItems/>
@@ -69,25 +52,6 @@
                         <Property name="Inflection" value="Crmm"/>
                         <Property name="Time Format" value="TH24M"/>
                         <Property name="Name" value="GetTimePC"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
-                    <Properties>
-                        <Property name="Phraseset" value="English"/>
-                        <Property name="Phrase" value="BookingDurationIs"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
-                    <Properties>
-                        <Property name="Field" value="value"/>
-                        <Property name="Valid" value="true"/>
-                        <Property name="format" value="number"/>
-                        <Property name="Time Format" value="THMAM"/>
-                        <Property name="Name" value="GetDurationPC"/>
-                        <Property name="Number Type" value="integer"/>
-                        <Property name="inflection" value="Nn"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

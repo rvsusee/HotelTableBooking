@@ -12,6 +12,23 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="English"/>
+                        <Property name="Phrase" value="BookingNoIs"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
+                    <Properties>
+                        <Property name="Field" value="BookingNo"/>
+                        <Property name="Valid" value="true"/>
+                        <Property name="format" value="digits"/>
+                        <Property name="Inflection" value="Crmm"/>
+                        <Property name="Name" value="BookingDetails"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="English"/>
                         <Property name="Phrase" value="BookingConfirmed"/>
                     </Properties>
                     <ChildItems/>

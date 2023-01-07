@@ -188,10 +188,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>AddBooking-GetDatePC</servlet-name>
         <servlet-class>flow.subflow.AddBooking.GetDatePC</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_51">
-        <servlet-name>AddBooking-GetDurationPC</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.GetDurationPC</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_AddBooking_4">
         <servlet-name>AddBooking-GetNoPersonPC</servlet-name>
         <servlet-class>flow.subflow.AddBooking.GetNoPersonPC</servlet-class>
@@ -300,34 +297,16 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.subflow.AddBooking.BookingCancel</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_AddBooking_221">
-        <servlet-name>AddBooking-ValidateDate</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.ValidateDate</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_226">
-        <servlet-name>AddBooking-DateValidater</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.DateValidater</servlet-class>
-    </servlet>
+    
+    
     <servlet id="SAGE-callflow-servlet_main_371">
         <servlet-name>Disconnect</servlet-name>
         <servlet-class>flow.Disconnect</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_256">
-        <servlet-name>AddBooking-WrongDateFormat</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.WrongDateFormat</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_274">
-        <servlet-name>AddBooking-ValidateTime</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.ValidateTime</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_278">
-        <servlet-name>AddBooking-dateValidator</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.dateValidator</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_AddBooking_290">
-        <servlet-name>AddBooking-WrongTimeAcmt</servlet-name>
-        <servlet-class>flow.subflow.AddBooking.WrongTimeAcmt</servlet-class>
-    </servlet>
+    
+    
+    
+    
     
     
     
@@ -453,6 +432,8 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>AddBooking-PastDateAcmt</servlet-name>
         <servlet-class>flow.subflow.AddBooking.PastDateAcmt</servlet-class>
     </servlet>
+    
+    
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -555,10 +536,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>AddBooking-GetDatePC</servlet-name>
         <url-pattern>/AddBooking-GetDatePC</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_51">
-        <servlet-name>AddBooking-GetDurationPC</servlet-name>
-        <url-pattern>/AddBooking-GetDurationPC</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_4">
         <servlet-name>AddBooking-GetNoPersonPC</servlet-name>
         <url-pattern>/AddBooking-GetNoPersonPC</url-pattern>
@@ -662,34 +640,16 @@ Copyright 2004-2021 Avaya Inc.
         <url-pattern>/AddBooking-BookingCancel</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_221">
-        <servlet-name>AddBooking-ValidateDate</servlet-name>
-        <url-pattern>/AddBooking-ValidateDate</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_226">
-        <servlet-name>AddBooking-DateValidater</servlet-name>
-        <url-pattern>/AddBooking-DateValidater</url-pattern>
-    </servlet-mapping>
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_371">
         <servlet-name>Disconnect</servlet-name>
         <url-pattern>/Disconnect</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_256">
-        <servlet-name>AddBooking-WrongDateFormat</servlet-name>
-        <url-pattern>/AddBooking-WrongDateFormat</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_274">
-        <servlet-name>AddBooking-ValidateTime</servlet-name>
-        <url-pattern>/AddBooking-ValidateTime</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_278">
-        <servlet-name>AddBooking-dateValidator</servlet-name>
-        <url-pattern>/AddBooking-dateValidator</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_AddBooking_290">
-        <servlet-name>AddBooking-WrongTimeAcmt</servlet-name>
-        <url-pattern>/AddBooking-WrongTimeAcmt</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
     
     <servlet-mapping id="SAGE-callflow-servletmapping_main_426">
         <servlet-name>HangupNode</servlet-name>
@@ -799,6 +759,8 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>AddBooking-PastDateAcmt</servlet-name>
         <url-pattern>/AddBooking-PastDateAcmt</url-pattern>
     </servlet-mapping>
+    
+    
     
     
     

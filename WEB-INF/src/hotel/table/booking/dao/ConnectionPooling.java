@@ -21,6 +21,7 @@ public class ConnectionPooling {
 	private static String URL;
 	private static String USERNAME;
 	private static String PASSWORD;
+	private static String DRIVER;
 	private static boolean isAlreadyRead = false;
 	private SCESession mySession;
 
@@ -41,7 +42,7 @@ public class ConnectionPooling {
 		dataSource.setUrl(URL);
 		dataSource.setUsername(USERNAME);
 		dataSource.setPassword(PASSWORD);
-
+		dataSource.setDriverClassName(DRIVER);
 		dataSource.setMinIdle(5);
 		dataSource.setMaxIdle(10);
 		dataSource.setMaxTotal(25);
@@ -49,22 +50,54 @@ public class ConnectionPooling {
 	}
 
 	public void uploadBooking(String query) throws SQLException {
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Upload Booking " + query, mySession);
 		Connection connection = null;
 		Statement statement = null;
-		ResultSet resultSet = null;
 		BasicDataSource dataSource = null;
 		try {
 			dataSource = getDataSource();
 			connection = dataSource.getConnection();
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Created", mySession);
 			statement = connection.createStatement();
 			statement.execute(query);
 		} catch (Exception e) {
-			System.out.println(e.toString());
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Exception Occured" + e.toString(), mySession);
 		} finally {
-			statement.close();
-			connection.close();
-			dataSource.close();
+			try {
+				statement.close();
+				connection.close();
+				dataSource.close();
+			} catch (Exception e) {
+
+			}
 		}
+	}
+
+	public ResultSet getBookingDetails(String query) {
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Get Details From Database " + query, mySession);
+		Connection connection = null;
+		Statement statement = null;
+		ResultSet rs = null;
+		BasicDataSource dataSource = null;
+		try {
+			dataSource = getDataSource();
+			connection = dataSource.getConnection();
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Created", mySession);
+			statement = connection.createStatement();
+			rs = statement.executeQuery(query);
+
+		} catch (Exception e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Exception Occured" + e.toString(), mySession);
+		} finally {
+			try {
+				statement.close();
+				connection.close();
+				dataSource.close();
+			} catch (Exception e) {
+
+			}
+		}
+		return rs;
 	}
 
 	private boolean readPropertyFile() {
@@ -75,6 +108,7 @@ public class ConnectionPooling {
 			fileInput = new FileInputStream(file);
 			properties = new Properties();
 			properties.load(fileInput);
+			DRIVER = properties.getProperty("database.driverClassName");
 			URL = properties.getProperty("database.url");
 			USERNAME = properties.getProperty("database.username");
 			PASSWORD = properties.getProperty("database.password");

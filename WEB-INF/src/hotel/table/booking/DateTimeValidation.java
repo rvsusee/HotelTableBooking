@@ -13,7 +13,6 @@ import com.avaya.sce.runtimecommon.SCESession;
 public class DateTimeValidation {
 	LocalDate localDate;
 	LocalDate inputDate;
-
 	SCESession mySession;
 
 	public DateTimeValidation(SCESession mySession) {
@@ -67,7 +66,7 @@ public class DateTimeValidation {
 			dtf = DateTimeFormatter.ofPattern(dateFormat);
 			inputDate = LocalDate.parse(date, dtf);
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "User Entered Valid Date format", mySession);
-			return inputDate;
+			return localDate;
 		} catch (DateTimeParseException e) {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "DateTimeParseException Occured " + e.toString(), mySession);
 		} catch (DateTimeException e) {
@@ -75,4 +74,5 @@ public class DateTimeValidation {
 		}
 		return null;
 	}
+
 }

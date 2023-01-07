@@ -1,7 +1,7 @@
 
 package hotel.table.booking.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class BookingDetails {
 	private int id;
@@ -18,6 +18,21 @@ public class BookingDetails {
 		this.personCount = personCount;
 		this.dateTime = dateTime;
 		this.allocatedTable = allocatedTable;
+		this.bookingOn = bookingOn;
+	}
+
+	public BookingDetails(int id, int personCount, Date dateTime, TableDetails allocatedTable, Date bookingOn) {
+		this.id = id;
+		this.personCount = personCount;
+		this.dateTime = dateTime;
+		this.allocatedTable = allocatedTable;
+		this.bookingOn = bookingOn;
+	}
+
+	public BookingDetails(int id, int personCount, Date dateTime, Date bookingOn) {
+		this.id = id;
+		this.personCount = personCount;
+		this.dateTime = dateTime;
 		this.bookingOn = bookingOn;
 	}
 
