@@ -33,7 +33,7 @@ public class ConnectionPooling {
 			else
 				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "PropertyFile Failed", mySession);
 		} else {
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "DataBase values alread readed", mySession);
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "DataBase values alread readed from property file", mySession);
 		}
 	}
 
@@ -49,7 +49,7 @@ public class ConnectionPooling {
 		return dataSource;
 	}
 
-	public void uploadBooking(String query) throws SQLException {
+	public void uploadDetails(String query) throws SQLException {
 		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Upload Booking " + query, mySession);
 		Connection connection = null;
 		Statement statement = null;
@@ -68,7 +68,6 @@ public class ConnectionPooling {
 				connection.close();
 				dataSource.close();
 			} catch (Exception e) {
-
 			}
 		}
 	}
@@ -99,7 +98,8 @@ public class ConnectionPooling {
 		}
 		return rs;
 	}
-
+	
+	
 	private boolean readPropertyFile() {
 		File file = new File("D:\\AVAYA Project\\HotelTableBooking\\data\\Database.properties");
 		FileInputStream fileInput = null;
@@ -124,7 +124,7 @@ public class ConnectionPooling {
 			fileInput.close();
 		} catch (IOException e) {
 		}
-		isAlreadyRead = false;
+		isAlreadyRead = true;
 		return false;
 	}
 

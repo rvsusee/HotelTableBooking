@@ -1,10 +1,14 @@
 package hotel.table.booking;
 
+import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.util.Date;
 
 import com.avaya.sce.runtime.tracking.TraceInfo;
 import com.avaya.sce.runtimecommon.ITraceInfo;
@@ -75,4 +79,34 @@ public class DateTimeValidation {
 		return null;
 	}
 
+	public long getDuration(String start_date, String end_date) {
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Duration Calculation", mySession);
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+		try {
+			Date startDate = sdf.parse(start_date);
+			Date endDate = sdf.parse(end_date);
+			long difference_In_Time = endDate.getTime() - startDate.getTime();
+			long difference_In_Seconds = (difference_In_Time / 1000) % 60;
+			System.out.print("Difference " + "between two dates is: ");
+			return difference_In_Seconds;
+		}
+		// Catch the Exception
+		catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
+
+	public static java.sql.Timestamp convertSqlDate(String strDate) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Date date = null;
+		try {
+			date = sdf.parse(strDate);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		long millis = date.getTime();
+		java.sql.Timestamp ts = new Timestamp(millis);
+		return ts;
+	}
 }
