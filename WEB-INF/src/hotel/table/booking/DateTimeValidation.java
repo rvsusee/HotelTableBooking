@@ -87,23 +87,20 @@ public class DateTimeValidation {
 			Date endDate = sdf.parse(end_date);
 			long difference_In_Time = endDate.getTime() - startDate.getTime();
 			long difference_In_Seconds = (difference_In_Time / 1000) % 60;
-			System.out.print("Difference " + "between two dates is: ");
 			return difference_In_Seconds;
-		}
-		// Catch the Exception
-		catch (ParseException e) {
-			e.printStackTrace();
+		} catch (ParseException e) {
 		}
 		return 0;
 	}
 
-	public static java.sql.Timestamp convertSqlDate(String strDate) {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	public java.sql.Timestamp convertSqlDate(String strDate) {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		Date date = null;
 		try {
 			date = sdf.parse(strDate);
 		} catch (ParseException e) {
-			e.printStackTrace();
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "ConcertSqlDate Exception Occured " + e.toString(),
+					mySession);
 		}
 		long millis = date.getTime();
 		java.sql.Timestamp ts = new Timestamp(millis);

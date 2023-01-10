@@ -50,7 +50,7 @@ public class ConnectionPooling {
 	}
 
 	public void uploadDetails(String query) throws SQLException {
-		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Upload Booking " + query, mySession);
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Add Details From Database" + query, mySession);
 		Connection connection = null;
 		Statement statement = null;
 		BasicDataSource dataSource = null;
@@ -60,8 +60,9 @@ public class ConnectionPooling {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Created", mySession);
 			statement = connection.createStatement();
 			statement.execute(query);
-		} catch (Exception e) {
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Exception Occured" + e.toString(), mySession);
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Query Executed Successfully", mySession);
+		} catch (SQLException e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "SQLException Occured" + e.toString(), mySession);
 		} finally {
 			try {
 				statement.close();
@@ -84,10 +85,12 @@ public class ConnectionPooling {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Connection Created", mySession);
 			statement = connection.createStatement();
 			rs = statement.executeQuery(query);
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Query Executed Successfully", mySession);
+		} catch (SQLException e) {
+			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "SQLException Occured" + e.toString(), mySession);
+		}
 
-		} catch (Exception e) {
-			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Exception Occured" + e.toString(), mySession);
-		} finally {
+		finally {
 			try {
 				statement.close();
 				connection.close();
@@ -98,8 +101,7 @@ public class ConnectionPooling {
 		}
 		return rs;
 	}
-	
-	
+
 	private boolean readPropertyFile() {
 		File file = new File("D:\\AVAYA Project\\HotelTableBooking\\data\\Database.properties");
 		FileInputStream fileInput = null;

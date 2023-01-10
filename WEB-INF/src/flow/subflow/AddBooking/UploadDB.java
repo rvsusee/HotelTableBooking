@@ -1,6 +1,5 @@
 package flow.subflow.AddBooking;
 
-import java.sql.Date;
 import java.sql.SQLException;
 
 import com.avaya.sce.runtime.tracking.TraceInfo;
