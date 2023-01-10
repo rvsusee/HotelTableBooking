@@ -29,9 +29,9 @@ public class ConnectionPooling {
 		this.mySession = mySession;
 		if (!isAlreadyRead) {
 			if (readPropertyFile())
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "PropertyFile Success", mySession);
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "PropertyFile-Read-Success", mySession);
 			else
-				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "PropertyFile Failed", mySession);
+				TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "PropertyFile-Read_Failed", mySession);
 		} else {
 			TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "DataBase values alread readed from property file", mySession);
 		}
