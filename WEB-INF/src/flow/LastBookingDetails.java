@@ -8,7 +8,7 @@ import com.avaya.sce.runtime.tracking.TraceInfo;
 import com.avaya.sce.runtimecommon.ITraceInfo;
 import com.avaya.sce.runtimecommon.SCESession;
 
-import hotel.table.booking.dao.ConnectionPooling;
+import hotel.table.booking.configuration.ConnectionPooling;
 
 /**
  * This servlet is used to forward the request to the entry point of a project

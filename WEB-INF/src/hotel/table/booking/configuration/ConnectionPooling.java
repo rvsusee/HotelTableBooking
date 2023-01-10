@@ -1,4 +1,4 @@
-package hotel.table.booking.dao;
+package hotel.table.booking.configuration;
 
 import java.io.File;
 import java.io.FileInputStream;

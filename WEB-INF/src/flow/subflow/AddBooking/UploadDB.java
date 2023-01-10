@@ -7,7 +7,7 @@ import com.avaya.sce.runtimecommon.ITraceInfo;
 import com.avaya.sce.runtimecommon.SCESession;
 
 import flow.IProjectVariables;
-import hotel.table.booking.dao.ConnectionPooling;
+import hotel.table.booking.configuration.ConnectionPooling;
 
 /**
  * The Data class handles many types of server-side operations including data
