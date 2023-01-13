@@ -23,6 +23,7 @@ public class ConnectionPooling {
 	private static String PASSWORD;
 	private static String DRIVER;
 	private static boolean isAlreadyRead = false;
+	private static BasicDataSource dataSource = null;
 	private SCESession mySession;
 
 	public ConnectionPooling(SCESession mySession) {
@@ -38,7 +39,7 @@ public class ConnectionPooling {
 	}
 
 	public BasicDataSource getDataSource() {
-		BasicDataSource dataSource = new BasicDataSource();
+		dataSource = new BasicDataSource();
 		dataSource.setUrl(URL);
 		dataSource.setUsername(USERNAME);
 		dataSource.setPassword(PASSWORD);
