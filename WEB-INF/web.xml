@@ -438,6 +438,10 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>UpdateSessionDetails</servlet-name>
         <servlet-class>flow.UpdateSessionDetails</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_733">
+        <servlet-name>CustomerVerification</servlet-name>
+        <servlet-class>flow.CustomerVerification</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -766,6 +770,10 @@ Copyright 2004-2021 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_725">
         <servlet-name>UpdateSessionDetails</servlet-name>
         <url-pattern>/UpdateSessionDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_733">
+        <servlet-name>CustomerVerification</servlet-name>
+        <url-pattern>/CustomerVerification</url-pattern>
     </servlet-mapping>
     
     

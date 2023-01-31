@@ -1,15 +1,26 @@
 package hotel.table.booking.model;
 
 public class Customer {
+
 	private int id;
 	private String name;
-	private int mobileNumber;
+	private long mobileNumber;
+	private String pin;
 	private String emailId;
 
-	public Customer(int id, String name, int mobileNumber, String emailId) {
+	public Customer() {
+	}
+
+	public Customer(long mobileNumber, String pin) {
+		this.mobileNumber = mobileNumber;
+		this.pin = pin;
+	}
+
+	public Customer(int id, String name, long mobileNumber, String pin, String emailId) {
 		this.id = id;
 		this.name = name;
 		this.mobileNumber = mobileNumber;
+		this.pin = pin;
 		this.emailId = emailId;
 	}
 
@@ -29,12 +40,20 @@ public class Customer {
 		this.name = name;
 	}
 
-	public int getMobileNumber() {
+	public long getMobileNumber() {
 		return mobileNumber;
 	}
 
-	public void setMobileNumber(int mobileNumber) {
+	public void setMobileNumber(long mobileNumber) {
 		this.mobileNumber = mobileNumber;
+	}
+
+	public String getPin() {
+		return pin;
+	}
+
+	public void setPin(String pin) {
+		this.pin = pin;
 	}
 
 	public String getEmailId() {
@@ -43,6 +62,12 @@ public class Customer {
 
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", mobileNumber=" + mobileNumber + ", pin=" + pin
+				+ ", emailId=" + emailId + "]";
 	}
 
 }

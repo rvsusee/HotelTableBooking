@@ -1,29 +1,33 @@
 package hotel.table.booking.model;
 
 public class TableDetails {
-	private int tableId;
-	private int tableSize;
-	private BranchDetails branchDetails;
 
-	public TableDetails(int tableId, int tableSize) {
-		this.tableId = tableId;
-		this.tableSize = tableSize;
+	private int id;
+
+	private int size;
+
+	public TableDetails() {
 	}
 
-	public int getTableId() {
-		return tableId;
+	public TableDetails(int id, int size) {
+		this.id = id;
+		this.size = size;
 	}
 
-	public void setTableId(int tableId) {
-		this.tableId = tableId;
+	public int getId() {
+		return id;
 	}
 
-	public int getTableSize() {
-		return tableSize;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public void setTableSize(int tableSize) {
-		this.tableSize = tableSize;
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
 	}
 
 }

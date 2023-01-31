@@ -1,14 +1,20 @@
 
 package hotel.table.booking.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class BookingDetails {
+
 	private int id;
+
 	private Customer customer;
+
 	private int personCount;
+
 	private Date dateTime;
+
 	private TableDetails allocatedTable;
+
 	private Date bookingOn;
 
 	public BookingDetails(int id, Customer customer, int personCount, Date dateTime, TableDetails allocatedTable,
@@ -21,19 +27,7 @@ public class BookingDetails {
 		this.bookingOn = bookingOn;
 	}
 
-	public BookingDetails(int id, int personCount, Date dateTime, TableDetails allocatedTable, Date bookingOn) {
-		this.id = id;
-		this.personCount = personCount;
-		this.dateTime = dateTime;
-		this.allocatedTable = allocatedTable;
-		this.bookingOn = bookingOn;
-	}
-
-	public BookingDetails(int id, int personCount, Date dateTime, Date bookingOn) {
-		this.id = id;
-		this.personCount = personCount;
-		this.dateTime = dateTime;
-		this.bookingOn = bookingOn;
+	public BookingDetails() {
 	}
 
 	public int getId() {
@@ -82,6 +76,12 @@ public class BookingDetails {
 
 	public void setBookingOn(Date bookingOn) {
 		this.bookingOn = bookingOn;
+	}
+
+	@Override
+	public String toString() {
+		return "BookingDetails [id=" + id + ", customer=" + customer + ", personCount=" + personCount + ", dateTime="
+				+ dateTime + ", allocatedTable=" + allocatedTable + ", bookingOn=" + bookingOn + "]";
 	}
 
 }
