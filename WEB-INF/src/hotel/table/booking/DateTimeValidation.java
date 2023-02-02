@@ -80,7 +80,7 @@ public class DateTimeValidation {
 	}
 
 	public long getDuration(String start_date, String end_date) {
-		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_ERROR, "Duration Calculation", mySession);
+		TraceInfo.trace(ITraceInfo.TRACE_LEVEL_INFO, "Duration Calculation", mySession);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		try {
 			Date startDate = sdf.parse(start_date);

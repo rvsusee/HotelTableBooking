@@ -432,4 +432,67 @@
         <comments/>
         <audiofile>PastDateAcmt.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>NewCustomerEnterPin</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NewCustomerEnterPin.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ExistingCustomerEnterPin</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ExistCustomerEnterPin.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>WrongPin</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>WrongPin.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoPin</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoPin.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>WrongPinExit</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>WrongPinExit.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoInputPin</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoPinExit.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoPinExit</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoPinExit.wav</audiofile>
+    </phrase>
 </phraseset>

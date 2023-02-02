@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <projectvariables>
+    <variable factoryID="" name="audioPath:ExistCustomerEnterPin" owner="" type="" value="http://localhost:8050/Audio/HotelTableBooking/English/ExistCustomerEnterPin.wav" version="1.0"/>
+    <variable factoryID="" name="audioPath:NewCustomerEnterPin" owner="" type="" value="http://localhost:8050/Audio/HotelTableBooking/English/NewCustomerEnterPin.wav" version="1.0"/>
+    <variable factoryID="" name="audioPath:testing" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="BookingDetails:BookingNo" owner="" type="" value="10304050" version="1.0"/>
     <variable factoryID="" name="BookingDetails:Date" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="BookingDetails:MobileNo" owner="" type="" value="8838930954" version="1.0"/>
@@ -12,6 +15,11 @@
     <variable factoryID="" name="CallHistoryInfo:ExitLocation" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="CallHistoryInfo:ip" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="CallHistoryInfo:startDate" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="CustomerDetails:emailId" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="CustomerDetails:id" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="CustomerDetails:mobileNumber" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="CustomerDetails:name" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="CustomerDetails:pin" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="date:audio" owner="com.avaya.sce.core" type="com.avaya.sce.core.date" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>
@@ -581,6 +589,62 @@
         </editpolicies>
     </variable>
     <variable factoryID="" name="MobileNo" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="PinPC:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="PinPC:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="PinPC:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="PinPC:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="PinPC:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="PinPC:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="PinPC:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
     <variable factoryID="" name="redirectinfo:presentationinfo" owner="com.avaya.sce.core" type="com.avaya.sce.core.redirect" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>
@@ -1050,7 +1114,9 @@
         </editpolicies>
     </variable>
     <variable factoryID="" name="validation:attemptCount" owner="" type="" value="0" version="1.0"/>
+    <variable factoryID="" name="validation:isExistCustomer" owner="" type="" value="false" version="1.0"/>
     <variable factoryID="" name="validation:isHaveLastBooking" owner="" type="" value="false" version="1.0"/>
+    <variable factoryID="" name="validation:isLogin" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="validation:isNoOfPerson" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="validation:isPastDate" owner="" type="" value="false" version="1.0"/>
     <variable factoryID="" name="validation:isValidBookingNo" owner="" type="" value="" version="1.0"/>

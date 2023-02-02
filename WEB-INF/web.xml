@@ -442,6 +442,24 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>CustomerVerification</servlet-name>
         <servlet-class>flow.CustomerVerification</servlet-class>
     </servlet>
+    
+    
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_main_806">
+        <servlet-name>CustomerAuth</servlet-name>
+        <servlet-class>flow.CustomerAuth</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_812">
+        <servlet-name>PinPC</servlet-name>
+        <servlet-class>flow.PinPC</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_839">
+        <servlet-name>AttemptValidation</servlet-name>
+        <servlet-class>flow.AttemptValidation</servlet-class>
+    </servlet>
+    
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -775,6 +793,24 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>CustomerVerification</servlet-name>
         <url-pattern>/CustomerVerification</url-pattern>
     </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_806">
+        <servlet-name>CustomerAuth</servlet-name>
+        <url-pattern>/CustomerAuth</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_812">
+        <servlet-name>PinPC</servlet-name>
+        <url-pattern>/PinPC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_839">
+        <servlet-name>AttemptValidation</servlet-name>
+        <url-pattern>/AttemptValidation</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
     
     
     
